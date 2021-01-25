@@ -1,0 +1,86 @@
+[
+  {
+    "time": 0.0,
+    "head": {
+      "dur": 0.0,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.0,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "rwrist": {
+      "dur": 0.0,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "lelbow": {
+      "dur": 0.0,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "lwrist": {
+      "dur": 0.0,
+      "dir": "forward",
+      "lvl": "normal"
+    }
+  },
+  {
+    "time": 0.0,
+    "head": {
+      "dur": 0.175,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.175,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "rwrist": {
+      "dur": 0.175,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "lelbow": {
+      "dur": 0.175,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "lwrist": {
+      "dur": 0.175,
+      "dir": "forward",
+      "lvl": "normal"
+    }
+  },
+  {
+    "time": 0.175,
+    "head": {
+      "dur": 1.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 1.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 1.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 1.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lwrist": {
+      "dur": 1.5,
+      "dir": "place",
+      "lvl": "low"
+    }
+  }
+]

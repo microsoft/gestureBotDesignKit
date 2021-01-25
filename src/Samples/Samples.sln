@@ -1,0 +1,297 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Simple", "Simple\Simple.pyproj", "{C39FD1EE-3319-4947-B4DD-3C56957B4470}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MSRAbot", "MSRAbot\MSRAbot.pyproj", "{00F14C0F-8160-4028-A9CB-71DAF1917454}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "gestureService_w2v", "gestureService_w2v\gestureService_w2v.pyproj", "{5C86D86E-DA15-4341-8FC4-4458B7355DEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{CDE3F82D-A26A-45DB-B002-CBAB4B25C35B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gestureService_w2v", "gestureService_w2v", "{595EDCC2-A18E-481C-B973-369913BE0359}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\gestureService_w2v\gestureService.py = ..\Libraries\gestureService_w2v\gestureService.py
+		..\Libraries\gestureService_w2v\tag_lab_word.txt = ..\Libraries\gestureService_w2v\tag_lab_word.txt
+		..\Libraries\gestureService_w2v\word2vec.py = ..\Libraries\gestureService_w2v\word2vec.py
+		..\Libraries\gestureService_w2v\word2vec_server.py = ..\Libraries\gestureService_w2v\word2vec_server.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{B16EB73E-8E20-49EB-9021-68293FBF666A}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\Controller\controller.py = ..\Libraries\Controller\controller.py
+		..\Libraries\Controller\drawLaban.py = ..\Libraries\Controller\drawLaban.py
+		..\Libraries\Controller\jointLaban.py = ..\Libraries\Controller\jointLaban.py
+		..\Libraries\Controller\loadLaban.py = ..\Libraries\Controller\loadLaban.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSRAbot", "MSRAbot", "{569C28DD-6A6F-469E-BA4C-69B7CFC78C01}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\MSRAbot\airsimclient.py = ..\Libraries\MSRAbot\airsimclient.py
+		..\Libraries\MSRAbot\hardware.py = ..\Libraries\MSRAbot\hardware.py
+		..\Libraries\MSRAbot\msrabot.py = ..\Libraries\MSRAbot\msrabot.py
+		..\Libraries\MSRAbot\RS30X.py = ..\Libraries\MSRAbot\RS30X.py
+		..\Libraries\MSRAbot\servo.py = ..\Libraries\MSRAbot\servo.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AirSim", "AirSim", "{9BC9A0EA-A750-40FE-A194-FE6EBC63509B}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\MSRAbot\airsim\client.py = ..\Libraries\MSRAbot\airsim\client.py
+		..\Libraries\MSRAbot\airsim\pfm.py = ..\Libraries\MSRAbot\airsim\pfm.py
+		..\Libraries\MSRAbot\airsim\types.py = ..\Libraries\MSRAbot\airsim\types.py
+		..\Libraries\MSRAbot\airsim\utils.py = ..\Libraries\MSRAbot\airsim\utils.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DE8413CD-83A1-4848-BFD8-C54F97963884}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9A3C5E52-872F-4BFD-AF72-F03CE6EBFA5E}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\Common\geometry.py = ..\Libraries\Common\geometry.py
+		..\Libraries\Common\settings.py = ..\Libraries\Common\settings.py
+		..\Libraries\Common\utilities.py = ..\Libraries\Common\utilities.py
+		..\Libraries\Common\webSocket.py = ..\Libraries\Common\webSocket.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labanotation", "Labanotation", "{41A57244-8002-4553-8093-03FEB72062F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gestureLibrary", "gestureLibrary", "{EF4916ED-51AE-4E82-B579-A52DC9FDDF30}"
+	ProjectSection(SolutionItems) = preProject
+		..\Labanotation\gestureLibrary\away.json = ..\Labanotation\gestureLibrary\away.json
+		..\Labanotation\gestureLibrary\away2.json = ..\Labanotation\gestureLibrary\away2.json
+		..\Labanotation\gestureLibrary\away4.json = ..\Labanotation\gestureLibrary\away4.json
+		..\Labanotation\gestureLibrary\bad.json = ..\Labanotation\gestureLibrary\bad.json
+		..\Labanotation\gestureLibrary\beat rotate.json = ..\Labanotation\gestureLibrary\beat rotate.json
+		..\Labanotation\gestureLibrary\beat.json = ..\Labanotation\gestureLibrary\beat.json
+		..\Labanotation\gestureLibrary\beat2.json = ..\Labanotation\gestureLibrary\beat2.json
+		..\Labanotation\gestureLibrary\beat3.json = ..\Labanotation\gestureLibrary\beat3.json
+		..\Labanotation\gestureLibrary\big.json = ..\Labanotation\gestureLibrary\big.json
+		..\Labanotation\gestureLibrary\big2.json = ..\Labanotation\gestureLibrary\big2.json
+		..\Labanotation\gestureLibrary\catch.json = ..\Labanotation\gestureLibrary\catch.json
+		..\Labanotation\gestureLibrary\come.json = ..\Labanotation\gestureLibrary\come.json
+		..\Labanotation\gestureLibrary\come2.json = ..\Labanotation\gestureLibrary\come2.json
+		..\Labanotation\gestureLibrary\confuse r.json = ..\Labanotation\gestureLibrary\confuse r.json
+		..\Labanotation\gestureLibrary\contrast.json = ..\Labanotation\gestureLibrary\contrast.json
+		..\Labanotation\gestureLibrary\dance4.json = ..\Labanotation\gestureLibrary\dance4.json
+		..\Labanotation\gestureLibrary\deictic here.json = ..\Labanotation\gestureLibrary\deictic here.json
+		..\Labanotation\gestureLibrary\deictic me l.json = ..\Labanotation\gestureLibrary\deictic me l.json
+		..\Labanotation\gestureLibrary\deictic me rotate l.json = ..\Labanotation\gestureLibrary\deictic me rotate l.json
+		..\Labanotation\gestureLibrary\deictic that h.json = ..\Labanotation\gestureLibrary\deictic that h.json
+		..\Labanotation\gestureLibrary\deictic that m.json = ..\Labanotation\gestureLibrary\deictic that m.json
+		..\Labanotation\gestureLibrary\deictic that rotate.json = ..\Labanotation\gestureLibrary\deictic that rotate.json
+		..\Labanotation\gestureLibrary\deictic there h.json = ..\Labanotation\gestureLibrary\deictic there h.json
+		..\Labanotation\gestureLibrary\deictic there m.json = ..\Labanotation\gestureLibrary\deictic there m.json
+		..\Labanotation\gestureLibrary\deictic there rotate.json = ..\Labanotation\gestureLibrary\deictic there rotate.json
+		..\Labanotation\gestureLibrary\deictic this.json = ..\Labanotation\gestureLibrary\deictic this.json
+		..\Labanotation\gestureLibrary\deictic you d.json = ..\Labanotation\gestureLibrary\deictic you d.json
+		..\Labanotation\gestureLibrary\deictic you l.json = ..\Labanotation\gestureLibrary\deictic you l.json
+		..\Labanotation\gestureLibrary\deictic you r.json = ..\Labanotation\gestureLibrary\deictic you r.json
+		..\Labanotation\gestureLibrary\deictic you rotate.json = ..\Labanotation\gestureLibrary\deictic you rotate.json
+		..\Labanotation\gestureLibrary\dont like4.json = ..\Labanotation\gestureLibrary\dont like4.json
+		..\Labanotation\gestureLibrary\drink4.json = ..\Labanotation\gestureLibrary\drink4.json
+		..\Labanotation\gestureLibrary\dummy.json = ..\Labanotation\gestureLibrary\dummy.json
+		..\Labanotation\gestureLibrary\go.json = ..\Labanotation\gestureLibrary\go.json
+		..\Labanotation\gestureLibrary\good.json = ..\Labanotation\gestureLibrary\good.json
+		..\Labanotation\gestureLibrary\goodbye.json = ..\Labanotation\gestureLibrary\goodbye.json
+		..\Labanotation\gestureLibrary\happy4.json = ..\Labanotation\gestureLibrary\happy4.json
+		..\Labanotation\gestureLibrary\hello.json = ..\Labanotation\gestureLibrary\hello.json
+		..\Labanotation\gestureLibrary\hello4.json = ..\Labanotation\gestureLibrary\hello4.json
+		..\Labanotation\gestureLibrary\help4.json = ..\Labanotation\gestureLibrary\help4.json
+		..\Labanotation\gestureLibrary\howareyou4.json = ..\Labanotation\gestureLibrary\howareyou4.json
+		..\Labanotation\gestureLibrary\hungry.json = ..\Labanotation\gestureLibrary\hungry.json
+		..\Labanotation\gestureLibrary\i4.json = ..\Labanotation\gestureLibrary\i4.json
+		..\Labanotation\gestureLibrary\initialize.json = ..\Labanotation\gestureLibrary\initialize.json
+		..\Labanotation\gestureLibrary\interesting.json = ..\Labanotation\gestureLibrary\interesting.json
+		..\Labanotation\gestureLibrary\laugh head.json = ..\Labanotation\gestureLibrary\laugh head.json
+		..\Labanotation\gestureLibrary\lets go4.json = ..\Labanotation\gestureLibrary\lets go4.json
+		..\Labanotation\gestureLibrary\look at.json = ..\Labanotation\gestureLibrary\look at.json
+		..\Labanotation\gestureLibrary\many.json = ..\Labanotation\gestureLibrary\many.json
+		..\Labanotation\gestureLibrary\nice.json = ..\Labanotation\gestureLibrary\nice.json
+		..\Labanotation\gestureLibrary\nod.json = ..\Labanotation\gestureLibrary\nod.json
+		..\Labanotation\gestureLibrary\ok4.json = ..\Labanotation\gestureLibrary\ok4.json
+		..\Labanotation\gestureLibrary\open two arms.json = ..\Labanotation\gestureLibrary\open two arms.json
+		..\Labanotation\gestureLibrary\panic.json = ..\Labanotation\gestureLibrary\panic.json
+		..\Labanotation\gestureLibrary\please4.json = ..\Labanotation\gestureLibrary\please4.json
+		..\Labanotation\gestureLibrary\question.json = ..\Labanotation\gestureLibrary\question.json
+		..\Labanotation\gestureLibrary\quit.json = ..\Labanotation\gestureLibrary\quit.json
+		..\Labanotation\gestureLibrary\relax hand.json = ..\Labanotation\gestureLibrary\relax hand.json
+		..\Labanotation\gestureLibrary\robot d move.json = ..\Labanotation\gestureLibrary\robot d move.json
+		..\Labanotation\gestureLibrary\robot d.json = ..\Labanotation\gestureLibrary\robot d.json
+		..\Labanotation\gestureLibrary\say.json = ..\Labanotation\gestureLibrary\say.json
+		..\Labanotation\gestureLibrary\shake head.json = ..\Labanotation\gestureLibrary\shake head.json
+		..\Labanotation\gestureLibrary\sleepy.json = ..\Labanotation\gestureLibrary\sleepy.json
+		..\Labanotation\gestureLibrary\sleepy4.json = ..\Labanotation\gestureLibrary\sleepy4.json
+		..\Labanotation\gestureLibrary\small.json = ..\Labanotation\gestureLibrary\small.json
+		..\Labanotation\gestureLibrary\sorry.json = ..\Labanotation\gestureLibrary\sorry.json
+		..\Labanotation\gestureLibrary\sorry2.json = ..\Labanotation\gestureLibrary\sorry2.json
+		..\Labanotation\gestureLibrary\sorry3.json = ..\Labanotation\gestureLibrary\sorry3.json
+		..\Labanotation\gestureLibrary\surprised.json = ..\Labanotation\gestureLibrary\surprised.json
+		..\Labanotation\gestureLibrary\test.json = ..\Labanotation\gestureLibrary\test.json
+		..\Labanotation\gestureLibrary\thanks.json = ..\Labanotation\gestureLibrary\thanks.json
+		..\Labanotation\gestureLibrary\theme head down continue.json = ..\Labanotation\gestureLibrary\theme head down continue.json
+		..\Labanotation\gestureLibrary\theme head down end.json = ..\Labanotation\gestureLibrary\theme head down end.json
+		..\Labanotation\gestureLibrary\theme head lean continue.json = ..\Labanotation\gestureLibrary\theme head lean continue.json
+		..\Labanotation\gestureLibrary\theme head lean end.json = ..\Labanotation\gestureLibrary\theme head lean end.json
+		..\Labanotation\gestureLibrary\theme rotate continue.json = ..\Labanotation\gestureLibrary\theme rotate continue.json
+		..\Labanotation\gestureLibrary\theme rotate end.json = ..\Labanotation\gestureLibrary\theme rotate end.json
+		..\Labanotation\gestureLibrary\theme still continue.json = ..\Labanotation\gestureLibrary\theme still continue.json
+		..\Labanotation\gestureLibrary\theme still end.json = ..\Labanotation\gestureLibrary\theme still end.json
+		..\Labanotation\gestureLibrary\think d high l.json = ..\Labanotation\gestureLibrary\think d high l.json
+		..\Labanotation\gestureLibrary\think d high s.json = ..\Labanotation\gestureLibrary\think d high s.json
+		..\Labanotation\gestureLibrary\think d low l.json = ..\Labanotation\gestureLibrary\think d low l.json
+		..\Labanotation\gestureLibrary\think d low s.json = ..\Labanotation\gestureLibrary\think d low s.json
+		..\Labanotation\gestureLibrary\think l high l.json = ..\Labanotation\gestureLibrary\think l high l.json
+		..\Labanotation\gestureLibrary\think l high s.json = ..\Labanotation\gestureLibrary\think l high s.json
+		..\Labanotation\gestureLibrary\think l low l.json = ..\Labanotation\gestureLibrary\think l low l.json
+		..\Labanotation\gestureLibrary\think l low s.json = ..\Labanotation\gestureLibrary\think l low s.json
+		..\Labanotation\gestureLibrary\tired.json = ..\Labanotation\gestureLibrary\tired.json
+		..\Labanotation\gestureLibrary\wave happily.json = ..\Labanotation\gestureLibrary\wave happily.json
+		..\Labanotation\gestureLibrary\weather.json = ..\Labanotation\gestureLibrary\weather.json
+		..\Labanotation\gestureLibrary\yawn.json = ..\Labanotation\gestureLibrary\yawn.json
+		..\Labanotation\gestureLibrary\youandme4.json = ..\Labanotation\gestureLibrary\youandme4.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kinectSuite", "kinectSuite", "{BFFFFBCF-1380-4E56-8118-A69952F85C0A}"
+	ProjectSection(SolutionItems) = preProject
+		..\Labanotation\kinectSuite\Ges01_wavehand.naive.json = ..\Labanotation\kinectSuite\Ges01_wavehand.naive.json
+		..\Labanotation\kinectSuite\Ges01_wavehand.total.json = ..\Labanotation\kinectSuite\Ges01_wavehand.total.json
+		..\Labanotation\kinectSuite\Ges02_balancinghands.naive.json = ..\Labanotation\kinectSuite\Ges02_balancinghands.naive.json
+		..\Labanotation\kinectSuite\Ges02_balancinghands.parallel.json = ..\Labanotation\kinectSuite\Ges02_balancinghands.parallel.json
+		..\Labanotation\kinectSuite\Ges02_balancinghands.total.json = ..\Labanotation\kinectSuite\Ges02_balancinghands.total.json
+		..\Labanotation\kinectSuite\Ges03_drawlines.naive.json = ..\Labanotation\kinectSuite\Ges03_drawlines.naive.json
+		..\Labanotation\kinectSuite\Ges03_drawlines.parallel.json = ..\Labanotation\kinectSuite\Ges03_drawlines.parallel.json
+		..\Labanotation\kinectSuite\Ges03_drawlines.total.json = ..\Labanotation\kinectSuite\Ges03_drawlines.total.json
+		..\Labanotation\kinectSuite\Ges04_comehere.naive.json = ..\Labanotation\kinectSuite\Ges04_comehere.naive.json
+		..\Labanotation\kinectSuite\Ges04_comehere.parallel.json = ..\Labanotation\kinectSuite\Ges04_comehere.parallel.json
+		..\Labanotation\kinectSuite\Ges04_comehere.total.json = ..\Labanotation\kinectSuite\Ges04_comehere.total.json
+		..\Labanotation\kinectSuite\Ges05_demopoint.naive.json = ..\Labanotation\kinectSuite\Ges05_demopoint.naive.json
+		..\Labanotation\kinectSuite\Ges05_demopoint.parallel.json = ..\Labanotation\kinectSuite\Ges05_demopoint.parallel.json
+		..\Labanotation\kinectSuite\Ges05_demopoint.total.json = ..\Labanotation\kinectSuite\Ges05_demopoint.total.json
+		..\Labanotation\kinectSuite\Ges06_chickenwing.naive.json = ..\Labanotation\kinectSuite\Ges06_chickenwing.naive.json
+		..\Labanotation\kinectSuite\Ges06_chickenwing.parallel.json = ..\Labanotation\kinectSuite\Ges06_chickenwing.parallel.json
+		..\Labanotation\kinectSuite\Ges06_chickenwing.total.json = ..\Labanotation\kinectSuite\Ges06_chickenwing.total.json
+		..\Labanotation\kinectSuite\NewFormat.json = ..\Labanotation\kinectSuite\NewFormat.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gestureBot", "gestureBot", "{F50CA5DC-A1C1-43B4-9343-BD90C0D18137}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\gestureBot\airsimclient.py = ..\Libraries\gestureBot\airsimclient.py
+		..\Libraries\gestureBot\gestureBot.py = ..\Libraries\gestureBot\gestureBot.py
+		..\Libraries\gestureBot\hardware.py = ..\Libraries\gestureBot\hardware.py
+		..\Libraries\gestureBot\servo.py = ..\Libraries\gestureBot\servo.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AirSim", "AirSim", "{1C0CD7B2-1AC0-4A76-8784-36C5AFE92D76}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\gestureBot\airsim\client.py = ..\Libraries\gestureBot\airsim\client.py
+		..\Libraries\gestureBot\airsim\pfm.py = ..\Libraries\gestureBot\airsim\pfm.py
+		..\Libraries\gestureBot\airsim\types.py = ..\Libraries\gestureBot\airsim\types.py
+		..\Libraries\gestureBot\airsim\utils.py = ..\Libraries\gestureBot\airsim\utils.py
+	EndProjectSection
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "gestureBot", "gestureBot\gestureBot.pyproj", "{00F14C0F-8160-4028-A9CB-71DAF1917455}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{03788B52-2483-491A-9604-36301B46916B}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\gestureBot\web\index.html = ..\Libraries\gestureBot\web\index.html
+		..\Libraries\gestureBot\web\main.css = ..\Libraries\gestureBot\web\main.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{18B18933-1249-47B8-91F2-48461D7C95DC}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\gestureBot\web\js\app.js = ..\Libraries\gestureBot\web\js\app.js
+		..\Libraries\gestureBot\web\js\chart.js = ..\Libraries\gestureBot\web\js\chart.js
+		..\Libraries\gestureBot\web\js\controls.js = ..\Libraries\gestureBot\web\js\controls.js
+		..\Libraries\gestureBot\web\js\gestureBot.js = ..\Libraries\gestureBot\web\js\gestureBot.js
+		..\Libraries\gestureBot\web\js\servo.js = ..\Libraries\gestureBot\web\js\servo.js
+		..\Libraries\gestureBot\web\js\utils.js = ..\Libraries\gestureBot\web\js\utils.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{248CBFF3-F3B6-4624-ADC0-593FF5042BAB}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "lab2png", "..\Tools\lab2png\lab2png.pyproj", "{007E4A74-4AAC-4E39-9670-00A51460102F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{0D1BB546-B5DA-4103-B57B-58DF82442C03}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\Controller\web\index.html = ..\Libraries\Controller\web\index.html
+		..\Libraries\Controller\web\main.css = ..\Libraries\Controller\web\main.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{D68CE4BA-769B-47C2-8E0E-F6109438AB1C}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\Controller\web\js\app.js = ..\Libraries\Controller\web\js\app.js
+		..\Libraries\Controller\web\js\skeleton.js = ..\Libraries\Controller\web\js\skeleton.js
+	EndProjectSection
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "convert", "..\Tools\convert\convert.pyproj", "{007E4A74-4AAC-4E39-9670-00A514601122}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{51796CD5-1F04-4027-874E-6215FB976AB0}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\MSRAbot\web\index.html = ..\Libraries\MSRAbot\web\index.html
+		..\Libraries\MSRAbot\web\main.css = ..\Libraries\MSRAbot\web\main.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{95EF0AF6-B0DC-49D5-A4DE-9B04C4B8EC6A}"
+	ProjectSection(SolutionItems) = preProject
+		..\Libraries\MSRAbot\web\js\app.js = ..\Libraries\MSRAbot\web\js\app.js
+		..\Libraries\MSRAbot\web\js\controls.js = ..\Libraries\MSRAbot\web\js\controls.js
+		..\Libraries\MSRAbot\web\js\msrabot.js = ..\Libraries\MSRAbot\web\js\msrabot.js
+		..\Libraries\MSRAbot\web\js\servo.js = ..\Libraries\MSRAbot\web\js\servo.js
+		..\Libraries\MSRAbot\web\js\utils.js = ..\Libraries\MSRAbot\web\js\utils.js
+	EndProjectSection
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "gestureBotSetLimits", "gestureBotSetLimits\gestureBotSetLimits.pyproj", "{00F14C0F-8160-4028-A9CB-71DAF1917456}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C39FD1EE-3319-4947-B4DD-3C56957B4470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39FD1EE-3319-4947-B4DD-3C56957B4470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F14C0F-8160-4028-A9CB-71DAF1917454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F14C0F-8160-4028-A9CB-71DAF1917454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C86D86E-DA15-4341-8FC4-4458B7355DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C86D86E-DA15-4341-8FC4-4458B7355DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F14C0F-8160-4028-A9CB-71DAF1917455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F14C0F-8160-4028-A9CB-71DAF1917455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007E4A74-4AAC-4E39-9670-00A51460102F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007E4A74-4AAC-4E39-9670-00A51460102F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007E4A74-4AAC-4E39-9670-00A514601122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007E4A74-4AAC-4E39-9670-00A514601122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F14C0F-8160-4028-A9CB-71DAF1917456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F14C0F-8160-4028-A9CB-71DAF1917456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C39FD1EE-3319-4947-B4DD-3C56957B4470} = {DE8413CD-83A1-4848-BFD8-C54F97963884}
+		{00F14C0F-8160-4028-A9CB-71DAF1917454} = {DE8413CD-83A1-4848-BFD8-C54F97963884}
+		{5C86D86E-DA15-4341-8FC4-4458B7355DEB} = {DE8413CD-83A1-4848-BFD8-C54F97963884}
+		{595EDCC2-A18E-481C-B973-369913BE0359} = {CDE3F82D-A26A-45DB-B002-CBAB4B25C35B}
+		{B16EB73E-8E20-49EB-9021-68293FBF666A} = {CDE3F82D-A26A-45DB-B002-CBAB4B25C35B}
+		{569C28DD-6A6F-469E-BA4C-69B7CFC78C01} = {CDE3F82D-A26A-45DB-B002-CBAB4B25C35B}
+		{9BC9A0EA-A750-40FE-A194-FE6EBC63509B} = {569C28DD-6A6F-469E-BA4C-69B7CFC78C01}
+		{9A3C5E52-872F-4BFD-AF72-F03CE6EBFA5E} = {CDE3F82D-A26A-45DB-B002-CBAB4B25C35B}
+		{EF4916ED-51AE-4E82-B579-A52DC9FDDF30} = {41A57244-8002-4553-8093-03FEB72062F7}
+		{BFFFFBCF-1380-4E56-8118-A69952F85C0A} = {41A57244-8002-4553-8093-03FEB72062F7}
+		{F50CA5DC-A1C1-43B4-9343-BD90C0D18137} = {CDE3F82D-A26A-45DB-B002-CBAB4B25C35B}
+		{1C0CD7B2-1AC0-4A76-8784-36C5AFE92D76} = {F50CA5DC-A1C1-43B4-9343-BD90C0D18137}
+		{00F14C0F-8160-4028-A9CB-71DAF1917455} = {DE8413CD-83A1-4848-BFD8-C54F97963884}
+		{03788B52-2483-491A-9604-36301B46916B} = {F50CA5DC-A1C1-43B4-9343-BD90C0D18137}
+		{18B18933-1249-47B8-91F2-48461D7C95DC} = {03788B52-2483-491A-9604-36301B46916B}
+		{007E4A74-4AAC-4E39-9670-00A51460102F} = {248CBFF3-F3B6-4624-ADC0-593FF5042BAB}
+		{0D1BB546-B5DA-4103-B57B-58DF82442C03} = {B16EB73E-8E20-49EB-9021-68293FBF666A}
+		{D68CE4BA-769B-47C2-8E0E-F6109438AB1C} = {0D1BB546-B5DA-4103-B57B-58DF82442C03}
+		{007E4A74-4AAC-4E39-9670-00A514601122} = {248CBFF3-F3B6-4624-ADC0-593FF5042BAB}
+		{51796CD5-1F04-4027-874E-6215FB976AB0} = {569C28DD-6A6F-469E-BA4C-69B7CFC78C01}
+		{95EF0AF6-B0DC-49D5-A4DE-9B04C4B8EC6A} = {51796CD5-1F04-4027-874E-6215FB976AB0}
+		{00F14C0F-8160-4028-A9CB-71DAF1917456} = {DE8413CD-83A1-4848-BFD8-C54F97963884}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C584EBD-C55C-4931-B9F3-096C81783A1D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+beat:beat|beat2|beat3:really|just
+big:big:big|large|huge
+sorry:sorry|sorry2|sorry3:sorry
+confuse:confuse r:confuse
+or:contrast:or
+here:deictic here:here
+there:deictic there rotate|deictic there m|deictic there h:there
+this:deictic this:this
+that:deictic that h|deictic that rotate:that
+you:deictic you l|youandme4:you|your
+me:deictic me l|youandme4:i|me|my
+goodbye:goodbye:goodbye|bye
+hello:hello|hello4:hello|hi|Hello|Hi
+laugh:laugh head:haha|ha|Ha
+yes:nod:yes|agree
+ok:nod|ok4:ok|okay
+robot:robot d|robot d move:robot
+surprise:open two arms:surprise
+say:say:say|said|talk
+no:shake head:no|not|n't|never
+small:small:small
+thank:thanks:thank|thanks
+think:think d high s|think d low s|think l low s|think l high s:think
+away:away|away2:away
+bad:bad:bad
+catch:catch:catch|get
+come:come|come2:come
+go:go:go|runs|run|walk|walking
+good:good:good
+hungry:hungry:hungry
+interesting:interesting:interesting
+happy:interesting|happy4:glad|happy
+many:many:many
+nice:nice:nice|fine
+panic:panic:ah|uh|hmm
+question:question:what|where|when|who|why|how|What|Where|When|Who|Why|How|?
+quit:quit:stop|quit
+sleepy:sleepy|sleepy4:sleep|sleepy
+tired:tired:tired
+weather:weather:weather|sunny|cloudy|windy|rainy
+help:help4:help
+drink:drink4:drink
+dance:dance4:dance
+please:please4:please
+hate:dont like4:hate|dislike
+lets:lets go4:Let

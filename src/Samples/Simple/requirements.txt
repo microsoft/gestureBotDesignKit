@@ -1,0 +1,5 @@
+numpy==1.19.3
+tornado==4.5.2
+opencv-python==4.4.0.46
+pyserial==3.4
+msgpack-rpc-python==0.4.1

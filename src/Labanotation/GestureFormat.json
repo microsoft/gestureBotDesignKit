@@ -1,0 +1,45 @@
+[
+    {
+        "time": 0.0,
+        "head": {
+            "dur": 1.0,
+            "dir": "Forward",
+            "lvl": "Normal"
+        },
+        "relbow": {
+            "dur": 1.0,
+            "dir": "Place",
+            "lvl": "Low"
+        },
+        "rwrist": {
+            "dur": 1.0,
+            "dir": "Forward",
+            "lvl": "Low"
+        },
+        "lelbow": {
+            "dur": 1.0,
+            "dir": "Place",
+            "lvl": "Low"
+        },
+        "lwrist": {
+            "dur": 1.0,
+            "dir": "Forward",
+            "lvl": "Low"
+        },
+        "text": {
+            "dur": 0.8,
+            "phrase": "hello world"
+        },
+        "midi": {
+            "dur": 0.8,
+            "notes": "C1 C1 0.5 E1 0.5"
+        },
+        "audio": {
+            "file": "hello_world.mp3",
+            "raw": "64-encode"
+        }
+    },
+    {
+        "time": 232.0
+    }
+]

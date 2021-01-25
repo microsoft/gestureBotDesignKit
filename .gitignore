@@ -1,0 +1,204 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Labanotation_Controller/utils/__init__.pyc
+/Labanotation_Controller/utils/geometry.pyc
+/Labanotation_Controller/settings.pyc
+/Labanotation_Controller/MSRAbotController.sln
+/Labanotation_Controller/MSRAbotController.pyproj
+/Labanotation_Controller/msrabot/__init__.pyc
+/Labanotation_Controller/msrabot/webSocket.pyc
+/Labanotation_Controller/msrabot/RS30X.pyc
+/Labanotation_Controller/msrabot/msrabot.pyc
+/Labanotation_Controller/msrabot/hardware.pyc
+/Labanotation_Controller/msrabot/airsim/__init__.pyc
+/Labanotation_Controller/msrabot/airsim/utils.pyc
+/Labanotation_Controller/msrabot/airsim/types.pyc
+/Labanotation_Controller/msrabot/airsim/client.pyc
+/Labanotation_Controller/msrabot/airsim/airsim.pyc
+/Labanotation_Controller/controller/__init__.pyc
+/Labanotation_Controller/controller/webSocket.pyc
+/Labanotation_Controller/controller/controller.pyc
+/Labanotation_Controller/.vs/MSRAbotController/v16/.suo
+/Labanotation_Controller/.vs/MSRAbotController/config/applicationhost.config
+/lab2jpg/.vs/lab2jpg/v16/.suo
+/lab2jpg/labanotation/README.md
+/lab2jpg/labanotation/Ges06_chickenwing.total.json
+/lab2jpg/labanotation/Ges06_chickenwing.parallel.json
+/lab2jpg/labanotation/Ges06_chickenwing.naive.json
+/lab2jpg/labanotation/Ges05_demopoint.total.json
+/lab2jpg/labanotation/Ges05_demopoint.parallel.json
+/lab2jpg/labanotation/Ges05_demopoint.naive.json
+/lab2jpg/labanotation/Ges04_comehere.total.json
+/lab2jpg/labanotation/Ges04_comehere.parallel.json
+/lab2jpg/labanotation/Ges04_comehere.naive.json
+/lab2jpg/labanotation/Ges03_drawlines.total.png
+/lab2jpg/labanotation/Ges03_drawlines.total.json
+/lab2jpg/labanotation/Ges03_drawlines.parallel.png
+/lab2jpg/labanotation/Ges03_drawlines.parallel.json
+/lab2jpg/labanotation/Ges03_drawlines.naive.png
+/lab2jpg/labanotation/Ges03_drawlines.naive.json
+/lab2jpg/labanotation/Ges02_balancinghands.total.json
+/lab2jpg/labanotation/Ges02_balancinghands.parallel.json
+/lab2jpg/labanotation/Ges02_balancinghands.naive.json
+/lab2jpg/labanotation/Ges01_wavehand.total.json
+/lab2jpg/labanotation/Ges01_wavehand.parallel.json
+/lab2jpg/labanotation/Ges01_wavehand.naive.json
+/lab2png/labanotation/README.md
+/lab2png/labanotation/Ges06_chickenwing.total.json
+/lab2png/labanotation/Ges06_chickenwing.parallel.json
+/lab2png/labanotation/Ges06_chickenwing.naive.json
+/lab2png/labanotation/Ges05_demopoint.total.json
+/lab2png/labanotation/Ges05_demopoint.parallel.json
+/lab2png/labanotation/Ges05_demopoint.naive.json
+/lab2png/labanotation/Ges04_comehere.total.json
+/lab2png/labanotation/Ges04_comehere.parallel.json
+/lab2png/labanotation/Ges04_comehere.naive.json
+/lab2png/labanotation/Ges03_drawlines.total.png
+/lab2png/labanotation/Ges03_drawlines.total.json
+/lab2png/labanotation/Ges03_drawlines.parallel.png
+/lab2png/labanotation/Ges03_drawlines.parallel.json
+/lab2png/labanotation/Ges03_drawlines.naive.png
+/lab2png/labanotation/Ges03_drawlines.naive.json
+/lab2png/labanotation/Ges02_balancinghands.total.json
+/lab2png/labanotation/Ges02_balancinghands.parallel.json
+/lab2png/labanotation/Ges02_balancinghands.naive.json
+/lab2png/labanotation/Ges01_wavehand.total.json
+/lab2png/labanotation/Ges01_wavehand.parallel.json
+/lab2png/labanotation/Ges01_wavehand.naive.json
+/lab2png/.vs/lab2jpg/v16/.suo
+/lab2png/settings.pyc
+/lab2png/labanVisualization.pyc
+/lab2png/labanotation.pyc
+/lab2png/lab2png.sln
+/lab2png/lab2png.pyproj
+/Labanotation_Controller/labanotation2b/youandme4.json
+/Labanotation_Controller/labanotation2b/yawn.json
+/Labanotation_Controller/labanotation2b/weather.json
+/Labanotation_Controller/labanotation2b/wave happily.json
+/Labanotation_Controller/labanotation2b/translator_look_right.json
+/Labanotation_Controller/labanotation2b/translator_look_left.json
+/Labanotation_Controller/labanotation2b/translator_look_center.json
+/Labanotation_Controller/labanotation2b/tired.json
+/Labanotation_Controller/labanotation2b/think l low s.json
+/Labanotation_Controller/labanotation2b/think l low l.json
+/Labanotation_Controller/labanotation2b/think l high s.json
+/Labanotation_Controller/labanotation2b/think l high l.json
+/Labanotation_Controller/labanotation2b/think d low s.json
+/Labanotation_Controller/labanotation2b/think d low l.json
+/Labanotation_Controller/labanotation2b/think d high s.json
+/Labanotation_Controller/labanotation2b/think d high l.json
+/Labanotation_Controller/labanotation2b/theme still end.json
+/Labanotation_Controller/labanotation2b/theme still continue.json
+/Labanotation_Controller/labanotation2b/theme rotate end.json
+/Labanotation_Controller/labanotation2b/theme rotate continue.json
+/Labanotation_Controller/labanotation2b/theme head lean end.json
+/Labanotation_Controller/labanotation2b/theme head lean continue.json
+/Labanotation_Controller/labanotation2b/theme head down end.json
+/Labanotation_Controller/labanotation2b/theme head down continue.json
+/Labanotation_Controller/labanotation2b/thanks.json
+/Labanotation_Controller/labanotation2b/test.json
+/Labanotation_Controller/labanotation2b/surprised.json
+/Labanotation_Controller/labanotation2b/sorry3.json
+/Labanotation_Controller/labanotation2b/sorry2.json
+/Labanotation_Controller/labanotation2b/sorry.json
+/Labanotation_Controller/labanotation2b/small.json
+/Labanotation_Controller/labanotation2b/sleepy4.json
+/Labanotation_Controller/labanotation2b/sleepy.json
+/Labanotation_Controller/labanotation2b/shake head.json
+/Labanotation_Controller/labanotation2b/say.json
+/Labanotation_Controller/labanotation2b/robot d.json
+/Labanotation_Controller/labanotation2b/robot d move.json
+/Labanotation_Controller/labanotation2b/relax hand.json
+/Labanotation_Controller/labanotation2b/README.md
+/Labanotation_Controller/labanotation2b/quit.json
+/Labanotation_Controller/labanotation2b/question2.json
+/Labanotation_Controller/labanotation2b/question.json
+/Labanotation_Controller/labanotation2b/question-taki.json
+/Labanotation_Controller/labanotation2b/please4.json
+/Labanotation_Controller/labanotation2b/panic.json
+/Labanotation_Controller/labanotation2b/open two arms.json
+/Labanotation_Controller/labanotation2b/ok4.json
+/Labanotation_Controller/labanotation2b/nod.json
+/Labanotation_Controller/labanotation2b/nice.json
+/Labanotation_Controller/labanotation2b/many.json
+/Labanotation_Controller/labanotation2b/look at.json
+/Labanotation_Controller/labanotation2b/lets go4.json
+/Labanotation_Controller/labanotation2b/laugh head.json
+/Labanotation_Controller/labanotation2b/interesting.json
+/Labanotation_Controller/labanotation2b/initialize.json
+/Labanotation_Controller/labanotation2b/i4.json
+/Labanotation_Controller/labanotation2b/hungry.json
+/Labanotation_Controller/labanotation2b/howareyou4.json
+/Labanotation_Controller/labanotation2b/help4.json
+/Labanotation_Controller/labanotation2b/hello4.json
+/Labanotation_Controller/labanotation2b/hello2.json
+/Labanotation_Controller/labanotation2b/hello.json
+/Labanotation_Controller/labanotation2b/happy4.json
+/Labanotation_Controller/labanotation2b/goodbye.json
+/Labanotation_Controller/labanotation2b/good.json
+/Labanotation_Controller/labanotation2b/go.json
+/Labanotation_Controller/labanotation2b/dummy.json
+/Labanotation_Controller/labanotation2b/drink4.json
+/Labanotation_Controller/labanotation2b/dont like4.json
+/Labanotation_Controller/labanotation2b/deictic you rotate.json
+/Labanotation_Controller/labanotation2b/deictic you r.json
+/Labanotation_Controller/labanotation2b/deictic you l.json
+/Labanotation_Controller/labanotation2b/deictic you d.json
+/Labanotation_Controller/labanotation2b/deictic this.json
+/Labanotation_Controller/labanotation2b/deictic there rotate.json
+/Labanotation_Controller/labanotation2b/deictic there m.json
+/Labanotation_Controller/labanotation2b/deictic there h.json
+/Labanotation_Controller/labanotation2b/deictic that rotate.json
+/Labanotation_Controller/labanotation2b/deictic that m.json
+/Labanotation_Controller/labanotation2b/deictic that h.json
+/Labanotation_Controller/labanotation2b/deictic me rotate l.json
+/Labanotation_Controller/labanotation2b/deictic me l.json
+/Labanotation_Controller/labanotation2b/deictic here.json
+/Labanotation_Controller/labanotation2b/deictic here l.json
+/Labanotation_Controller/labanotation2b/dance4.json
+/Labanotation_Controller/labanotation2b/contrast.json
+/Labanotation_Controller/labanotation2b/confuse r.json
+/Labanotation_Controller/labanotation2b/come2.json
+/Labanotation_Controller/labanotation2b/come.json
+/Labanotation_Controller/labanotation2b/catch.json
+/Labanotation_Controller/labanotation2b/big2.json
+/Labanotation_Controller/labanotation2b/big.json
+/Labanotation_Controller/labanotation2b/beat3.json
+/Labanotation_Controller/labanotation2b/beat2.json
+/Labanotation_Controller/labanotation2b/beat.json
+/Labanotation_Controller/labanotation2b/beat rotate.json
+/Labanotation_Controller/labanotation2b/bad.json
+/Labanotation_Controller/labanotation2b/away4.json
+/Labanotation_Controller/labanotation2b/away2.json
+/Labanotation_Controller/labanotation2b/away.json
+/Labanotation_Controller/labanotation2b/away-zhaoyuan.json
+/lab2png/.vs/lab2png/v16/.suo
+/Labanotation_Controller/.vs/MSRAbotController/v16
+/Labanotation_Controller/chat
+/Labanotation_Controller/controller/__pycache__
+/Labanotation_Controller/gestureService/__pycache__
+*.pyc
+*.bin
+/Labanotation_Controller/gestureService
+/src/Samples/.vs/Samples/v16
+/Tools/lab2png/.vs
+/Tools/lab2png/labanotation
+/word2vec_server/.vs/word2vec_server/v16
+/Tools/lab2png
+/Labanotation_Controller/requirements - Copy.txt
+/Labanotation_Controller/utils
+/src/Samples/.vs/Samples/config
+/Construction/Software/Tools/MSRAbot_Web_Controller.py/test.bat
+/src/Labanotation.oldFormat
+/src/Libraries/gestureBot/gestureBotJoint.py
+/Construction/gestureBot/gestureBot.blend1
+/src/Labanotation/kinectSuite/aTest.json
+/Construction/gestureBot/newSwingBracker_RivetMount.stl
+/Construction/gestureBot/newSwingBracker_RivetMount.blend1
+/Construction/gestureBot/newSwingBracker_RivetMount.blend
+/src/Samples/Teams
+*.blend1
+src/Labanotation/~$gestureLibrary_gestureBot.pptx
+docs_images/gesture-library_gestureBot.pptx

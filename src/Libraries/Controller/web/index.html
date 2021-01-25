@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Labanotation Controller</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" />
+    <link type="text/css" rel="Stylesheet" href="./main.css" />
+
+    <script type="text/javascript" src="./js/libs/three.min.js"></script>
+    <script type="text/javascript" src="./js/libs/stats.min.js"></script>
+    <script type="text/javascript" src="./js/libs/dat.gui.min.js"></script>
+    <script type="text/javascript" src="./js/libs/Tween.js"></script>
+
+    <script type="text/javascript" src="./js/libs/controls/DragControls.js"></script>
+    <script type="text/javascript" src="./js/libs/controls/OrbitControls.js"></script>
+    <script type="text/javascript" src="./js/libs/controls/TransformControls.js"></script>
+
+    <script>
+        var dev_version = '' + Math.floor(Math.random() * 100000);
+        var js_files = ['skeleton', 'app'];
+
+        for (var i = 0; i < js_files.length; i++) {
+            document.write('<script src="./js/' + js_files[i] + '.js?rand=' + dev_version + '"\><\/script>');
+        }
+    </script>
+
+    <style>
+    </style>
+</head>
+
+<body style="touch-action: none;" onload="onBodyLoad()">
+    <table style="border: none">
+        <tr>
+            <td width="64px"><img src="./images/Logo_RobotHandshake.png" width="64px" /></td>
+            <td align="left">
+                <div>
+                    <div style="font-size: 1.8em; font-family: 'Open Sans'; font-weight: bold; margin-bottom: -0.3em">Microsoft Applied Robotics Research Library</div><br />
+                    <div style="font-size: 1.5em; font-family: 'Open Sans'; font-weight: normal; margin-top: -0.3em"><a href="https://github.com/microsoft/LabanotationSuite">Labanotation Suite</a>: Labanotation Controller</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <div style="border: none">
+        <div style="float: left;" align="left">
+            <!--   ----------------------------------------  -->
+            <!--   labanotation controls                     -->
+            <!--   ----------------------------------------  -->
+            <fieldset>
+                <legend>Labanotation</legend>
+                <div>
+                    <label for="listGestures" id="lblGestures">Choose Gesture&nbsp;</label>
+                    <select name="listGestures" id="listGestures" style="font-family: 'Droid Sans Mono'">
+                    </select>
+                </div>
+                <br />
+                <div style="margin: 0 auto;">
+                    <div style="float: left;">
+                        <button id="media_controls_play-pause-button">
+                            <i id="togglePlayPause" class="fa fa-play" style="padding: 4px;"></i>
+                        </button>
+                        &nbsp;
+                    </div>
+                    <div style="float: left; padding-top: 0px;">
+                        <table width="100%">
+                            <tr><td width="100%">
+                                <input name="sliderTime" id="sliderTime" type="range" min="0" max="1000" step="1" value="0" style="width: 360px;">
+                            </td></tr>
+                            <tr><td>
+                                <canvas id="canvasFrameTimes" width="360px" height="12px"></canvas>
+                            </td></tr>
+                        </table>
+                    </div>
+                    <div id="lblTime" style="float: right; border: 0px solid #a0a0a0; padding: 4px;">0%</div>
+                </div>
+            </fieldset>
+            <!--   ----------------------------------------  -->
+            <!--   Application controls                      -->
+            <!--   ----------------------------------------  -->
+            <fieldset>
+                <legend>Application</legend>
+                <div>
+                    <table style="width: 100%">
+                        <tr>
+                            <td><button type="button" id="btnExitApp">Shut Down Controller</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+            <!--   ----------------------------------------  -->
+            <!--   status / log window                       -->
+            <!--   ----------------------------------------  -->
+            <fieldset style="background: #e8e8e8;">
+                <legend>Status</legend>
+                <div id="lblStatus" style="width:512px; height: 200px; overflow-y: auto; background: #e8e8e8; padding: 0px;"></div>
+            </fieldset>
+        </div>
+        <div style="float: left; border: none; width: 32px;">&nbsp;</div>
+        <!--   ----------------------------------------  -->
+        <!--   3d object renderer                        -->
+        <!--   ----------------------------------------  -->
+        <div style="float: left; border: none; outline: none;">
+            <br />
+            <div id="renderer" style="width: 512px; height: 512px; border: none; outline: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        //--------------------------------------------------------------------------------------------
+        function onBodyLoad()
+        {
+            //
+            // no scrollbars
+            document.body.style.overflow = 'hidden';
+
+            _app = new App(document.getElementById('renderer'));
+            if (_app) {
+                _app.initialize();
+
+                animate();
+            }
+        }
+        //--------------------------------------------------------------------------------------------
+        function animate()
+        {
+            requestAnimationFrame(animate);
+
+            _app.update();
+            _app.render();
+        }
+        //--------------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>
