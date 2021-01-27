@@ -49,9 +49,8 @@ From a [**cmd.exe**](C:\WINDOWS\system32\cmd.exe), bash, or other terminal shell
 ```
 - Clone the repository:
 ```
-> git clone --recursive https://dev.azure.com/msresearch/Robotics/_git/gestureBotDesignKit_Beta
+> git clone --recursive https://github.com/microsoft/gestureBotDesignKit
 ```
-# ***ToDo:  Replace above link with public Github repository when it is released.***
 - Run these commands to download and install required python software modules:
 
 ***Tip:*** on some systems, earlier versions of python (such as python 2.7) may already be installed with a need to keep them as they are. In this case, it may be required to set a system variable that creates a path to the new installation with a link such as "python37".
