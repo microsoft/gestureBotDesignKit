@@ -145,5 +145,5 @@ Something to keep in mind is that this kit is designed to be changed and adapted
 
 We can't wait to see what you come up with!
 
-***--the Microsoft Applied Robotics and Research Team***
+***--the Microsoft Applied Robotics Research Team***
 
