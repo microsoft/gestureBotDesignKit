@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows10'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - script: echo Hello, world!
