@@ -67,9 +67,9 @@ Here are the physical things you'll need to build and use your gestureBot:
 |M2|1|[Base Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl)|![](/docs_images/gB_TableImage_BaseFrame.jpg)|
 |M3|1|[Bracket Cover (Rivet Side)](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BracketCover_RivetSide.stl)|![](/docs_images/gB_TableImage_BracketCover_RivetSide.jpg)|
 |M4|1|[Bracket Cover (Screw Side)](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BracketCover_ScrewSide.stl)|![](/docs_images/gB_TableImage_BracketCover_ScrewSide.jpg)|
-|M5|2|[Ear](https://github.com/microsoft/gestureBotDesignKit/blob/mainhttps://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Ear.stl)|![](/docs_images/gB_TableImage_Ear.jpg)|
-|M6|1|[Eyes](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Eyes.stl)|![](/docs_images/gB_TableImage_Eyes.jpg)|
-|M7|1|[Face](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Face.stl)|![](/docs_images/gB_TableImage_Face.jpg)|
+|M5|2|[Ear](https://github.com/microsoft/gestureBotDesignKit/blob/mainhttps://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Ear.STL)|![](/docs_images/gB_TableImage_Ear.jpg)|
+|M6|1|[Eyes](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Eyes.STL)|![](/docs_images/gB_TableImage_Eyes.jpg)|
+|M7|1|[Face](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Face.STL)|![](/docs_images/gB_TableImage_Face.jpg)|
 |M8|2|[Hand](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Neck.stl)|![](/docs_images/gB_TableImage_Neck.jpg)|
 |M9|1|[Head Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_HeadFrame.stl)|![](/docs_images/gB_TableImage_HeadFrame.jpg)|
 |M10|1|[Hip Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_HipCover.stl)|![](/docs_images/gB_TableImage_HipCover.jpg)|
