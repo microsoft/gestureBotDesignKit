@@ -48,9 +48,8 @@ Here are the physical things you'll need to build and use your gestureBot:
 
 ## Parts List
 ### Purchased Parts
-|**ID**|**Qty**|**Name & Purchase Link**|**Image**|
+|**ID**|**Qty**|**Name & Purchase Link**|** . **|
 |:--:|:--:|:----------:|:------:|
-|P0|1|[Complete Kit](https://www.vetco.net/gestureBotDesignKit.html)|Everything except the models|
 |P1|12|[Robotis XL-320 Servo Motors (includes short connection cable)](https://www.robotis.us/dynamixel-xl-320/)|![](/docs_images/gB_TableImage_XL-320_Servo.jpg)|
 |P2|1|[USB3 Hub with Power Supply](https://vetco.net/products/4-port-powered-usb-3-0-hub/vupn615)|![](/docs_images/gB_TableImage_USB3Hub.jpg)|
 |P3|1|[Robotis OpenCM9.04c Servo Control Circuit Board](https://www.robotis.us/opencm9-04-c-with-onboard-xl-type-connectors/)|![](/docs_images/gB_TableImage_ServoController.jpg)
@@ -62,7 +61,7 @@ Here are the physical things you'll need to build and use your gestureBot:
 |P8|1|[Screw Set](https://www.robotis.us/robotis-mini-screw-set/)|![](/docs_images/gB_TableImage_PowerSignalJumper.jpg)
 
 ### 3D Printed Parts
-|**ID**|**Qty**|**Name & Model Link**|**Image**|
+|**ID**|**Qty**|**Name & Model Link**|** . **|
 |:--:|:--:|:--:|:------:|
 |M1|1|[&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Base &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Base.stl)|![](/docs_images/gB_TableImage_Base.jpg)|
 |M2|1|[Base Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl)|![](/docs_images/gB_TableImage_BaseFrame.jpg)|
