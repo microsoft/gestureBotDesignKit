@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/davidbaumert/AppliedRoboticsResearchLibrary)
+# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -63,29 +63,29 @@ Here are the physical things you'll need to build and use your gestureBot:
 ### 3D Printed Parts
 |**ID**|**Qty**|**Name & Model Link**|** . **|
 |:--:|:--:|:--:|:------:|
-|M1|1|[&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Base &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Base.stl)|![](/docs_images/gB_TableImage_Base.jpg)|
-|M2|1|[Base Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl)|![](/docs_images/gB_TableImage_BaseFrame.jpg)|
-|M3|1|[Bracket Cover (Rivet Side)](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BracketCover_RivetSide.stl)|![](/docs_images/gB_TableImage_BracketCover_RivetSide.jpg)|
-|M4|1|[Bracket Cover (Screw Side)](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BracketCover_ScrewSide.stl)|![](/docs_images/gB_TableImage_BracketCover_ScrewSide.jpg)|
-|M5|2|[Ear](https://github.com/davidbaumert/gestureBotDesignKit/blob/mainhttps://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Ear.stl)|![](/docs_images/gB_TableImage_Ear.jpg)|
-|M6|1|[Eyes](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Eyes.stl)|![](/docs_images/gB_TableImage_Eyes.jpg)|
-|M7|1|[Face](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Face.stl)|![](/docs_images/gB_TableImage_Face.jpg)|
-|M8|2|[Hand](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Neck.stl)|![](/docs_images/gB_TableImage_Neck.jpg)|
-|M9|1|[Head Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_HeadFrame.stl)|![](/docs_images/gB_TableImage_HeadFrame.jpg)|
-|M10|1|[Hip Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_HipCover.stl)|![](/docs_images/gB_TableImage_HipCover.jpg)|
-|M11|1|[Hood](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Hood.stl)|![](/docs_images/gB_TableImage_Hood.jpg)|
-|M12|1|[Neck](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Neck.stl)|![](/docs_images/gB_TableImage_Neck.jpg)|
-|M13|1|[Servo Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoCover.stl)|![](/docs_images/gB_TableImage_ServoCover.jpg)|
-|M14|2|[Servo Mount Plate](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoMountPlate.stl)|![](/docs_images/gB_TableImage_ServoMountPlate.jpg)|
-|M15|2|[Servo Side Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoSideCover.stl)|![](/docs_images/gB_TableImage_ServoSideCover.jpg)|
-|M16|2|[Servo Wheel](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoWheel.stl)|![](/docs_images/gB_TableImage_ServoWheel.jpg)|
-|M17|2|[Speaker](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Speaker.stl)|![](/docs_images/gB_TableImage_Speaker.jpg)|
-|M18|2|[Head Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_Head.stl)|![](/docs_images/gB_TableImage_SwingBracket_Head.jpg)|
-|M19|2|[Hip Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_Hip.stl)|![](/docs_images/gestureBo_SwingBracket_Hip.jpg)|
-|M20|1|[Screw-Mount Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_ScrewMount.stl)|![](/docs_images/gB_TableImage_SwingBracket_ScrewMount.jpg)|
-|M21|1|[Upper Torso Back Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoBackCover.stl)|![](/docs_images/gB_TableImage_UpperTorsoBackCover.jpg)|
-|M22|1|[Upper Torso Front Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoFrontCover.stl)|![](/docs_images/gB_TableImage_UpperTorsoFrontCover.jpg)|
-|M23|1|[Upper Torso Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoFrame.stl)|![](/docs_images/gB_TableImage_UpperTorsoFrame.jpg)|
+|M1|1|[&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Base &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Base.stl)|![](/docs_images/gB_TableImage_Base.jpg)|
+|M2|1|[Base Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl)|![](/docs_images/gB_TableImage_BaseFrame.jpg)|
+|M3|1|[Bracket Cover (Rivet Side)](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BracketCover_RivetSide.stl)|![](/docs_images/gB_TableImage_BracketCover_RivetSide.jpg)|
+|M4|1|[Bracket Cover (Screw Side)](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BracketCover_ScrewSide.stl)|![](/docs_images/gB_TableImage_BracketCover_ScrewSide.jpg)|
+|M5|2|[Ear](https://github.com/microsoft/gestureBotDesignKit/blob/mainhttps://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Ear.stl)|![](/docs_images/gB_TableImage_Ear.jpg)|
+|M6|1|[Eyes](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Eyes.stl)|![](/docs_images/gB_TableImage_Eyes.jpg)|
+|M7|1|[Face](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Face.stl)|![](/docs_images/gB_TableImage_Face.jpg)|
+|M8|2|[Hand](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Neck.stl)|![](/docs_images/gB_TableImage_Neck.jpg)|
+|M9|1|[Head Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_HeadFrame.stl)|![](/docs_images/gB_TableImage_HeadFrame.jpg)|
+|M10|1|[Hip Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_HipCover.stl)|![](/docs_images/gB_TableImage_HipCover.jpg)|
+|M11|1|[Hood](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Hood.stl)|![](/docs_images/gB_TableImage_Hood.jpg)|
+|M12|1|[Neck](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Neck.stl)|![](/docs_images/gB_TableImage_Neck.jpg)|
+|M13|1|[Servo Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoCover.stl)|![](/docs_images/gB_TableImage_ServoCover.jpg)|
+|M14|2|[Servo Mount Plate](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoMountPlate.stl)|![](/docs_images/gB_TableImage_ServoMountPlate.jpg)|
+|M15|2|[Servo Side Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoSideCover.stl)|![](/docs_images/gB_TableImage_ServoSideCover.jpg)|
+|M16|2|[Servo Wheel](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoWheel.stl)|![](/docs_images/gB_TableImage_ServoWheel.jpg)|
+|M17|2|[Speaker](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Speaker.stl)|![](/docs_images/gB_TableImage_Speaker.jpg)|
+|M18|2|[Head Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_Head.stl)|![](/docs_images/gB_TableImage_SwingBracket_Head.jpg)|
+|M19|2|[Hip Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_Hip.stl)|![](/docs_images/gestureBo_SwingBracket_Hip.jpg)|
+|M20|1|[Screw-Mount Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_ScrewMount.stl)|![](/docs_images/gB_TableImage_SwingBracket_ScrewMount.jpg)|
+|M21|1|[Upper Torso Back Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoBackCover.stl)|![](/docs_images/gB_TableImage_UpperTorsoBackCover.jpg)|
+|M22|1|[Upper Torso Front Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoFrontCover.stl)|![](/docs_images/gB_TableImage_UpperTorsoFrontCover.jpg)|
+|M23|1|[Upper Torso Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoFrame.stl)|![](/docs_images/gB_TableImage_UpperTorsoFrame.jpg)|
 
 # Step-by-Step Instructions
 The 3D-printed parts are used to organize this project's task steps into sessions. 3D printing a part usually requires more time than is reasonable for a work session, often leaving the print operation to complete overnight as the most practical solution.

@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/davidbaumert/AppliedRoboticsResearchLibrary)
+# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -23,7 +23,7 @@ In this first session we will begin the process of 3D-printing robot plastic par
 ### **Procedure:**
 
 #### **First, start 3D-printing the parts required for the next session:**
-- [Base Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl)
+- [Base Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl)
 
 #### **Second, connect the controller and Terminal Block to the USB Hub:**
 

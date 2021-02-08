@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/davidbaumert/AppliedRoboticsResearchLibrary)
+# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -14,12 +14,12 @@ In this session we will 3D-print the head components while assembling the gestur
 - (22) short plastic rivets
 - (5) long plastic rivets
 - (4) 3mm miniature steel screws
-- [Base Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl) 3D-printed in Session 1, the base frame is the lower torso component and provides the stationary mounting point for servo ID:004 and anchors all of the moving parts of the gestureBot.
-- [Hip Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HipCover.stl) 3D-printed in Session 2, the hip cover attaches to the base frame and it's spherical shape allows the gestureBot's hip joint to move without exposing its interior.
-- [Hip Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Hip.stl) 3D-printed in Session 2, the hip swing bracket and servo wheel attach to servo ID:004 and ID:003 rotating vertically to allow the entire gestureBot to lean forward and backward.
-- [Upper Torso Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrame.stl) 3D-printed in Session 2, the upper torso frame and mount plate connect to servo ID:003 allowing the gestureBot's torso to rotate horizontally, as well as providing mount points for servo ID:002 which rotates the head horizontally and servos ID:005 and ID:009 which rotate the arm assemblies vertically.
-- [Servo Wheel](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Hip.stl) 3D-printed in Session 2, the servo wheel supports servo ID:004 in the hip swing bracket.
-- [Servo Mount Plate](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrame.stl) 3D-printed in Session 2, the servo mount plate supports servo ID:002 in the upper torso frame.
+- [Base Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl) 3D-printed in Session 1, the base frame is the lower torso component and provides the stationary mounting point for servo ID:004 and anchors all of the moving parts of the gestureBot.
+- [Hip Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HipCover.stl) 3D-printed in Session 2, the hip cover attaches to the base frame and it's spherical shape allows the gestureBot's hip joint to move without exposing its interior.
+- [Hip Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Hip.stl) 3D-printed in Session 2, the hip swing bracket and servo wheel attach to servo ID:004 and ID:003 rotating vertically to allow the entire gestureBot to lean forward and backward.
+- [Upper Torso Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrame.stl) 3D-printed in Session 2, the upper torso frame and mount plate connect to servo ID:003 allowing the gestureBot's torso to rotate horizontally, as well as providing mount points for servo ID:002 which rotates the head horizontally and servos ID:005 and ID:009 which rotate the arm assemblies vertically.
+- [Servo Wheel](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Hip.stl) 3D-printed in Session 2, the servo wheel supports servo ID:004 in the hip swing bracket.
+- [Servo Mount Plate](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrame.stl) 3D-printed in Session 2, the servo mount plate supports servo ID:002 in the upper torso frame.
 
 ### Tools: 
 - PH0 Phillips screwdriver
@@ -29,12 +29,12 @@ In this session we will 3D-print the head components while assembling the gestur
 
 ### **Procedure:**
 #### **First, start 3D-printing the parts required for the next session:**
-- [Neck](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Neck.stl) 3D-printed in Session 3
-- [Head Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Head.stl) 3D-printed in Session 3
-- [Servo Wheel](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl) 3D-printed in Session 3
-- [Head Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HeadFrame.stl) 3D-printed in Session 3
-- [Face](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Face.stl) 3D-printed in Session 3
-- [Speaker](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Speaker.stl) 3D-printed in Session 3
+- [Neck](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Neck.stl) 3D-printed in Session 3
+- [Head Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Head.stl) 3D-printed in Session 3
+- [Servo Wheel](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl) 3D-printed in Session 3
+- [Head Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HeadFrame.stl) 3D-printed in Session 3
+- [Face](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Face.stl) 3D-printed in Session 3
+- [Speaker](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Speaker.stl) 3D-printed in Session 3
 
 **Hint:** Many 3D-printers have enough room on their build plate to print all of these models at the same time. Follow your printer's software instructions on how to add multiple models to a printing project file.
 

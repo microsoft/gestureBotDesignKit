@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/davidbaumert/AppliedRoboticsResearchLibrary)
+# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -14,9 +14,9 @@ In this session we will 3D-print the base component while assembling the gesture
 - (16) short plastic rivets
 - (2) long plastic rivets
 - (16) 3mm miniature steel screws
-- [(2) Screw Mount Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket.stl) 3D-printed in Session 4, the swing brackets and servo wheels form a shoulder joint between servos ID:005 and ID:006 and an elbow joint between servos ID:007 and ID:008.
-- [(2) Servo Wheel](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl) 3D-printed in Session 4, the servo wheels support the swing bracket mounts for servo ID:006 and ID:008.
-- [(2) Servo Mount Plate](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoMountPlate.stl) 3D-printed in Session 4, the servo mount plates support the servo ID:005 attachment to the upper torso frame and form a lower arm section between servo ID:006 and ID:007.
+- [(2) Screw Mount Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket.stl) 3D-printed in Session 4, the swing brackets and servo wheels form a shoulder joint between servos ID:005 and ID:006 and an elbow joint between servos ID:007 and ID:008.
+- [(2) Servo Wheel](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl) 3D-printed in Session 4, the servo wheels support the swing bracket mounts for servo ID:006 and ID:008.
+- [(2) Servo Mount Plate](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoMountPlate.stl) 3D-printed in Session 4, the servo mount plates support the servo ID:005 attachment to the upper torso frame and form a lower arm section between servo ID:006 and ID:007.
 
 ### Tools: 
 - PH0 Phillips screwdriver
@@ -27,7 +27,7 @@ In this session we will 3D-print the base component while assembling the gesture
 ### **Procedure:**
 
 #### **First, start 3D-printing the parts required for future sessions:**
-- [Base](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Base.stl)
+- [Base](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Base.stl)
 
 #### **Second, assemble the right arm:**
 - Mount a swing bracket to servo ID:005 with (4) 3mm miniature screws, taking care to align the tick-marks on the servo horn, the servo cover, and the swing bracket.

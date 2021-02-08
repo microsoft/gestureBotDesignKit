@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/davidbaumert/AppliedRoboticsResearchLibrary)
+# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -14,12 +14,12 @@ In this session we will 3D-print the components for both arms while assembling t
 - (22) short plastic rivets
 - (5) long plastic rivets
 - (8) 3mm miniature steel screws
-- [Neck](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Neck.stl) 3D-printed in Session 3, the neck is connected to servo ID:002 that rotates horizontally allowing the gestureBot to turn its head and servo ID:001.
-- [Head Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Head.stl) 3D-printed in Session 3, the head swing bracket and servo wheel are attached to servo ID:001 that rotates vertically allowing the gestureBot to look up and down.
-- [Servo Wheel](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl) 3D-printed in Session 3, the servo wheel supports servo ID:001 in the head swing bracket.
-- [Head Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HeadFrame.stl) 3D-printed in Session 3, the head frame attaches to the head swing bracket and provides a mount point for the speaker and face components.
-- [Face](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Face.stl) 3D-printed in Session 3, the face connects to the head frame and provides a mount point for the speaker and the eyes.
-- [Speaker](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Speaker.stl) 3D-printed in Session 3, the speaker is a mounting component intended as a placeholder for a speakspeaker modification in the future.
+- [Neck](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Neck.stl) 3D-printed in Session 3, the neck is connected to servo ID:002 that rotates horizontally allowing the gestureBot to turn its head and servo ID:001.
+- [Head Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Head.stl) 3D-printed in Session 3, the head swing bracket and servo wheel are attached to servo ID:001 that rotates vertically allowing the gestureBot to look up and down.
+- [Servo Wheel](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl) 3D-printed in Session 3, the servo wheel supports servo ID:001 in the head swing bracket.
+- [Head Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HeadFrame.stl) 3D-printed in Session 3, the head frame attaches to the head swing bracket and provides a mount point for the speaker and face components.
+- [Face](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Face.stl) 3D-printed in Session 3, the face connects to the head frame and provides a mount point for the speaker and the eyes.
+- [Speaker](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Speaker.stl) 3D-printed in Session 3, the speaker is a mounting component intended as a placeholder for a speakspeaker modification in the future.
 
 ### Tools: 
 - PH0 Phillips screwdriver
@@ -30,9 +30,9 @@ In this session we will 3D-print the components for both arms while assembling t
 ### **Procedure:**
 
 #### **First, start 3D-printing the parts required for both arm assemblies:**
-- [(4) Screw Mount Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket.stl)
-- [(4) Servo Wheel](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl)
-- [(6) Servo Mount Plate](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoMountPlate.stl)
+- [(4) Screw Mount Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket.stl)
+- [(4) Servo Wheel](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl)
+- [(6) Servo Mount Plate](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoMountPlate.stl)
 
 #### **Second, assemble the head structure:**
 - Mount the neck to the horn () of servo ID:002, taking care to align the tick-marks of the servo cover, the horn, and the neck component.

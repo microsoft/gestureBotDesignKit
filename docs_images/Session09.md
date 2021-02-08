@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/davidbaumert/AppliedRoboticsResearchLibrary)
+# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -9,13 +9,13 @@
 In this session we will 3D-print the torso cover components while we attach the hands and the arm servo covers. All of the cover components are designed to be removable without disassembling the gestureBot. At this point the gestureBot is ready to run the Labanotation Suite software applications. The torso covers can be attached as soon as they are finished printing.
 
 ### Parts: 
-- [(6) Servo Covers](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoCover.stl)
-- [(8) Servo Side Covers](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoSideCover.stl)
-- [(4) Screw-side Swing Bracket Covers](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gB_BracketCover_ScrewSide.stl)
-- [(4) Rivet-side Swing Bracket Covers](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gB_BracketCover_RivetSide.stl)
-- [(2) Hand](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Hand.stl)
-- [Upper Torso Front Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrontCover.stl)
-- [Upper Torse Back Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gB_UpperTorsoBackCover.stl)
+- [(6) Servo Covers](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoCover.stl)
+- [(8) Servo Side Covers](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoSideCover.stl)
+- [(4) Screw-side Swing Bracket Covers](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gB_BracketCover_ScrewSide.stl)
+- [(4) Rivet-side Swing Bracket Covers](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gB_BracketCover_RivetSide.stl)
+- [(2) Hand](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Hand.stl)
+- [Upper Torso Front Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrontCover.stl)
+- [Upper Torse Back Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gB_UpperTorsoBackCover.stl)
 
 
 ![Session09 parts and tools](/docs_images/gB_Session09_PartsTools.jpg)
@@ -23,8 +23,8 @@ In this session we will 3D-print the torso cover components while we attach the 
 ### **Procedure:**
 
 #### **First, start 3D-printing the parts required for future sessions:**
-- [Upper Torso Front Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrontCover.stl)
-- [Upper Torse Back Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gB_UpperTorsoBackCover.stl)
+- [Upper Torso Front Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrontCover.stl)
+- [Upper Torse Back Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gB_UpperTorsoBackCover.stl)
 
 #### **Second, install the right arm covers and hands:**
 - Route the cable connecting servo ID:006 to ID:005 folding downward and between the side servo mounting holes, then slide the cover over the servo.

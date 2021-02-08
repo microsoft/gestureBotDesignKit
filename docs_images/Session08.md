@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/davidbaumert/AppliedRoboticsResearchLibrary)
+# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -11,9 +11,9 @@ In this session we will 3D-print the hands and arm servo covers while we assembl
 ### Parts: 
 - gestureBot (partially assembled through Session 7)
 - (4) short plastic rivets
-- [Hood](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Hood.stl) 3D-printed in Session 7, the hood provides a cosmetic cover for the head structure assembly.
-- [Eyes](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Eyes.stl) 3D-printed in Session 6, the eyes provide a cosmetic cover addition to the face component.
-- [Ear](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Ear.stl) 3D-printed in Session 6, the ears provide cosmetic covers and removable access to the interior of the head assembly without requiring the hood to be removed.
+- [Hood](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Hood.stl) 3D-printed in Session 7, the hood provides a cosmetic cover for the head structure assembly.
+- [Eyes](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Eyes.stl) 3D-printed in Session 6, the eyes provide a cosmetic cover addition to the face component.
+- [Ear](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Ear.stl) 3D-printed in Session 6, the ears provide cosmetic covers and removable access to the interior of the head assembly without requiring the hood to be removed.
 
 ### Tools: 
 - PH0 Phillips screwdriver
@@ -24,9 +24,9 @@ In this session we will 3D-print the hands and arm servo covers while we assembl
 ### **Procedure:**
 
 #### **First, start 3D-printing the parts required for future sessions:**
-- [(6) Servo Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoCover.stl)
-- [(12) Servo Side Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoSideCover.stl)
-- [(2) Hand](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Hand.stl)
+- [(6) Servo Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoCover.stl)
+- [(12) Servo Side Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoSideCover.stl)
+- [(2) Hand](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Hand.stl)
 
 #### **Second, attach the eyes, hood, and ears:**
 - Mount the eyes component by inserting the two posts behind the face into the two holes in the bridge between the eyes.

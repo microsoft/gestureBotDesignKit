@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/davidbaumert/AppliedRoboticsResearchLibrary)
+# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -24,12 +24,12 @@ In this session we will 3D-print the robot's torso components while establishing
 
 ### **Procedure:**
 #### **First, start 3D-printing the parts required for the next session:**
-- [Hip Cover](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gB_HipCover.stl)
-- [Hip Swing Bracket](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gB_SwingBracket_Hip.stl)
-- [Servo Wheel](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gBServoWheel.stl)
-- [Upper Torso Frame](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gB_UpperTorsoFrame.stl)
-- [Servo Wheel](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Hip.stl)
-- [Servo Mount Plate](https://github.com/davidbaumert/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrame.stl)
+- [Hip Cover](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gB_HipCover.stl)
+- [Hip Swing Bracket](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gB_SwingBracket_Hip.stl)
+- [Servo Wheel](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gBServoWheel.stl)
+- [Upper Torso Frame](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gB_UpperTorsoFrame.stl)
+- [Servo Wheel](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Hip.stl)
+- [Servo Mount Plate](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrame.stl)
 
 ***Tip:*** Many 3D-printers have enough room on their build plate to print all of these models at the same time. Follow your printer's software instructions on how to add multiple models to a printing project file.
 
