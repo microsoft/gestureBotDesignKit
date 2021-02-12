@@ -72,19 +72,15 @@ input.coloredRange[type="range"] {
     --thumbBg: #888;
     /* webkit progress workaround */
     --webkitProgressPercent: 0%;
-}
 
-input.coloredRange[type="range"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     height: 10px;
     width: 100%;
-    margin: 0;
     padding: 0;
-}
+    margin: 0;
 
-input.coloredRange[type='range'] {
     background: linear-gradient(90deg, #ffb2b2 37.5%, #b2ffb2 0, #b2ffb2 75%, #ffb2b2 0);
     border-radius: var(--thumbSize);
 }
@@ -101,9 +97,9 @@ input.coloredRange[type="range"]::-ms-track {
     /* Styles for IE */
 }
 
-input.coloredRange[type="range"]:focus {
+/*input.coloredRange[type="range"]:focus {
     outline: none;
-}
+}*/
 
 /* Thumb Styles for Chrome */
 input.coloredRange[type="range"]::-webkit-slider-thumb {

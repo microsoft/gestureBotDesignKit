@@ -18,7 +18,7 @@ def initialize():
     if (os.name == 'nt'):
         os.system('color')  # needed on windows platforms to support terminal colors
 
-    appVersion = 'v1.00.0184'
+    appVersion = 'v1.00.0185'
     fVerbose = False
     application = None
 
