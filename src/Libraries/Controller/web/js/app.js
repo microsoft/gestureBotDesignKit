@@ -56,7 +56,7 @@ App.prototype.initialize = function initApp()
     this.canvasFrameTimes = null;
 
     this.clrControlEnabled = "#000000";
-    this.clrControlDisabled = "#a0a0a0";
+    this.clrControlDisabled = "#f9f9f9";
 
     this.setupRenderer();
     this.setupDomEvents();

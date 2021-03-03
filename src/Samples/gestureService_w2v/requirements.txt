@@ -1,6 +1,6 @@
 numpy==1.19.3
 scipy==1.5.2
-tornado==4.5.2
+tornado
 opencv-python==4.4.0.46
 pyserial==3.4
 msgpack-rpc-python==0.4.1
