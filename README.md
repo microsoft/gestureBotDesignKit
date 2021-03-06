@@ -70,7 +70,7 @@ We think the gestureBot can be made to do much more than render gestures and we 
 
 *   **Q** *Who should I contact regarding this repository?*
 
-*   **A** Please create a Github issue or email [robotics@microsoft.com](mailto:robotics@microsoft.com) with any questions or feedback.
+*   **A** Please create a Github issue or email [robosupp@microsoft.com](mailto:robosupp@microsoft.com) with any questions or feedback.
 
 *   **Q** *How challenging is this project for children?*
 
