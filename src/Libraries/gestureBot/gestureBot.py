@@ -21,7 +21,7 @@ import Common.geometry as geometry
 import Common.utilities as utilities
 
 from .hardware import gestureBotHardware
-from .airsimclient import AirSim
+#from .airsimclient import AirSim
 
 # -----------------------------------------------------------------------------
 #
@@ -102,7 +102,7 @@ class gestureBot(webSocket.HttpServerWrapper):
 
         #
         # AirSim
-        self.airsim = AirSim()
+        #self.airsim = AirSim()
 
         #
         # if requested, create and initialize http server to access gestureBot
@@ -124,10 +124,10 @@ class gestureBot(webSocket.HttpServerWrapper):
             del self.hardware
             self.hardware = None
 
-        if (self.airsim is not None):
-            self.airsim.close()
-            del self.airsim
-            self.airsim = None
+#        if (self.airsim is not None):
+#            self.airsim.close()
+#            del self.airsim
+#            self.airsim = None
 
     # -----------------------------------------------------------------------------
     #
@@ -687,8 +687,8 @@ class gestureBot(webSocket.HttpServerWrapper):
         if (self.hardware is not None):
             self.hardware.setServoTarget(key, target, duration)
 
-        if (self.airsim is not None):
-            self.airsim.setRobotKeyPoseTarget(key, target, duration)
+#        if (self.airsim is not None):
+#            self.airsim.setRobotKeyPoseTarget(key, target, duration)
 
     # -----------------------------------------------------------------------------
     #

@@ -47,7 +47,7 @@ class application:
     # Class initialization
     #
     def __init__(self):
-        self.comPort = "com4"
+        self.comPort = "com7"
         self.baudrate = 1000000           # Dynamixel default baudrate : 57600
         self.packetHandler = PacketHandler(PROTOCOL_VERSION)
         self.portHandler = None
