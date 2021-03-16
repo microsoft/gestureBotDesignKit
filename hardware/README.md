@@ -96,7 +96,7 @@ In the first session we will begin the process of 3D-printing the gestureBot's p
 ![Session 1 Complete](/docs_images/gB_Session01_Servo_PowerLightFlash.jpg)
 
 ## Session 2: [Configure the Servos](/docs_images/Session02.md)
-In the second session we will 3D-print the gestureBot's torso components while establishing the communication network for our servo motors by connecting them one-by-one to the PC and using using the [Robotis Dynamixel Wizard 2.0](https://www.robotis.us/dynamixel-management/) application to program each with a unique ID.
+In the second session we will 3D-print the gestureBot's torso components while establishing the communication network for our servo motors by connecting them one-by-one to the PC and using using the [Robotis Dynamixel Wizard 2.0](http://en.robotis.com/service/downloadpage.php?ca_id=10) application to program each with a unique ID.
 
 ![Session 2 Complete](/docs_images/gB_Session02_LabeledServos.jpg)
 
