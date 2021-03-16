@@ -36,7 +36,7 @@ In this session we will 3D-print the robot's torso components while establishing
 #### **Second, download and install the servo configuration software:**
 
 - Download the Robotis Dynamixel Wizard 2.0 software appropriate for you platform from this web page:
-https://www.robotis.us/dynamixel-management/
+http://en.robotis.com/service/downloadpage.php?ca_id=10
 
 - Install and launch the Dynamixel Wizard 2.0 application, which provides a Graphical User Interface (GUI) for configuring the servo motors. If needed, installation instructions are provided on the this web page:
 https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/#introduction
