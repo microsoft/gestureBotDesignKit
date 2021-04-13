@@ -1,1 +1,6 @@
 theme: jekyll-theme-leap-day
+defaults:
+  - scope:
+      path: "/docs_images"
+    values:
+      image: true
