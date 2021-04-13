@@ -1,1 +1,10 @@
 theme: jekyll-theme-leap-day
+.
+├── SECURITY.md          # => http://example.com/SECURITY.html
+├── SUPPORT.md          # => http://example.com/SUPPORT.html
+├── CODE_OF_CONDUCT.md          # => http://example.com/CODE_OF_CONDUCT.html
+├── docs_images     # folder containing pages
+│   └── Session01.md       # => http://example.com/docs_images/Session01.html
+│   └── Session02.md       # => http://example.com/docs_images/Session01.html
+├── hardware            # folder containing pages
+│   └── README.md      # => http://example.com/design/draft.html
