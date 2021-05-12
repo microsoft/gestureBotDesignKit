@@ -1,4 +1,4 @@
-theme: jekyll-theme-leap-day
+theme: jekyll-rtd-theme
 defaults:
   - scope:
       path: "/docs_images"
