@@ -1,4 +1,4 @@
-theme: jekyll-rtd-theme
+remote_theme: jekyll-rtd-theme
 defaults:
   - scope:
       path: "/docs_images"
