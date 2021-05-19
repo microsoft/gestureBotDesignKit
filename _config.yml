@@ -1,6 +1,6 @@
 remote_theme: jekyll-rtd-theme
 defaults:
   - scope:
-      path: "/docs_images"
+      path: "https://github.com/microsoft/gestureBotDesignKit/main/docs_images"
     values:
       image: true
