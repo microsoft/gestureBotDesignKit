@@ -53,7 +53,7 @@ A Labanotation score contains vertical columns representing specific body parts 
 |concept name|similar words|gesture file|Labanotation Score|Video|
 |-------|----------------------------|---------|-------------|---------------|
 |=======|============================|==========|=============|===============|
-|me|I, my, me|deictic me I.json|![lab score](../../docs_images/gL_Lab_deictic_me.png)|![animated clip](../../docs_images/gL_gB_deictic_me.gif)|
+|me|{::nomarkdown}<ul><li>I, my, me</li></ul>{:/}|deictic me I.json|![lab score](../../docs_images/gL_Lab_deictic_me.png)|![animated clip](../../docs_images/gL_gB_deictic_me.gif)|
 |you|you, your|deictic you d.json|![lab score](/docs_images/gL_Lab_deictic_you.png)|![animated clip](/docs_images/gL_gB_deictic_you.gif)|
 |this|this|deictic this.json|![lab score](/docs_images/gL_Lab_deictic_this.png)|![animated clip](/docs_images/gL_gB_deictic_this.gif)|
 |that|that|deictic that.json|![lab score](/docs_images/gL_Lab_deictic_that.png)|![animated clip](/docs_images/gL_gB_deictic_that.gif)|
