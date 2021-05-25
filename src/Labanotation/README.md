@@ -44,8 +44,7 @@ An example of the data structure in the .json files is provided in [GestureForma
 
 A Labanotation score contains vertical columns representing specific body parts with notations indicating global positions of those parts in transition over a time-line flowing from bottom to top. In our .json files, from the Labanotation score we group horizontal sets of body-part movements into poses comprising keyframes that correspond to sections within the file.
 
-![Labanotation score](/docs_images/gL_json_format.png
-)
+![Labanotation score](/docs_images/gL_json_format.png)
 
 ## Table of Concept-Gesture Pairs in Library:
 
