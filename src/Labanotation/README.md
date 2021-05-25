@@ -1,4 +1,4 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
+# [![logo](../../docs_images/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 # Labanotation Suite: [gestureBot Design Kit](/README.md)
@@ -44,7 +44,7 @@ An example of the data structure in the .json files is provided in [GestureForma
 
 A Labanotation score contains vertical columns representing specific body parts with notations indicating global positions of those parts in transition over a time-line flowing from bottom to top. In our .json files, from the Labanotation score we group horizontal sets of body-part movements into poses comprising keyframes that correspond to sections within the file.
 
-![Labanotation score](/docs_images/gL_json_format.png)
+![Labanotation score](../../docs_images/gL_json_format.png)
 
 ## Table of Concept-Gesture Pairs in Library:
 
@@ -53,7 +53,7 @@ A Labanotation score contains vertical columns representing specific body parts 
 |concept name|similar words|gesture file|Labanotation Score|Video|
 |-------|----------------------------|---------|-------------|---------------|
 |=======|============================|==========|=============|===============|
-|me|I, my, me|deictic me I.json|![lab score](/docs_images/gL_Lab_deictic_me.png)|![animated clip](/docs_images/gL_gB_deictic_me.gif)|
+|me|I, my, me|deictic me I.json|![lab score](../../docs_images/gL_Lab_deictic_me.png)|![animated clip](../../docs_images/gL_gB_deictic_me.gif)|
 |you|you, your|deictic you d.json|![lab score](/docs_images/gL_Lab_deictic_you.png)|![animated clip](/docs_images/gL_gB_deictic_you.gif)|
 |this|this|deictic this.json|![lab score](/docs_images/gL_Lab_deictic_this.png)|![animated clip](/docs_images/gL_gB_deictic_this.gif)|
 |that|that|deictic that.json|![lab score](/docs_images/gL_Lab_deictic_that.png)|![animated clip](/docs_images/gL_gB_deictic_that.gif)|
