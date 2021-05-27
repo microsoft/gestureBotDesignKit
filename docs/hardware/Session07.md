@@ -7,10 +7,10 @@
 In this session we will 3D-print the hood component (in an alternate color if desired) while we attach the arms to the torso and test the servos using the Robotis Dynamixel Wizard 2.0 application.
 
 ### Parts: 
-- controller electronics assembly completed in [Session 1](../img/Session01.md)
-- head and torso completed in [Session 4](../img/Session04.md)
-- right arm assembly completed in [Session 5](../img/Session05.md)
-- left arm assembly completed in  [Session 6](../img/Session06.md)
+- controller electronics assembly completed in [Session 1](Session01.md)
+- head and torso completed in [Session 4](Session04.md)
+- right arm assembly completed in [Session 5](Session05.md)
+- left arm assembly completed in  [Session 6](Session06.md)
 - (2) 190MM servo cables
 - (24) short plastic rivets
 - [(2) Servo Mount Plate](https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoMountPlate.stl) 3D-printed in Session 4, the servo mount plates support servos' ID:005 and ID:009 (from the arm assemblies) attachment to the upper torso frame.
