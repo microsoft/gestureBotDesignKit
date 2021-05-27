@@ -1,11 +1,8 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
+## ![logo](../../../../docs/img/MARR_logo.png) [Microsoft Applied Robotics Research Library](https://special-giggle-b26bab5f.pages.github.io/)
+### Open Source Samples for Service Robotics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-# Labanotation Suite: [gestureBot Design Kit](/README.md)
-
-# **Software Installation and Operation: Simple Sample**
-
-# Introduction
+# Simple Sample
 The sample source code in 'Simple.pyproj' demonstrates how to instantiate and run the Labanotation Controller software module by itself.
 
 # Software Installation
@@ -87,5 +84,5 @@ The user-interface (UI) in this sample can be run in a browser window on the loc
 
 ## Labanotation Controller UI
 [http://localhost:8000](http://localhost:8000)
-![Labanotation Controller UI](/docs_images/gB_LabanotationController_UI.png)
+![Labanotation Controller UI](../../../img/gB_LabanotationController_UI.png)
 

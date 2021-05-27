@@ -1,11 +1,8 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
+## ![logo](../../../../docs/img/MARR_logo.png) [Microsoft Applied Robotics Research Library](https://special-giggle-b26bab5f.pages.github.io/)
+### Open Source Samples for Service Robotics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-# Labanotation Suite: [gestureBot Design Kit](/README.md)
-
-# **Software Installation and Operation: gestureBotSetLimits Sample**
-
-# Introduction
+# gestureBotSetLimits Sample
 The sample source code in 'gestureBotSetLimits.pyproj' demonstrates how to send configuration commands to the servos using the Robotis Dynamixel 2.0 Protocol. This sample is provided as part of the physical gestureBot construction procedures to set specific rotation limits on particular servos. These limits can help prevent damage caused by incorrect commands or code errors resulting in physical collisions of the gestureBot body components. ***To run this sample, a complete physical gestureBot robot connected to the PC's USB port is required.*** 
 
 # Software Installation

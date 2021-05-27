@@ -1,14 +1,15 @@
-# [![logo](/docs_images/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
+## ![logo](img/MARR_logo.png) [Microsoft Applied Robotics Research Library](https://special-giggle-b26bab5f.pages.github.io/)
+### Open Source Samples for Service Robotics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-# Labanotation Suite: gestureBot Design Kit
+# gestureBot Design Kit
 Welcome! This gestureBot Design Kit repository  contains all the information needed to build both a virtual and physical desktop companion robot. Along with other tools in the Labanotation Suite, the gestureBot can be used to create and edit gestures documented in the Labanotation format and see them performed by a robot.  
 
 A Windows 10 PC is required to run the software and the virtual robot. The physical robot can be built using a desktop 3D-printer and about **$350(USD)** in electronic servos and parts.
 
 The kit contains a browser-based simulated robot with control software based on the [Robotis XL](https://www.robotis.us/dynamixel-xl-320/) series of servo motors. To construct a physical robot, it provides models for 3D-printable body-parts, a parts-list and purchase links for electronic components, and step-by-step assembly instructions. No soldering is required, but some manual skill is needed to mate small electronic connectors, manipulate small plastic rivets, and install miniature metal screws to assemble the body components.
 
-![Browser Model Wave](/docs_images/gB_BrowserModel_Wave.png)
+![Browser Model Wave](/img/gB_BrowserModel_Wave.png)
 
 ## What is the gestureBot and who might be interested in using this kit?
 The gestureBot is a semi-humanoid service-robot capable of mimicking human gestures. Its purpose is to support research and education in the field of ***Human-Robot-Interaction (HRI)***. Its function is to physically and virtually render gestures stored in a digital Labanotation format. The designation "semi-humanoid" means that it has some but not all of the limbs and joints of a human form. The designation **"service-robot"** refers to a requirement that is designed to safely operate directly with humans, as opposed to an **"industrial-robot"** that usually repeats tasks within a cordoned-off safety zone. The gestureBot was adapted from a project originally created by interns working for Microsoft Research Asia. We've built on their work and put together this design kit to help students learn with a fun hand's-on project that provides exposure to key technologies used in service-robotics. Researchers in the field of HRI can use the kit to support experimentation in the use of gestures to enhance robot-to-human comunication.
@@ -17,7 +18,7 @@ No matter where your interest lies, we hope you find the gestureBot Design Kit a
 
 # How It Works
 ## System Diagram
-![gestureBot System Diagram](/docs_images/gB_RobotGestureSystem_Diagram.png)
+![gestureBot System Diagram](img/gB_RobotGestureSystem_Diagram.png)
 
 ## System Modules:
 
@@ -27,7 +28,7 @@ No matter where your interest lies, we hope you find the gestureBot Design Kit a
 The Labanotation Controller reads .json files containing gestures described in Labanotation format, which are recordings of human gestural movements reduced to significant keyframes consisting of sequenced joint position and movement timing goals. Gesture selection and loading, as well as joint positional movements and their durations contained in the gestures, are requested by and sent to the gestureBot Controller module. The keyframes can also be transmitted under the control of simple play/pause commands and a scrubbing timeline with a browser-based UI available on **http port 8000**.
 
 #### **Gesture Library**
-The [**Gesture Library**](/src/Labanotation/README.md) is a database of gesture-concept pairs expressed in Labanotation format and stored as .json files. The data is directly accessed by the Gesture Engine.  The library includes a complete listing of the sample database including a video clip of each gesture performed by the gestureBot.
+The [**Gesture Library**](./src/Labanotation/README.md) is a database of gesture-concept pairs expressed in Labanotation format and stored as .json files. The data is directly accessed by the Gesture Engine.  The library includes a complete listing of the sample database including a video clip of each gesture performed by the gestureBot.
 
 #### **Gesture Engine**
 For humanoid robot performance, the Gesture Engine contains a software module constructed with Python and Google's neural network [**word2vec**](https://code.google.com/archive/p/word2vec/#!). It receives text phrases from the Labanotation Controller as input and returns corresponding gestures. Sample text phrases and gesture-concept pairs contained in the Gesture Library can be previewed by the system with a browser-based UI available on **http port 8002**.
@@ -46,13 +47,13 @@ The gestureBot Controller requests from the Labanotation Controller gestures to 
 Both physical gestureBots and virtual models hosted in a browser connect to the gestureBot controller and receive movement commands as servo-control packets. The packets adhere to the [Robotis Dynamixel 2.0 Protocol](https://emanual.robotis.com/docs/en/dxl/x/xl320/). A packet is sent for each Labanotation and interstitial keyframe transmitted by the gestureBot Controller and contains individual goal positions and movement durations for each servo in the gestureBot.
 
 # Install, Build and Run
-- [Software Installation Instructions ](/src/Samples/gestureService_w2v/README.md) for the controller applications
-- [Step-by-Step Instructions ](/hardware/README.md) for constructing a physical gestureBot
+- [Software Installation Instructions ](./src/Samples/gestureService_w2v/README.md) for the controller applications
+- [Step-by-Step Instructions ](./hardware/README.md) for constructing a physical gestureBot
 
 # Contributing
 We think the gestureBot can be made to do much more than render gestures and we hope you will help it evolve! We have designed the hardware and software to be easy to understand and modify.
 - Please read our [short and sweet coding guidelines](coding_guidelines.md).
-- For big changes such as adding new feature or refactoring, [file an issue first](https://github.com/Microsoft/gestureBot_DesignKit/issues).
+- For big changes such as adding new feature or refactoring, [file an issue first](https://github.com/Microsoft/gestureBotDesignKit/issues).
 - Use our [recommended development workflow](dev_workflow.md) to make changes and test it.
 - Use [usual steps](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/) to make contributions just like other GitHub projects. If you are not familiar with Git Branch-Rebase-Merge workflow, please [read this first](http://shitalshah.com/p/git-workflow-branch-rebase-squash-merge/).
 

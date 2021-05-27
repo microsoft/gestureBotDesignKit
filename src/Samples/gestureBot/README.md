@@ -1,11 +1,8 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
+## ![logo](../../../../docs/img/MARR_logo.png) [Microsoft Applied Robotics Research Library](https://special-giggle-b26bab5f.pages.github.io/)
+### Open Source Samples for Service Robotics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-# Labanotation Suite: [gestureBot Design Kit](/README.md)
-
-# **Software Installation and Operation: gestureBot Sample**
-
-# Introduction
+# gestureBot Sample
 The gestureBot sample source code in 'gestureBot.pyproj' demonstrates how to instantiate and run the software modules required to control a physical robot and have it perform gestures from ghe Gesture Library:
 - Gesture Service
   - Labanotation controller
@@ -98,8 +95,8 @@ The two user-interfaces (UI) in this sample can be run in a browser window on th
 
 ## Labanotation Controller UI
 [http://localhost:8000](http://localhost:8000)
-![Labanotation Controller UI](/docs_images/gB_LabanotationController_UI.png)
+![Labanotation Controller UI](../../../img/gB_LabanotationController_UI.png)
 
 ## gestureBot Controller UI
 [http://localhost:8001](http://localhost:8001)
-![gestureBot Controller UI](/docs_images/gB_gestureBotController_UI.png)
+![gestureBot Controller UI](../../../img/gB_gestureBotController_UI.png)

@@ -1,11 +1,9 @@
-# [![logo](/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
+## ![logo](../../../../docs/img/MARR_logo.png) [Microsoft Applied Robotics Research Library](https://special-giggle-b26bab5f.pages.github.io/)
+### Open Source Samples for Service Robotics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-# Labanotation Suite: [gestureBot Design Kit](/README.md)
+# Gesture Service System Sample
 
-# **Software Installation and Operation: Gesture Service System Sample**
-
-# Introduction
 The Gesture Service sample source code in 'gestureService_w2v.pyproj' demonstrates how to instantiate and run all of the software modules in the project together:
 - Gesture Service
   - Labanotation controller
@@ -13,10 +11,10 @@ The Gesture Service sample source code in 'gestureService_w2v.pyproj' demonstrat
   - Gesture Library
 - gestureBot controller
 
-# Software Installation
+## Software Installation
 The sample 'gestureService_w2v' source code depends on a number of open-source Python libraries. This section provides instructions for installing and operating the software.
 
-## Tested System Software
+### Tested System Software
 We used the following software versions to test the Gesture Service samples:
 - Windows 10 (Version 2004, 64-bit) **or** Linux (Ubuntu18.04, 64-bit)
 - Microsoft Edge Browser (Version 87.0.664.66, 64-bit)
@@ -37,7 +35,7 @@ nltk==3.5
 dynamixel_sdk==3.7.31
 ```
 
-## Installation Instructions
+### Installation Instructions
 For Windows or Linux, the following instructions will guide you through the installation of code and assets comprising the gestureBot Design Kit as well as dependent external software.
 
 If not already on your PC, download and run the following installers:
@@ -76,7 +74,7 @@ To provide a sample Gesture Engine implementation, Google's neural network [word
 ```
 C:\Users\robotics\github_repos\gestureBotDesignKit\src\Libraries\gestureService_w2v\GoogleNews-vectors-negative300.bin
 ```
-# Run the System
+## Run the System
 Following is an example run session preceded by a check to insure the correct version of Python 3.7.8 is invoked:
 ```
 C:\Users\robotics>python
@@ -98,19 +96,19 @@ Loading and parsing labanotation gesture dictionary...
 Http application started on http://localhost:8002.
 Ready.
 ```
-# System Operations
+## System Operations
 The three user-interfaces (UI) in this sample can be run in a browser window on the local machine with the localhost URL's provided in each section below.
 
 ***Tip:*** If 'localhost' is not a mapped name on the PC, it can be substituted with the PC's local IP address. Also, remote control can be achieved on the local network segment by using the PC's IP address in a browser on a different PC.
 
-## Labanotation Controller UI
+### Labanotation Controller UI
 [http://localhost:8000](http://localhost:8000)
-![Labanotation Controller UI](/docs_images/gB_LabanotationController_UI.png)
+![Labanotation Controller UI](../../../../docs/img/gB_LabanotationController_UI.png)
 
-## Gesture Service UI
+### Gesture Service UI
 [http://localhost:8002](http://localhost:8002)
-![Gesture Service UI](/docs_images/gB_GestureService_UI.png)
+![Gesture Service UI](../../../../docs/img/gB_GestureService_UI.png)
 
-## gestureBot Controller UI
+### gestureBot Controller UI
 [http://localhost:8001](http://localhost:8001)
-![gestureBot Controller UI](/docs_images/gB_gestureBotController_UI.png)
+![gestureBot Controller UI](../../../../docs/img/gB_gestureBotController_UI.png)

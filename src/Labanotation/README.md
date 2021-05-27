@@ -1,10 +1,9 @@
-# [![logo](../../docs_images/MARR_logo.png)Microsoft Applied Robotics Research Library](https://github.com/microsoft/AppliedRoboticsResearchLibrary)
+## ![logo](../../img/MARR_logo.png) [Microsoft Applied Robotics Research Library](https://special-giggle-b26bab5f.pages.github.io/)
+### Open Source Samples for Service Robotics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-# Labanotation Suite: [gestureBot Design Kit](/README.md)
-
 # **Gesture Library**
-This folder **/src/Labanotation/gestureLibrary/** contains sample gesture data expressed as Labanotation scores in the .json file format. Valid gesture files in child folders will be picked up by the Labanotation Controller service when it launches and made available to client applications.
+The folder **/src/Labanotation/gestureLibrary/** contains sample gesture data expressed as Labanotation scores in the JSON file format. Valid gesture files in child folders will be picked up by the Labanotation Controller service when it launches and made available to client applications.
 
  A complete listing of the database including a video clip of each gesture is provided at the end of this page.
 
@@ -32,19 +31,17 @@ In any case, the current state of the art does not provide a reasonable method t
 
 Links to related work in this field:
 
-- https://arxiv.org/abs/1905.08702 Design of conversational humanoid robot based on hardware independent gesture generation
-- https://hal.archives-ouvertes.fr/hal-03047565/document SRG3: Speech-driven Robot Gesture Generation with GAN 
-- https://www.osaka-kyoiku.ac.jp/~challeng/SIG-Challenge-057/SIG-Challenge-057-15.pdf Improving Conditional-GAN using Unrolled-GAN for the
-Generation of Co-speech Upper Body Gesture
+- [https://arxiv.org/abs/1905.08702](https://arxiv.org/abs/1905.08702) Design of conversational humanoid robot based on hardware independent gesture generation
+- [https://hal.archives-ouvertes.fr/hal-03047565/document](https://hal.archives-ouvertes.fr/hal-03047565/document) SRG3: Speech-driven Robot Gesture Generation with GAN 
+- [https://www.osaka-kyoiku.ac.jp/~challeng/SIG-Challenge-057/SIG-Challenge-057-15.pdf](https://www.osaka-kyoiku.ac.jp/~challeng/SIG-Challenge-057/SIG-Challenge-057-15.pdf) Improving Conditional-GAN using Unrolled-GAN for the Generation of Co-speech Upper Body Gesture
+- [https://arxiv.org/abs/2010.06194](https://arxiv.org/abs/2010.06194) Manual Clustering:  Labeling the Phrase Set of the Conversation Agent, Rinna
 
-- https://arxiv.org/abs/2010.06194 Manual Clustering:  Labeling the Phrase Set of the Conversation Agent, Rinna
+## Gesture Labanotation in JSON Format
+An example of the data structure in the JSON files is provided in [GestureFormat.json](/src/Labanotation/GestureFormat.json).
 
-## Gesture Labanotation in .json Format
-An example of the data structure in the .json files is provided in [GestureFormat.json](/src/Labanotation/GestureFormat.json).
+A Labanotation score contains vertical columns representing specific body parts with notations indicating global positions of those parts in transition over a time-line flowing from bottom to top. In our JSON files, from the Labanotation score we group horizontal sets of body-part movements into poses comprising keyframes that correspond to sections within the file.
 
-A Labanotation score contains vertical columns representing specific body parts with notations indicating global positions of those parts in transition over a time-line flowing from bottom to top. In our .json files, from the Labanotation score we group horizontal sets of body-part movements into poses comprising keyframes that correspond to sections within the file.
-
-![Labanotation score](../../docs_images/gL_json_format.png)
+![Labanotation score](../../img/gL_json_format.png)
 
 ## Table of Concept-Gesture Pairs in Library:
 
@@ -53,59 +50,59 @@ A Labanotation score contains vertical columns representing specific body parts 
 |concept name|similar words|gesture file|Labanotation Score|Video|
 |-------|----------------------------|---------|-------------|---------------|
 |=======|============================|==========|=============|===============|
-|me|{::nomarkdown}<ul><li>I, my, me</li></ul>{:/}|deictic me I.json|![lab score](../../docs_images/gL_Lab_deictic_me.png)|![animated clip](../../docs_images/gL_gB_deictic_me.gif)|
-|you|you, your|deictic you d.json|![lab score](/docs_images/gL_Lab_deictic_you.png)|![animated clip](/docs_images/gL_gB_deictic_you.gif)|
-|this|this|deictic this.json|![lab score](/docs_images/gL_Lab_deictic_this.png)|![animated clip](/docs_images/gL_gB_deictic_this.gif)|
-|that|that|deictic that.json|![lab score](/docs_images/gL_Lab_deictic_that.png)|![animated clip](/docs_images/gL_gB_deictic_that.gif)|
-|here|here|deictic here.json|![lab score](/docs_images/gL_Lab_deictic_here.png)|![animated clip](/docs_images/gL_gB_deictic_here.gif)|
-|there|there|deictic there.json|![lab score](/docs_images/gL_Lab_deictic_there.png)|![animated clip](/docs_images/gL_gB_deictic_there.gif)|
+|me|I, my, me|deictic me I.json|![lab score](../../img/gL_Lab_deictic_me.png)|![animated clip](../../img/gL_gB_deictic_me.gif)|
+|you|you, your|deictic you d.json|![lab score](../../img/gL_Lab_deictic_you.png)|![animated clip](../../img/gL_gB_deictic_you.gif)|
+|this|this|deictic this.json|![lab score](../../img/gL_Lab_deictic_this.png)|![animated clip](../../img/gL_gB_deictic_this.gif)|
+|that|that|deictic that.json|![lab score](../../img/gL_Lab_deictic_that.png)|![animated clip](../../img/gL_gB_deictic_that.gif)|
+|here|here|deictic here.json|![lab score](../../img/gL_Lab_deictic_here.png)|![animated clip](../../img/gL_gB_deictic_here.gif)|
+|there|there|deictic there.json|![lab score](../../img/gL_Lab_deictic_there.png)|![animated clip](../../img/gL_gB_deictic_there.gif)|
 
 ### **Expressive Themes**
 
 |concept name|similar words|gesture file|Labanotation Score|Video|
 |-------|----------------------------|---------|-------------|---------------|
 |=======|============================|=========|=============|===============|
-|away|away, hurry up, go out|away.json|![lab score](/docs_images/gL_Lab_away.png)|![animated clip](/docs_images/gL_gB_away.gif)|
-|bad|bad, busy, boring, unusual|bad.json|![lab score](/docs_images/gL_Lab_bad.png)|![animated clip](/docs_images/gL_gB_bad.gif)|
-|come|come, it's time, help, withdraw|come.json|![lab score](/docs_images/gL_Lab_come.png)|![animated clip](/docs_images/gL_gB_come.gif)|
-|confuse|confuse, never heard, puzzle|confuse.json|![lab score](/docs_images/gL_Lab_confuse.png)|![animated clip](/docs_images/gL_gB_confuse.gif)|
-|contrast|contrast, upside down, inside out, change|contrast.json|![lab score](/docs_images/gL_Lab_contrast.png)|![animated clip](/docs_images/gL_gB_contrast.gif)|
-|disgust|hate, don't like, dislike, too much|dont_like4.json|![lab score](/docs_images/gL_Lab_disgust.png)|![animated clip](/docs_images/gL_gB_disgust.gif)|
-|drink|drink, coffee, hangover, beer|drink.json|![lab score](/docs_images/gL_Lab_drink.png)|![animated clip](/docs_images/gL_gB_drink.gif)|
-|go|go, walk, work out, jog, deposit|go.json|![lab score](/docs_images/gL_Lab_go.png)|![animated clip](/docs_images/gL_gB_go.gif)|
-|good|good, sweet, money, free, fine, date, great|good.json|![lab score](/docs_images/gL_Lab_good.png)|![animated clip](/docs_images/gL_gB_good.gif)|
-|big|big, large, huge|big.json|![lab score](/docs_images/gL_Lab_big.png)|![animated clip](/docs_images/gL_gB_big.gif)|
-|goodbye|goodbye, bye, leaving, good night, see you|goodbye.json|![lab score](/docs_images/gL_Lab_goodbye.png)|![animated clip](/docs_images/gL_gB_goodbye.gif)|
-|happy|happy, glad, wake, good, moved, encore, cheers, best|happy.json|![lab score](/docs_images/gL_Lab_happy.png)|![animated clip](/docs_images/gL_gB_happy.gif)|
-|hello|hello, hi, welcome, good morning|hello.json|![lab score](/docs_images/gL_Lab_hello.png)|![animated clip](/docs_images/gL_gB_hello.gif)|
-|hungry|hungry, eat, dinner|hungry.json|![lab score](/docs_images/gL_Lab_hungry.png)|![animated clip](/docs_images/gL_gB_hungry.gif)|
-|interesting|interesting|interesting.json|![lab score](/docs_images/gL_Lab_interesting.png)|![animated clip](/docs_images/gL_gB_interesting.gif)|
-|laugh|laugh, sing|laugh.json|![lab score](/docs_images/gL_Lab_laugh.png)|![animated clip](/docs_images/gL_gB_laugh.gif)|
-|lets go|let's go, have to, it's time, hurry, hard, why don't we, go first|letsgo.json|![lab score](/docs_images/gL_Lab_letsgo.png)|![animated clip](/docs_images/gL_gB_letsgo.gif)|
-|many|many, more, crowded|many.json|![lab score](/docs_images/gL_Lab_many.png)|![animated clip](/docs_images/gL_gB_many.gif)|
-|nice|nice, good, well|nice.json|![lab score](/docs_images/gL_Lab_nice.png)|![animated clip](/docs_images/gL_gB_nice.gif)|
-|nod|nod, yes, come, I will, whenever, strong, OK, ready|nod.json|![lab score](/docs_images/gL_Lab_nod.png)|![animated clip](/docs_images/gL_gB_nod.gif)|
-|surprise|surprise, mess, waste|surprise.json|![lab score](/docs_images/gL_Lab_surprise.png)|![animated clip](/docs_images/gL_gB_surprise.gif)|
-|panic|panic, passout, ouch|panic.json|![lab score](/docs_images/gL_Lab_panic.png)|![animated clip](/docs_images/gL_gB_panic.gif)|
-|please|please, go ahead, would you, could you, will you, take care, clean up, I'd like|please.json|![lab score](/docs_images/gL_Lab_please.png)|![animated clip](/docs_images/gL_gB_please.gif)|
-|question|May I, did you, do you, what, where, when, who, why, how|question.json|![lab score](/docs_images/gL_Lab_question.png)|![animated clip](/docs_images/gL_gB_question.gif)|
-|quit|quit, knife, stop, off|quit.json|![lab score](/docs_images/gL_Lab_quit.png)|![animated clip](/docs_images/gL_gB_quit.gif)|
-|say|say, said, talk, request|say.json|![lab score](/docs_images/gL_Lab_say.png)|![animated clip](/docs_images/gL_gB_say.gif)|
-|shakehead|no, so, cannot, back, drunk, cannot keep, tone-deaf, not taking, pale, do not feel well, sick, itchy|shake_head.json|![lab score](/docs_images/gL_Lab_shakehead.png)|![animated clip](/docs_images/gL_gB_shakehead.gif)|
-|sleepy|sleepy, sleep, asleep, yawn|sleepy.json|![lab score](/docs_images/gL_Lab_sleepy.png)|![animated clip](/docs_images/gL_gB_sleepy.gif)|
-|small|small, out of dish|small.json|![lab score](/docs_images/gL_Lab_small.png)|![animated clip](/docs_images/gL_gB_small.gif)|
-|sorry|sorry, check|sorry.json|![lab score](/docs_images/gL_Lab_sorry.png)|![animated clip](/docs_images/gL_gB_sorry.gif)|
-|thanks|thank, thanks|thanks.json|![lab score](/docs_images/gL_Lab_thanks.png)|![animated clip](/docs_images/gL_gB_thanks.gif)|
-|tired|tired, hangover, lie down, drunk, tipsy, loaded, not feeling well|tired.json|![lab score](/docs_images/gL_Lab_tired.png)|![animated clip](/docs_images/gL_gB_tired.gif)|
-|weather|weather, sunny, cloudy, windy, rainy, nice day|weather.json|![lab score](/docs_images/gL_Lab_weather.png)|![animated clip](/docs_images/gL_gB_weather.gif)|
+|away|away, hurry up, go out|away.json|![lab score](../../img/gL_Lab_away.png)|![animated clip](../../img/gL_gB_away.gif)|
+|bad|bad, busy, boring, unusual|bad.json|![lab score](../../img/gL_Lab_bad.png)|![animated clip](../../img/gL_gB_bad.gif)|
+|come|come, it's time, help, withdraw|come.json|![lab score](../../img/gL_Lab_come.png)|![animated clip](../../img/gL_gB_come.gif)|
+|confuse|confuse, never heard, puzzle|confuse.json|![lab score](../../img/gL_Lab_confuse.png)|![animated clip](../../img/gL_gB_confuse.gif)|
+|contrast|contrast, upside down, inside out, change|contrast.json|![lab score](../../img/gL_Lab_contrast.png)|![animated clip](../../img/gL_gB_contrast.gif)|
+|disgust|hate, don't like, dislike, too much|dont_like4.json|![lab score](../../img/gL_Lab_disgust.png)|![animated clip](../../img/gL_gB_disgust.gif)|
+|drink|drink, coffee, hangover, beer|drink.json|![lab score](../../img/gL_Lab_drink.png)|![animated clip](../../img/gL_gB_drink.gif)|
+|go|go, walk, work out, jog, deposit|go.json|![lab score](../../img/gL_Lab_go.png)|![animated clip](../../img/gL_gB_go.gif)|
+|good|good, sweet, money, free, fine, date, great|good.json|![lab score](../../img/gL_Lab_good.png)|![animated clip](../../img/gL_gB_good.gif)|
+|big|big, large, huge|big.json|![lab score](../../img/gL_Lab_big.png)|![animated clip](../../img/gL_gB_big.gif)|
+|goodbye|goodbye, bye, leaving, good night, see you|goodbye.json|![lab score](../../img/gL_Lab_goodbye.png)|![animated clip](../../img/gL_gB_goodbye.gif)|
+|happy|happy, glad, wake, good, moved, encore, cheers, best|happy.json|![lab score](../../img/gL_Lab_happy.png)|![animated clip](../../img/gL_gB_happy.gif)|
+|hello|hello, hi, welcome, good morning|hello.json|![lab score](../../img/gL_Lab_hello.png)|![animated clip](../../img/gL_gB_hello.gif)|
+|hungry|hungry, eat, dinner|hungry.json|![lab score](../../img/gL_Lab_hungry.png)|![animated clip](../../img/gL_gB_hungry.gif)|
+|interesting|interesting|interesting.json|![lab score](../../img/gL_Lab_interesting.png)|![animated clip](../../img/gL_gB_interesting.gif)|
+|laugh|laugh, sing|laugh.json|![lab score](../../img/gL_Lab_laugh.png)|![animated clip](../../img/gL_gB_laugh.gif)|
+|lets go|let's go, have to, it's time, hurry, hard, why don't we, go first|letsgo.json|![lab score](../../img/gL_Lab_letsgo.png)|![animated clip](../../img/gL_gB_letsgo.gif)|
+|many|many, more, crowded|many.json|![lab score](../../img/gL_Lab_many.png)|![animated clip](../../img/gL_gB_many.gif)|
+|nice|nice, good, well|nice.json|![lab score](../../img/gL_Lab_nice.png)|![animated clip](../../img/gL_gB_nice.gif)|
+|nod|nod, yes, come, I will, whenever, strong, OK, ready|nod.json|![lab score](../../img/gL_Lab_nod.png)|![animated clip](../../img/gL_gB_nod.gif)|
+|surprise|surprise, mess, waste|surprise.json|![lab score](../../img/gL_Lab_surprise.png)|![animated clip](../../img/gL_gB_surprise.gif)|
+|panic|panic, passout, ouch|panic.json|![lab score](../../img/gL_Lab_panic.png)|![animated clip](../../img/gL_gB_panic.gif)|
+|please|please, go ahead, would you, could you, will you, take care, clean up, I'd like|please.json|![lab score](../../img/gL_Lab_please.png)|![animated clip](../../img/gL_gB_please.gif)|
+|question|May I, did you, do you, what, where, when, who, why, how|question.json|![lab score](../../img/gL_Lab_question.png)|![animated clip](../../img/gL_gB_question.gif)|
+|quit|quit, knife, stop, off|quit.json|![lab score](../../img/gL_Lab_quit.png)|![animated clip](../../img/gL_gB_quit.gif)|
+|say|say, said, talk, request|say.json|![lab score](../../img/gL_Lab_say.png)|![animated clip](../../img/gL_gB_say.gif)|
+|shakehead|no, so, cannot, back, drunk, cannot keep, tone-deaf, not taking, pale, do not feel well, sick, itchy|shake_head.json|![lab score](../../img/gL_Lab_shakehead.png)|![animated clip](../../img/gL_gB_shakehead.gif)|
+|sleepy|sleepy, sleep, asleep, yawn|sleepy.json|![lab score](../../img/gL_Lab_sleepy.png)|![animated clip](../../img/gL_gB_sleepy.gif)|
+|small|small, out of dish|small.json|![lab score](../../img/gL_Lab_small.png)|![animated clip](../../img/gL_gB_small.gif)|
+|sorry|sorry, check|sorry.json|![lab score](../../img/gL_Lab_sorry.png)|![animated clip](../../img/gL_gB_sorry.gif)|
+|thanks|thank, thanks|thanks.json|![lab score](../../img/gL_Lab_thanks.png)|![animated clip](../../img/gL_gB_thanks.gif)|
+|tired|tired, hangover, lie down, drunk, tipsy, loaded, not feeling well|tired.json|![lab score](../../img/gL_Lab_tired.png)|![animated clip](../../img/gL_gB_tired.gif)|
+|weather|weather, sunny, cloudy, windy, rainy, nice day|weather.json|![lab score](../../img/gL_Lab_weather.png)|![animated clip](../../img/gL_gB_weather.gif)|
 
 ### **Beat (Idle) Movements**
 | name|variations|gesture file|Labanotation Score|Video|
 |-------|----------------------------|---------|-------------|---------------|
 |=======|============================|==========|=============|===============|
-|beat|beat, beat_rotate, beat_2, beat_3|beat.json|![lab score](/docs_images/gL_Lab_beat.png)|![animated clip](/docs_images/gL_gB_beat.gif)|
+|beat|beat, beat_rotate, beat_2, beat_3|beat.json|![lab score](../../img/gL_Lab_beat.png)|![animated clip](../../img/gL_gB_beat.gif)|
 
 
 
-## [/src/Labanotation/kinectSuite](/src/Labanotation/kinectSuite/)
+## [/src/Labanotation/kinectSuite](https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Labanotation/kinectSuite)
 This folder contains gesture data files expressed as Labanotation scores in the JSON file format. These files were captured using a Kinect sensor and human subjects with the Gesture Authoring Tools included in the [Labanotation Suite](https://github.com/microsoft/LabanotationSuite) repository.
