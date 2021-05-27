@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesture-library">Gesture Library</a></li>
+            <li><a href="#classification-and-clustering-of-gesture-concept-pairs">Classification and Clustering of Gesture-concept Pairs</a></li>
+            <li><a href="#gesture-labanotation-in-json-format">Gesture Labanotation in JSON Format</a></li>
+            <li><a href="#table-of-concept-gesture-pairs-in-library">Table of Concept-Gesture Pairs in Library:</a></li>
+            <li><a href="#srclabanotationkinectsuite">/src/Labanotation/kinectSuite</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../../img/MARR_logo.png" /> <a href="https://special-giggle-b26bab5f.pages.github.io/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesture-library"><strong>Gesture Library</strong></h1>
+<p>The folder <strong>/src/Labanotation/gestureLibrary/</strong> contains sample gesture data expressed as Labanotation scores in the JSON file format. Valid gesture files in child folders will be picked up by the Labanotation Controller service when it launches and made available to client applications.</p>
+<p>A complete listing of the database including a video clip of each gesture is provided at the end of this page.</p>
+<h2 id="classification-and-clustering-of-gesture-concept-pairs">Classification and Clustering of Gesture-concept Pairs</h2>
+<p>This Gesture Library is organized around 40 clusters of gesture-concept pairs retrievable by a Gesture Engine component. </p>
+<ul>
+<li>6 deictic concepts (me, you, this, that, here, there)</li>
+<li>33 expressive theme concepts (hello, many, question, etc.)</li>
+<li>1 "beat" concept used for idling</li>
+</ul>
+<p>The clusters were segregated using a method described in the paper: <a href="https://hal.archives-ouvertes.fr/hal-03108169"><strong><em>Development and Verification of a Gesture-generating Architecture for Conversational Humanoid Robots:</em></strong> </a> </p>
+<ul>
+<li>First, the most import word in each of a data-set of 230 English conversational sentences was identified using vector analysis in a low-dimensional space.  </li>
+<li>Next, each of these identified words were manually paired with a corresponding gesture encoded in Labanotation. </li>
+<li>Finally, performance of the 230 gestures was compared using the geodesic distance between elements of movement across the set of gestures to identify the most similar movement sequences and consolidate the groups into a final set of 40 clusters.</li>
+</ul>
+<p>In each of the expressive theme clusters, synonyms of the concept label are included in the record. Also, there may be found data files containing variations of the gesture associated with the same concept. These features can allow a Gesture Engine to select alternatives in order to avoid un-natural repetitions of exactly the same gesture.</p>
+<p>The decisions required to define a gesture database in terms of how many and what types of concepts will be included will also be factors in the qualative performance (life-like realism) of gestures performed by robots. At this time, quantitative analysis resulting in concept groupings or clusters has not delivered a higher quality of lifelike gestures over clusters curated subjectively by human mind and hand.</p>
+<p>Additionally, interchangeable data volumes must be considered for a Gesture Library that contain gesture sets that at-worst stereotype ethnic or gender character traits and at-best can mimic comfortably familiar or iconic celebrity personalities.</p>
+<p>In any case, the current state of the art does not provide a reasonable method to define a gesture library. More exploration and discovery is needed before robots can, without procedural programming, effectively select and synchronize gestures with rendered speech to a degree that supports and enhances human-robot-interaction. We hope that this gestureBot Design Kit will be useful and support further research and development in  human-robot-interaction.</p>
+<p>Links to related work in this field:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1905.08702">https://arxiv.org/abs/1905.08702</a> Design of conversational humanoid robot based on hardware independent gesture generation</li>
+<li><a href="https://hal.archives-ouvertes.fr/hal-03047565/document">https://hal.archives-ouvertes.fr/hal-03047565/document</a> SRG3: Speech-driven Robot Gesture Generation with GAN </li>
+<li><a href="https://www.osaka-kyoiku.ac.jp/~challeng/SIG-Challenge-057/SIG-Challenge-057-15.pdf">https://www.osaka-kyoiku.ac.jp/~challeng/SIG-Challenge-057/SIG-Challenge-057-15.pdf</a> Improving Conditional-GAN using Unrolled-GAN for the Generation of Co-speech Upper Body Gesture</li>
+<li><a href="https://arxiv.org/abs/2010.06194">https://arxiv.org/abs/2010.06194</a> Manual Clustering:  Labeling the Phrase Set of the Conversation Agent, Rinna</li>
+</ul>
+<h2 id="gesture-labanotation-in-json-format">Gesture Labanotation in JSON Format</h2>
+<p>An example of the data structure in the JSON files is provided in <a href="/src/Labanotation/GestureFormat.json">GestureFormat.json</a>.</p>
+<p>A Labanotation score contains vertical columns representing specific body parts with notations indicating global positions of those parts in transition over a time-line flowing from bottom to top. In our JSON files, from the Labanotation score we group horizontal sets of body-part movements into poses comprising keyframes that correspond to sections within the file.</p>
+<p><img alt="Labanotation score" src="../../img/gL_json_format.png" /></p>
+<h2 id="table-of-concept-gesture-pairs-in-library">Table of Concept-Gesture Pairs in Library:</h2>
+<h3 id="deictic"><strong>Deictic</strong></h3>
+<table>
+<thead>
+<tr>
+<th>concept name</th>
+<th>similar words</th>
+<th>gesture file</th>
+<th>Labanotation Score</th>
+<th>Video</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=======</td>
+<td>============================</td>
+<td>==========</td>
+<td>=============</td>
+<td>===============</td>
+</tr>
+<tr>
+<td>me</td>
+<td>I, my, me</td>
+<td>deictic me I.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_deictic_me.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_deictic_me.gif" /></td>
+</tr>
+<tr>
+<td>you</td>
+<td>you, your</td>
+<td>deictic you d.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_deictic_you.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_deictic_you.gif" /></td>
+</tr>
+<tr>
+<td>this</td>
+<td>this</td>
+<td>deictic this.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_deictic_this.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_deictic_this.gif" /></td>
+</tr>
+<tr>
+<td>that</td>
+<td>that</td>
+<td>deictic that.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_deictic_that.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_deictic_that.gif" /></td>
+</tr>
+<tr>
+<td>here</td>
+<td>here</td>
+<td>deictic here.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_deictic_here.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_deictic_here.gif" /></td>
+</tr>
+<tr>
+<td>there</td>
+<td>there</td>
+<td>deictic there.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_deictic_there.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_deictic_there.gif" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="expressive-themes"><strong>Expressive Themes</strong></h3>
+<table>
+<thead>
+<tr>
+<th>concept name</th>
+<th>similar words</th>
+<th>gesture file</th>
+<th>Labanotation Score</th>
+<th>Video</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=======</td>
+<td>============================</td>
+<td>=========</td>
+<td>=============</td>
+<td>===============</td>
+</tr>
+<tr>
+<td>away</td>
+<td>away, hurry up, go out</td>
+<td>away.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_away.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_away.gif" /></td>
+</tr>
+<tr>
+<td>bad</td>
+<td>bad, busy, boring, unusual</td>
+<td>bad.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_bad.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_bad.gif" /></td>
+</tr>
+<tr>
+<td>come</td>
+<td>come, it's time, help, withdraw</td>
+<td>come.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_come.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_come.gif" /></td>
+</tr>
+<tr>
+<td>confuse</td>
+<td>confuse, never heard, puzzle</td>
+<td>confuse.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_confuse.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_confuse.gif" /></td>
+</tr>
+<tr>
+<td>contrast</td>
+<td>contrast, upside down, inside out, change</td>
+<td>contrast.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_contrast.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_contrast.gif" /></td>
+</tr>
+<tr>
+<td>disgust</td>
+<td>hate, don't like, dislike, too much</td>
+<td>dont_like4.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_disgust.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_disgust.gif" /></td>
+</tr>
+<tr>
+<td>drink</td>
+<td>drink, coffee, hangover, beer</td>
+<td>drink.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_drink.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_drink.gif" /></td>
+</tr>
+<tr>
+<td>go</td>
+<td>go, walk, work out, jog, deposit</td>
+<td>go.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_go.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_go.gif" /></td>
+</tr>
+<tr>
+<td>good</td>
+<td>good, sweet, money, free, fine, date, great</td>
+<td>good.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_good.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_good.gif" /></td>
+</tr>
+<tr>
+<td>big</td>
+<td>big, large, huge</td>
+<td>big.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_big.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_big.gif" /></td>
+</tr>
+<tr>
+<td>goodbye</td>
+<td>goodbye, bye, leaving, good night, see you</td>
+<td>goodbye.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_goodbye.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_goodbye.gif" /></td>
+</tr>
+<tr>
+<td>happy</td>
+<td>happy, glad, wake, good, moved, encore, cheers, best</td>
+<td>happy.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_happy.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_happy.gif" /></td>
+</tr>
+<tr>
+<td>hello</td>
+<td>hello, hi, welcome, good morning</td>
+<td>hello.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_hello.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_hello.gif" /></td>
+</tr>
+<tr>
+<td>hungry</td>
+<td>hungry, eat, dinner</td>
+<td>hungry.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_hungry.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_hungry.gif" /></td>
+</tr>
+<tr>
+<td>interesting</td>
+<td>interesting</td>
+<td>interesting.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_interesting.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_interesting.gif" /></td>
+</tr>
+<tr>
+<td>laugh</td>
+<td>laugh, sing</td>
+<td>laugh.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_laugh.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_laugh.gif" /></td>
+</tr>
+<tr>
+<td>lets go</td>
+<td>let's go, have to, it's time, hurry, hard, why don't we, go first</td>
+<td>letsgo.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_letsgo.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_letsgo.gif" /></td>
+</tr>
+<tr>
+<td>many</td>
+<td>many, more, crowded</td>
+<td>many.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_many.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_many.gif" /></td>
+</tr>
+<tr>
+<td>nice</td>
+<td>nice, good, well</td>
+<td>nice.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_nice.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_nice.gif" /></td>
+</tr>
+<tr>
+<td>nod</td>
+<td>nod, yes, come, I will, whenever, strong, OK, ready</td>
+<td>nod.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_nod.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_nod.gif" /></td>
+</tr>
+<tr>
+<td>surprise</td>
+<td>surprise, mess, waste</td>
+<td>surprise.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_surprise.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_surprise.gif" /></td>
+</tr>
+<tr>
+<td>panic</td>
+<td>panic, passout, ouch</td>
+<td>panic.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_panic.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_panic.gif" /></td>
+</tr>
+<tr>
+<td>please</td>
+<td>please, go ahead, would you, could you, will you, take care, clean up, I'd like</td>
+<td>please.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_please.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_please.gif" /></td>
+</tr>
+<tr>
+<td>question</td>
+<td>May I, did you, do you, what, where, when, who, why, how</td>
+<td>question.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_question.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_question.gif" /></td>
+</tr>
+<tr>
+<td>quit</td>
+<td>quit, knife, stop, off</td>
+<td>quit.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_quit.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_quit.gif" /></td>
+</tr>
+<tr>
+<td>say</td>
+<td>say, said, talk, request</td>
+<td>say.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_say.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_say.gif" /></td>
+</tr>
+<tr>
+<td>shakehead</td>
+<td>no, so, cannot, back, drunk, cannot keep, tone-deaf, not taking, pale, do not feel well, sick, itchy</td>
+<td>shake_head.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_shakehead.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_shakehead.gif" /></td>
+</tr>
+<tr>
+<td>sleepy</td>
+<td>sleepy, sleep, asleep, yawn</td>
+<td>sleepy.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_sleepy.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_sleepy.gif" /></td>
+</tr>
+<tr>
+<td>small</td>
+<td>small, out of dish</td>
+<td>small.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_small.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_small.gif" /></td>
+</tr>
+<tr>
+<td>sorry</td>
+<td>sorry, check</td>
+<td>sorry.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_sorry.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_sorry.gif" /></td>
+</tr>
+<tr>
+<td>thanks</td>
+<td>thank, thanks</td>
+<td>thanks.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_thanks.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_thanks.gif" /></td>
+</tr>
+<tr>
+<td>tired</td>
+<td>tired, hangover, lie down, drunk, tipsy, loaded, not feeling well</td>
+<td>tired.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_tired.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_tired.gif" /></td>
+</tr>
+<tr>
+<td>weather</td>
+<td>weather, sunny, cloudy, windy, rainy, nice day</td>
+<td>weather.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_weather.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_weather.gif" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="beat-idle-movements"><strong>Beat (Idle) Movements</strong></h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>variations</th>
+<th>gesture file</th>
+<th>Labanotation Score</th>
+<th>Video</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=======</td>
+<td>============================</td>
+<td>==========</td>
+<td>=============</td>
+<td>===============</td>
+</tr>
+<tr>
+<td>beat</td>
+<td>beat, beat_rotate, beat_2, beat_3</td>
+<td>beat.json</td>
+<td><img alt="lab score" src="../../img/gL_Lab_beat.png" /></td>
+<td><img alt="animated clip" src="../../img/gL_gB_beat.gif" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="srclabanotationkinectsuite"><a href="https://github.com/microsoft/gestureBotDesignKit/tree/main/src/Labanotation/kinectSuite">/src/Labanotation/kinectSuite</a></h2>
+<p>This folder contains gesture data files expressed as Labanotation scores in the JSON file format. These files were captured using a Kinect sensor and human subjects with the Gesture Authoring Tools included in the <a href="https://github.com/microsoft/LabanotationSuite">Labanotation Suite</a> repository.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2021-05-27 00:52:50
+-->

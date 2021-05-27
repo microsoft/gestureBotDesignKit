@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Session03 - Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesturebot-construction-guide">gestureBot Construction Guide</a></li>
+            <li><a href="#session-3-assemble-the-torso">Session 3: Assemble the Torso</a></li>
+            <li><a href="#next-session-4-assemble-the-head-structure">Next -&gt; Session 4: Assemble the Head Structure</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../../img/MARR_logo.png" /> <a href="https://special-giggle-b26bab5f.pages.github.io/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesturebot-construction-guide"><a href="../">gestureBot Construction Guide</a></h1>
+<h2 id="session-3-assemble-the-torso"><strong>Session 3:</strong> Assemble the Torso</h2>
+<p>In this session we will 3D-print the head components while assembling the gestureBot's torso.</p>
+<h3 id="parts">Parts:</h3>
+<ul>
+<li>(3) servos labeled ID:004, ID:003, and ID:002 programmed in Session 2</li>
+<li>(4) 130MM servo cables</li>
+<li>(22) short plastic rivets</li>
+<li>(5) long plastic rivets</li>
+<li>(4) 3mm miniature steel screws</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl">Base Frame</a> 3D-printed in Session 1, the base frame is the lower torso component and provides the stationary mounting point for servo ID:004 and anchors all of the moving parts of the gestureBot.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HipCover.stl">Hip Cover</a> 3D-printed in Session 2, the hip cover attaches to the base frame and it's spherical shape allows the gestureBot's hip joint to move without exposing its interior.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Hip.stl">Hip Swing Bracket</a> 3D-printed in Session 2, the hip swing bracket and servo wheel attach to servo ID:004 and ID:003 rotating vertically to allow the entire gestureBot to lean forward and backward.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrame.stl">Upper Torso Frame</a> 3D-printed in Session 2, the upper torso frame and mount plate connect to servo ID:003 allowing the gestureBot's torso to rotate horizontally, as well as providing mount points for servo ID:002 which rotates the head horizontally and servos ID:005 and ID:009 which rotate the arm assemblies vertically.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Hip.stl">Servo Wheel</a> 3D-printed in Session 2, the servo wheel supports servo ID:004 in the hip swing bracket.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_UpperTorsoFrame.stl">Servo Mount Plate</a> 3D-printed in Session 2, the servo mount plate supports servo ID:002 in the upper torso frame.</li>
+</ul>
+<h3 id="tools">Tools:</h3>
+<ul>
+<li>PH0 Phillips screwdriver</li>
+<li>plastic rivet tool</li>
+</ul>
+<p><img alt="Session 3 parts and tools" src="../../img/gB_Session03_PartsTools.jpg" /></p>
+<h3 id="procedure"><strong>Procedure:</strong></h3>
+<h4 id="first-start-3d-printing-the-parts-required-for-the-next-session"><strong>First, start 3D-printing the parts required for the next session:</strong></h4>
+<ul>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Neck.stl">Neck</a> 3D-printed in Session 3</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Head.stl">Head Swing Bracket</a> 3D-printed in Session 3</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl">Servo Wheel</a> 3D-printed in Session 3</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HeadFrame.stl">Head Frame</a> 3D-printed in Session 3</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Face.stl">Face</a> 3D-printed in Session 3</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Speaker.stl">Speaker</a> 3D-printed in Session 3</li>
+</ul>
+<p><strong>Hint:</strong> Many 3D-printers have enough room on their build plate to print all of these models at the same time. Follow your printer's software instructions on how to add multiple models to a printing project file.</p>
+<h4 id="second-learn-how-to-ensure-the-gripping-performance-of-plastic-rivets"><strong>Second, learn how to ensure the gripping performance of plastic rivets:</strong></h4>
+<p>It is easy to install plastic rivets incorrectly and decrease their grip and fastening strength. To work well, care must be taken not to deform their shape or crush their structure when inserting them into their mount holes. </p>
+<p><img alt="Damaged rivets versus functional rivets" src="../../img/gB_Session03_RivetComparison.jpg" /></p>
+<p>Generally, the plastic covers of the servo motors are molded (not 3D-printed) from high-quality plastic. Their precision shapes are stable and do not present a problem for plastic rivets. However, parts printed by desktop 3D-printers may have shape variances that may negatively impact the way the rivets work.  Issues such as printer settings, calibration drift, quality and type of the plastic filament supply, print head wear, and environmental conditions such as temperature, humidity or vibrations can all affect the strength, flexibility, and shape precision of the parts they print.</p>
+<p><img alt="tool small hole crushing rivet" src="../../img/gB_Session03_RivetInsertion.jpg" /></p>
+<p>To prevent these factors from impacting rivet strength, make sure that the mount holes are a full 3mm in diameter. If they are too small they will crush and deform the rivet shell, preventing their tips from expanding when the pin is inserted and gripping the inside edge of the mount hole. If this is the case with the mount holes in your 3D-printed parts, be sure to enlarge them with a 3mm drill bit, a rotary deburring tool, or a needle file.</p>
+<p><img alt="expanding rivet hole" src="../../img/gB_Session03_RivetHole_Debur.jpg" /></p>
+<p>When inserting a rivet, the shell must reach far enough into the material layers it is fastening that the ridges on its end extend past the edge of the last layer. Ideally, the ridge edge and the material edge match perfectly. When the pin is inserted, the shell expands and pushes the ridge edges over the material edge and should produce a satisfying "snap" feeling. This action creates a gripping shelf that prevents the rivet from exiting the hole. If the rivet does not fully expand, only the friction pressure of the rivet shell against the side of the hole will hold it in, which is a much weaker form of fastening and generally will work loose as the robot moves during normal operation. </p>
+<h4 id="third-assemble-the-components-of-the-torso"><strong>Third, assemble the components of the torso:</strong></h4>
+<ul>
+<li>
+<p>Mount servo ID:003 to the hip bracket by installing 6 rivets.
+<img alt="mount servo to hip bracket with rivets" src="../../img/gB_Session03_Servo_HipBracket_RivetInstall.jpg" />
+<img alt="servo mounted to hip bracket" src="../../img/gB_Session03_Servo_HipBracket_Complete.jpg" /></p>
+</li>
+<li>
+<p>Connect (2) 130mm cables to servo.
+<img alt="connect cables to servo" src="../../img/gB_Session03_Servo3Cables.jpg" /></p>
+</li>
+<li>
+<p>Install servo wheel with a long rivet. Do not insert a pin into the long rivet, friction will be sufficient to hold the rivet through the 3 layers and the servo wheel must spin freely.
+<img alt="install servo wheel" src="../../img/gB_Session03_Servo4WheelInstall.jpg" /></p>
+</li>
+<li>
+<p>Install servo ID:004 into the hip bracket, making sure that the servo horn (wheel that moves) is at its 0-degree postion. Check that the small single tick-mark on the horn is aligned with the tick-mark on the servo housing, as well as the tick-mark on the swing bracket.
+<img alt="check alignment of servo horn and bracket" src="../../img/gB_Session03_Servo4Install_BracketAlignment.jpg" /></p>
+</li>
+<li>
+<p>Fasten servo ID:004 to the bracket with (4) screws.
+<img alt="install servo with screws" src="../../img/gB_Session03_Servo4Install_Screws.jpg" /></p>
+</li>
+<li>
+<p>Connect servo ID003 to servo ID004 with one of its 130mm cables.
+<img alt="connect servo cables" src="../../img/gB_Session03_ConnectServo3toServo4.jpg" /></p>
+</li>
+<li>
+<p>Connect 130mm cable to servo ID004.
+<img alt="connect servo cables" src="../../img/gB_Session03_ConnectServo4Cable.jpg" /></p>
+</li>
+<li>
+<p>Mount servo ID:004 to base frame with (6) rivets, routing cable through side gap between mount holes.
+<img alt="mount servo to base frame" src="../../img/gB_Session03_MountServo4BaseFrame.jpg" />
+<img alt="mount servo to base frame interior" src="../../img/gB_Session03_MountServo4BaseFrame_Interior.jpg" /></p>
+</li>
+<li>
+<p>Route servo ID:004 cable through access hole in base frame.
+<img alt="route servo cable through base frame" src="../../img/gB_Session03_RouteServo4Cable.jpg" /></p>
+</li>
+<li>
+<p>Install the hip cover over servos ID:003 and ID:004 and onto the base frame. While not functionally significant, it might be aesthetically preferrable to align the ridges of the hip cover with the ridges on the base frame.
+<img alt="install hip cover" src="../../img/gB_Session03_InstallHipCover.jpg" />
+<img alt="align hip cover" src="../../img/gB_Session03_AlignHipCover.jpg" /></p>
+</li>
+<li>
+<p>Mount upper torso frame to servo ID003 with (4) short rivets, taking care servo horn tick-mark is aligned with tick-mark on servo housing.
+<img alt="mount upper torso frame to servo" src="../../img/gB_Session03_MountUpperTorsoFrame_AlignServo3Horn.jpg" />
+<img alt="mount upper torso frame to servo" src="../../img/gB_Session03_MountUpperTorsoFrame_Servo3Horn.jpg" /></p>
+</li>
+<li>
+<p>Attach servo ID:002 mount plate with (4) short rivets.
+<img alt="mount servo mount plate" src="../../img/gB_Session03_MountServo4MountPlate.jpg" />
+<img alt="install mount plate rivets" src="../../img/gB_Session03_Servo4MountPlateRivets.jpg" /></p>
+</li>
+<li>
+<p>Connect servo ID:003 to servo ID:002 with 130mm cable
+<img alt="connect servo cables" src="../../img/gB_Session03_ConnectServo3toServo2.jpg" /></p>
+</li>
+<li>
+<p>Mount servo ID:002 to upper torso frame with mount plate, taking care to route 130mm cables through gaps between mounting holes at bottom of servo.
+<img alt="mount servo to upper torso frame" src="../../img/gB_Session03_MountServo2UpperTorsoFrame.jpg" /></p>
+</li>
+<li>
+<p>Use (2) long rivets in the bottom mount plate holes.
+<img alt="mount servo to upper torso frame with long rivets" src="../../img/gB_Session03_MountServo2UpperTorsoFrame_LongRivets.jpg" /></p>
+</li>
+<li>
+<p>Use (4) short rivets in the back mount plate holes.
+<img alt="mount servo to upper torso frame with mount plate" src="../../img/gB_Session03_MountServo2UpperTorsoFrame_PlateRivets.jpg" /></p>
+</li>
+<li>
+<p>Inspect The completed upper torso assembly.
+<img alt="completed upper torso assembly" src="../../img/gB_Session03_Complete.jpg" /></p>
+</li>
+</ul>
+<h2 id="next-session-4-assemble-the-head-structure"><a href="../Session04/"><strong>Next -&gt; Session 4:</strong> Assemble the Head Structure</a></h2></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Session07 - Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesturebot-construction-guide">gestureBot Construction Guide</a></li>
+            <li><a href="#session-7-attach-the-arms-and-test-the-servos">Session 7: Attach the Arms and Test the Servos</a></li>
+            <li><a href="#next-session-8-complete-the-head">Next-&gt; Session 8: Complete the Head</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../../img/MARR_logo.png" /> <a href="https://special-giggle-b26bab5f.pages.github.io/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesturebot-construction-guide"><a href="../">gestureBot Construction Guide</a></h1>
+<h2 id="session-7-attach-the-arms-and-test-the-servos"><strong>Session 7:</strong> Attach the Arms and Test the Servos</h2>
+<p>In this session we will 3D-print the hood component (in an alternate color if desired) while we attach the arms to the torso and test the servos using the Robotis Dynamixel Wizard 2.0 application.</p>
+<h3 id="parts">Parts:</h3>
+<ul>
+<li>controller electronics assembly completed in <a href="../img/Session01.md">Session 1</a></li>
+<li>head and torso completed in <a href="../img/Session04.md">Session 4</a></li>
+<li>right arm assembly completed in <a href="../img/Session05.md">Session 5</a></li>
+<li>left arm assembly completed in  <a href="../img/Session06.md">Session 6</a></li>
+<li>(2) 190MM servo cables</li>
+<li>(24) short plastic rivets</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoMountPlate.stl">(2) Servo Mount Plate</a> 3D-printed in Session 4, the servo mount plates support servos' ID:005 and ID:009 (from the arm assemblies) attachment to the upper torso frame.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Base.stl">Base</a> 3D-printed in Session 4, the base supports the entire gestureBot. The tabs on the bottom of the base frame insert into the base to provide a stable platform as well as space to contain the controller electronics and USB3 hub.</li>
+</ul>
+<h3 id="tools">Tools:</h3>
+<ul>
+<li>plastic rivet tool</li>
+</ul>
+<p><img alt="Session07 parts and tools" src="../../img/gB_Session07_PartsTools.jpg" />
+<img alt="USB3 Hub terminal block and servo controller" src="../../img/gB_Session01_Controller_USBHubConnect.jpg" /></p>
+<h3 id="procedure"><strong>Procedure:</strong></h3>
+<h4 id="first-start-3d-printing-the-parts-required-for-future-sessions"><strong>First, start 3D-printing the parts required for future sessions:</strong></h4>
+<ul>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Hood.stl">Hood (use alternative color plastic if desired)</a></li>
+</ul>
+<h4 id="second-attach-the-arms-to-the-torso"><strong>Second, attach the arms to the torso:</strong></h4>
+<ul>
+<li>
+<p>Attach the mount plate to servo ID:005 in the <strong>right</strong> arm assembly using (4) short rivets.
+<img alt="attach mount plate servo5" src="../../img/gB_Session07_MountPlateServo5.jpg" /></p>
+</li>
+<li>
+<p>Attach the mount plate to servo ID:009 in the <strong>left</strong> arm assembly using (4) short rivets.
+<img alt="attach mount plate servo9" src="../../img/gB_Session07_MountPlateServo9.jpg" /></p>
+</li>
+<li>
+<p>Route the cable connecting servo ID:005 and ID:006 through the space between the bottom-rear rivet mount holes of servo ID:005.
+<img alt="route cable servo5" src="../../img/gB_Session07_RouteCableServo5.jpg" /></p>
+</li>
+<li>
+<p>Mount the right arm assembly to the upper torso frame using (8) short rivets.
+<img alt="attach right arm to upper torso" src="../../img/gB_Session07_MountRightArm.jpg" /></p>
+</li>
+<li>
+<p>Route the cable connecting servo ID:009 and ID:010 through the space between the bottom-rear rivet mount holes of servo ID:009.
+<img alt="route cable servo9" src="../../img/gB_Session07_RouteCableServo9.jpg" /></p>
+</li>
+<li>
+<p>Mount the left arm assembly to the upper torso frame using (8) short rivets.
+<img alt="attach left arm to upper torso" src="../../img/gB_Session07_MountLeftArm.jpg" /></p>
+</li>
+<li>
+<p>Connect the (2) 190mm cables to the front-side connectors of servos ID:005 and ID:009.
+<img alt="connect long cables to servo5 and servo9" src="../../img/gB_Session07_ConnectLongCables.jpg" /></p>
+</li>
+<li>
+<p>Route the (2) 190mm cables connected to servos ID:005 and ID:009 along with the 130mm cable connected to servo ID:004 down through the hip cover and the square hole in the top of the base frame.
+<img alt="route long cables through hip cover" src="../../img/gB_Session07_RouteLongCables.jpg" />
+<img alt="route long and short cables through base frame" src="../../img/gB_Session07_RouteCables_BaseFrame.jpg" /></p>
+</li>
+<li>
+<p><strong><em>With the USB3 hub power cable unplugged,</em></strong> insert the cables connected to servo ID:004, ID:005, and ID:009 into the three open connectors on the servo controller PC board.
+<img alt="connect cables to controller" src="../../img/gB_Session07_Connect3CablesController.jpg" /></p>
+</li>
+<li>
+<p>Place the controller electronics and USB3 hub into the base, with the USB terminal block resting in the right-side slot.
+<img alt="place controller and USB hub in base" src="../../img/gB_Session07_PlaceControllerUSBHub_Base.jpg" /></p>
+</li>
+<li>
+<p>Insert the large curved tabs on the bottom of the base frame into the slots on the base, with the open end of the base toward the rear.
+<img alt="insert base frame in base" src="../../img/gB_Session07_InsertBaseFrame_Base.jpg" /></p>
+</li>
+<li>
+<p>Plug the power connector into the USB3 Hub and observe all of the servos flash red LED's.
+<img alt="insert base frame in base" src="../../img/gB_Session07_TorsoArmsHeadStructureComplete_LEDFlash.jpg" /></p>
+</li>
+</ul>
+<h4 id="third-test-the-servos"><strong>Third, test the servos:</strong></h4>
+<ul>
+<li>With the USB3 hub power cable connected, insert the USB3 cable into the PC.</li>
+<li>
+<p>On the PC, launch the Dynamixel Wizard 2.0 application.
+<img alt="launch DMW2" src="../../img/gB_Session07_DMW2_Launch.png" /></p>
+</li>
+<li>
+<p>Select the <strong>Scan</strong> button on the top-level menu and allow the dialog box to complete its scan and close by itself.
+<img alt="DMW2 TopMenu ScanButton" src="../../img/gB_Session07_DMW2_TopMenu_ScanButton.png" /></p>
+</li>
+<li>
+<p>Observe all twelve of the servo ID's listed in the left-side panel.
+<img alt="DMW2 servo list" src="../../img/gB_Session07_DMW2_ServoList.png" /></p>
+</li>
+<li>
+<p>Test control and movement of each servo by selecting them one-by-one in the left-side list, then using the upper-right-side servo UI to turn torque on, move the servo slightly (approximately plus or minus 5 degrees), and then turn torque back off.
+<img alt="DMW2 servo tests" src="../../img/gB_Session07_DMW2_TestServosUI.png" />
+<strong><em>Tip: Be cautious when manually commanding the servos to move.</em></strong> The gestureBot assembly will physically limit the servos' rotation due to body part collisions. If a servo is driven into a collision, it may cause damage to the parts or the servo. As a protective feature, the servos may automatically shutdown in these cases and require a reset by unplugging the USB hub from the computer and then the power cable from the USB hub, waiting 15 seconds, then first plugging the hub power and then the USB connection to the PC back in. Also, <strong><em>do not change the servos from 'Joint' to 'Motor' mode.</em></strong> If driven in Motor mode the servos will wind their connection cables causing damage or automatic shutdown.</p>
+</li>
+</ul>
+<h2 id="next-session-8-complete-the-head"><a href="../Session08/"><strong>Next-&gt; Session 8:</strong> Complete the Head</a></h2></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

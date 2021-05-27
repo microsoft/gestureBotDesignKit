@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../../..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#simple-sample">Simple Sample</a></li>
+        <li class="main "><a href="#software-installation">Software Installation</a></li>
+            <li><a href="#tested-system-software">Tested System Software</a></li>
+            <li><a href="#installation-instructions">Installation Instructions</a></li>
+        <li class="main "><a href="#sample-operations">Sample Operations</a></li>
+            <li><a href="#labanotation-controller-ui">Labanotation Controller UI</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../../../../docs/img/MARR_logo.png" /> <a href="https://special-giggle-b26bab5f.pages.github.io/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="simple-sample">Simple Sample</h1>
+<p>The sample source code in 'Simple.pyproj' demonstrates how to instantiate and run the Labanotation Controller software module by itself.</p>
+<h1 id="software-installation">Software Installation</h1>
+<p>The sample 'Simple' source code depends on a number of open-source Python libraries. This section provides instructions for installing and operating the software.</p>
+<h2 id="tested-system-software">Tested System Software</h2>
+<p>We used the following software versions to test the Gesture Service samples:
+- Windows 10 (Version 2004, 64-bit) <strong>or</strong> Linux (Ubuntu18.04, 64-bit)
+- Microsoft Edge Browser (Version 87.0.664.66, 64-bit)
+- Git client <a href="https://code.visualstudio.com/Download"><em>(Comes with Microsoft Visual Studio Code)</em></a>
+- <a href="https://www.python.org/downloads/release/python-378/">Python 3.7.8</a></p>
+<h3 id="python-modules">Python Modules</h3>
+<ul>
+<li>The following modules are listed in a requirements.txt file for easy installation:</li>
+</ul>
+<pre><code>numpy==1.19.3
+scipy==1.5.2
+tornado==4.5.2
+opencv-python==4.4.0.46
+pyserial==3.4
+msgpack-rpc-python==0.4.1
+gensim==3.8.3
+nltk==3.5
+dynamixel_sdk==3.7.31
+</code></pre>
+
+<h2 id="installation-instructions">Installation Instructions</h2>
+<p>For Windows or Linux, the following instructions will guide you through the installation of code and assets comprising the gestureBot Design Kit as well as dependent external software.</p>
+<p>If not already on your PC, download and run the following installers:
+- Python 3.7.8:
+ <a href="https://www.python.org/downloads/release/python-378/">https://www.python.org/downloads/release/python-378/</a></p>
+<ul>
+<li>PIP:
+<a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a></li>
+</ul>
+<p>From a <a href="C:\WINDOWS\system32\cmd.exe"><strong>cmd.exe</strong></a>, bash, or other terminal shell:
+- Create a folder for the installation in any convenient location and make it the current directory:</p>
+<pre><code>&gt; mkdir [folder path]
+&gt; cd [folder path]]
+</code></pre>
+
+<ul>
+<li>Clone the repository:</li>
+</ul>
+<pre><code>&gt; git clone --recursive https://github.com/microsoft/gestureBotDesignKit
+</code></pre>
+
+<ul>
+<li>Run these commands to download and install required python software modules:</li>
+</ul>
+<p><strong><em>Tip:</em></strong> on some systems, earlier versions of python (such as python 2.7) may already be installed with a need to keep them as they are. In this case, it may be required to set a system variable that creates a path to the new installation with a link such as "python37".</p>
+<pre><code>&gt; python get-pip.py
+&gt; python -m pip install -r requirements.txt
+</code></pre>
+
+<p>The following examples assume the repository was downloaded to a folder:</p>
+<pre><code>c:\Users\robotics\github_repos\gestureBotDesignKit\
+</code></pre>
+
+<p>Following is an example run session preceded by a check to insure the correct version of Python 3.7.8 is invoked:</p>
+<pre><code>C:\Users\robotics&gt;python
+Python 3.7.8 (tags/v3.7.8:4b47a5b6ba, Jun 28 2020, 08:53:46) [MSC v.1916 64 bit (AMD64)] on win32
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; quit()
+&gt;
+&gt; cd \Users\robotics\github_repos\gestureBotDesignKit\src\Samples\Simple
+
+C:\Users\dbaum\source\github_repos\gestureBotDesignKit\src\Samples\Simple&gt;python main.py
+Labanotation Sample: Simple v1.00.0178
+
+Http controller started on http://localhost:8000.
+loaded 'Ges02_balancinghands.total.json': 10 frames. Performance duration: 5.347s
+Ready.
+
+</code></pre>
+
+<h1 id="sample-operations">Sample Operations</h1>
+<p>The user-interface (UI) in this sample can be run in a browser window on the local machine with the localhost URL's provided in each section below.</p>
+<p><strong><em>Tip:</em></strong> If 'localhost' is not a mapped name on the PC, it can be substituted with the PC's local IP address. Also, remote control can be achieved on the local network segment by using the PC's IP address in a browser on a different PC.</p>
+<h2 id="labanotation-controller-ui">Labanotation Controller UI</h2>
+<p><a href="http://localhost:8000">http://localhost:8000</a>
+<img alt="Labanotation Controller UI" src="../../../img/gB_LabanotationController_UI.png" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2021-05-27 00:52:50
+-->

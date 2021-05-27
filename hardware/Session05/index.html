@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Session05 - Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesturebot-construction-guide">gestureBot Construction Guide</a></li>
+            <li><a href="#session-5-assemble-the-right-arm">Session 5: Assemble the Right Arm</a></li>
+            <li><a href="#next-session-6-assemble-the-left-arm">Next-&gt; Session 6: Assemble the Left Arm</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../../img/MARR_logo.png" /> <a href="https://special-giggle-b26bab5f.pages.github.io/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesturebot-construction-guide"><a href="../">gestureBot Construction Guide</a></h1>
+<h2 id="session-5-assemble-the-right-arm"><strong>Session 5:</strong> Assemble the Right Arm</h2>
+<p>In this session we will 3D-print the base component while assembling the gestureBot's right arm.</p>
+<h3 id="parts">Parts:</h3>
+<ul>
+<li>servo labeled ID:005 programmed in Session 2</li>
+<li>(3) 130MM servo cable</li>
+<li>(16) short plastic rivets</li>
+<li>(2) long plastic rivets</li>
+<li>(16) 3mm miniature steel screws</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket.stl">(2) Screw Mount Swing Bracket</a> 3D-printed in Session 4, the swing brackets and servo wheels form a shoulder joint between servos ID:005 and ID:006 and an elbow joint between servos ID:007 and ID:008.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl">(2) Servo Wheel</a> 3D-printed in Session 4, the servo wheels support the swing bracket mounts for servo ID:006 and ID:008.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoMountPlate.stl">(2) Servo Mount Plate</a> 3D-printed in Session 4, the servo mount plates support the servo ID:005 attachment to the upper torso frame and form a lower arm section between servo ID:006 and ID:007.</li>
+</ul>
+<h3 id="tools">Tools:</h3>
+<ul>
+<li>PH0 Phillips screwdriver</li>
+<li>plastic rivet tool</li>
+</ul>
+<p><img alt="Session05 parts and tools" src="../../img/gB_Session05_PartsTools.jpg" /></p>
+<h3 id="procedure"><strong>Procedure:</strong></h3>
+<h4 id="first-start-3d-printing-the-parts-required-for-future-sessions"><strong>First, start 3D-printing the parts required for future sessions:</strong></h4>
+<ul>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Base.stl">Base</a></li>
+</ul>
+<h4 id="second-assemble-the-right-arm"><strong>Second, assemble the right arm:</strong></h4>
+<ul>
+<li>
+<p>Mount a swing bracket to servo ID:005 with (4) 3mm miniature screws, taking care to align the tick-marks on the servo horn, the servo cover, and the swing bracket.
+<img alt="mount right shoulder swing bracket" src="../../img/gB_Session05_MountRightShoulderSwingBracket.jpg" /></p>
+</li>
+<li>
+<p>Attach servo wheel to right shoulder swing bracket by inserting a long rivet through the bracket and into the back of servo ID:006. Do not install the rivet pin to allow the servo wheel to rotate freely.
+<img alt="mount right shoulder servo wheel" src="../../img/gB_Session05_Servo6WheelInstall.jpg" /></p>
+</li>
+<li>
+<p>Mount the servo ID:006 horn to the right shoulder swing bracket with (4) 3mm miniature screws and taking care to align servo horn <strong><em>double tick-marks</em></strong> with the tick-mark on the bracket. Note that in this case the alignment is made with the opposite side of the servo horn.
+<img alt="mount right shoulder swing bracket with screws" src="../../img/gB_Session05_Servo6InstallScrews.jpg" /></p>
+</li>
+<li>
+<p>With (3) short rivets, attach a servo mount plate to the back of servo ID:007 with the mount hole rings oriented length-wise to the servo.
+<img alt="attach servo7 mount plate" src="../../img/gB_Session05_Servo7MountPlate.jpg" /></p>
+</li>
+<li>
+<p>Connect a 130mm cable to the top-side connector of servo ID:006. 
+<img alt="connect cable to top of servo6" src="../../img/gB_Session05_Servo6ConnectCable.jpg" /></p>
+</li>
+<li>
+<p>Attach servo ID:006 to ID:007 using (4) short rivets in the mount plate while routing the cable connected to servo ID:006 through the space between the servo and the mount plate.
+<img alt="attach servo6 to servo7 and route cable through mount plate" src="../../img/gB_Session05_MountServo6Servo7MountPlate_RouteCable.jpg" /></p>
+</li>
+<li>
+<p>Connect cable from servo ID:006 to servo ID:007 on its bottom-side connector.
+<img alt="connect cable to bottom of servo7" src="../../img/gB_Session05_Connect6toServo7.jpg" /></p>
+</li>
+<li>
+<p>Mount the right elbow swing bracket to servo ID:007 with (4) 3mm miniature screws taking care to align the tick-mark on the servo horn with the tick-mark on the servo cover and the bracket.
+<img alt="attach swing bracket to servo7" src="../../img/gB_Session05_MountServo7SwingBracket.jpg" /></p>
+</li>
+<li>
+<p>Attach servo wheel to right elbow swing bracket by inserting a long rivet through the bracket and into the back of servo ID:008. Do not install the rivet pin to allow the servo wheel to rotate freely.
+<img alt="mount right shoulder servo wheel" src="../../img/gB_Session05_Servo8WheelInstall.jpg" /></p>
+</li>
+<li>
+<p>Mount the servo ID:008 horn to the right elbow swing bracket with (4) 3mm miniature screws and taking care to align servo horn <strong><em>double tick-marks</em></strong> with the tick-mark on the bracket. Note that in this case the alignment is made with the opposite side of the servo horn.
+<img alt="mount right elbow swing backet with screws" src="../../img/gB_Session05_Servo8InstallScrews.jpg" /></p>
+</li>
+<li>
+<p>Connect a 130mm cable from the top connector of servo ID:007 to the rear-side connector of servo ID:008.
+<img alt="connect servo7 to servo8" src="../../img/gB_Session05_ConnectServo7toServo8.jpg" /></p>
+</li>
+<li>
+<p>Connect a 130mm cable from the rear-side connector of servo ID:005 to the bottom-side connector of servo ID:006.
+<img alt="connect servo7 to servo8" src="../../img/gB_Session05_ConnectServo5toServo6.jpg" /></p>
+</li>
+</ul>
+<h2 id="next-session-6-assemble-the-left-arm"><a href="../Session06/"><strong>Next-&gt; Session 6:</strong> Assemble the Left Arm</a></h2></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
