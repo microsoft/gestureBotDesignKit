@@ -1,4 +1,4 @@
-## ![logo](../../../../docs/img/MARR_logo.png) [Microsoft Applied Robotics Research Library](https://special-giggle-b26bab5f.pages.github.io/)
+## ![logo](../../../img/MARR_logo.png) [Microsoft Applied Robotics Research Library](https://special-giggle-b26bab5f.pages.github.io/)
 ### Open Source Samples for Service Robotics
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
@@ -103,12 +103,12 @@ The three user-interfaces (UI) in this sample can be run in a browser window on 
 
 ### Labanotation Controller UI
 [http://localhost:8000](http://localhost:8000)
-![Labanotation Controller UI](../../../../docs/img/gB_LabanotationController_UI.png)
+![Labanotation Controller UI](../../../img/gB_LabanotationController_UI.png)
 
 ### Gesture Service UI
 [http://localhost:8002](http://localhost:8002)
-![Gesture Service UI](../../../../docs/img/gB_GestureService_UI.png)
+![Gesture Service UI](../../../img/gB_GestureService_UI.png)
 
 ### gestureBot Controller UI
 [http://localhost:8001](http://localhost:8001)
-![gestureBot Controller UI](../../../../docs/img/gB_gestureBotController_UI.png)
+![gestureBot Controller UI](../../../img/gB_gestureBotController_UI.png)

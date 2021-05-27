@@ -31,7 +31,7 @@ At this point the gestureBot hardware is complete and ready to run the Labanotat
 ```
     self.comPort = "com4"
 ```
-***Tip:*** If needed, the serial port can be looked up in Windows Device Manager as shown at the end of [Session 1](../img/Session01.md).
+***Tip:*** If needed, the serial port can be looked up in Windows Device Manager as shown at the end of [Session 1](Session01.md).
 
 Following is an example run session:
 ```
