@@ -46,7 +46,7 @@ class application(webSocket.HttpServerWrapper):
             httpPort=8000)
 
         #
-        # Create MSRAbot 
+        # Create gestureBot 
         self.gestureBot = gestureBot.gestureBot(self.controller, httpPort=8001, context="gestureBot")
 
         #

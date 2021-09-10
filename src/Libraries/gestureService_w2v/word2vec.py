@@ -25,7 +25,7 @@ class word2vec:
         if (True):
             filepath = os.path.join(os.path.split(os.path.realpath(__file__))[0], 'GoogleNews-vectors-negative300.bin')
         else:
-            ilepath = os.path.join(os.path.split(os.path.realpath(__file__))[0], 'GoogleNews-vectors-negative300.bin.gz')
+            filepath = os.path.join(os.path.split(os.path.realpath(__file__))[0], 'GoogleNews-vectors-negative300.bin.gz')
 
         print("loading '" + filepath + "'...")
 
