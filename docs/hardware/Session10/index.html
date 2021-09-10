@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Session10 - Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesturebot-construction-guide">gestureBot Construction Guide</a></li>
+            <li><a href="#session-10-run-the-labanotation-gesture-applications">Session 10: Run the Labanotation Gesture Applications</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../../img/MARR_logo.png" /> <a href="https://microsoft.github.io/AppliedRoboticsResearchLibrary/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesturebot-construction-guide"><a href="../">gestureBot Construction Guide</a></h1>
+<h2 id="session-10-run-the-labanotation-gesture-applications"><strong>Session 10:</strong> Run the Labanotation Gesture Applications</h2>
+<p>At this point the gestureBot hardware is complete and ready to run the Labanotation Suite software applications. </p>
+<h3 id="parts">Parts:</h3>
+<ul>
+<li>Completed gestureBot</li>
+<li>Windows 10 PC with USB3 port</li>
+</ul>
+<p><img alt="Session10 parts and tools" src="/hardware../img/gB_Session10_PartsTools.jpg" /></p>
+<h3 id="procedure"><strong>Procedure:</strong></h3>
+<h4 id="first-prep-the-pc-to-run-applications-with-python37"><strong>First, prep the PC to run applications with Python3.7:</strong></h4>
+<ul>
+<li>Follow the software installation instructions for either the <a href="/src/Samples/gestureService_w2v/README.md">Gesture Service</a> or (if you are in a hurry) <a href="/src/Samples/gestureBot/README.md">gestureBot</a> sample projects included in this repository and verify that the browser-based user-interface (UI) services run successfully on the Windows 10 PC.</li>
+<li>Plug in the gestureBot's USB3 hub's power supply.</li>
+<li>Connect the gestureBot's USB cable to the PC.</li>
+</ul>
+<h4 id="second-run-a-script-to-set-servo-rotation-limits"><strong>Second, run a script to set servo rotation limits:</strong></h4>
+<ul>
+<li>To protect the gestureBot from being damaged with movement commands that cause collisions or pull cables, we will run the Python code in the sample folder: </li>
+</ul>
+<p>\gestureBotDesignKit\src\Samples\gestureBotSetLimits\</p>
+<ul>
+<li>
+<p>Using Microsoft Visual Code or any text editor, open the file in the repository folder:
+\gestureBotDesignKit\src\Samples\gestureBotSetLimits\main.py</p>
+</li>
+<li>
+<p>In <strong>line 50</strong>, change the value to match the serial port noted earlier for your gestureBot. For example:</p>
+</li>
+</ul>
+<pre><code>    self.comPort = &quot;com4&quot;
+</code></pre>
+
+<p><strong><em>Tip:</em></strong> If needed, the serial port can be looked up in Windows Device Manager as shown at the end of <a href="../Session01/">Session 1</a>.</p>
+<p>Following is an example run session:</p>
+<pre><code>C:\Users\robotics\github_repos\gestureBotDesignKit\src\Samples\gestureBotSetLimits&gt;python main.py
+gestureBot: connecting to port 'com4'...
+ID: 1: setting CW angle limit to -70 (272)
+ID: 1: setting CCW angle limit to 50 (682)
+ID: 2: setting CW angle limit to -91 (201)
+ID: 2: setting CCW angle limit to 91 (821)
+gestureBot: disconnecting from port 'com4'...
+</code></pre>
+
+<p><strong><em>Tip:</em></strong> In the future, if you modify your gestureBot and want to set different safety limits, this code provides an example in the <strong>run()</strong> function starting at <strong>line 270</strong>.</p>
+<h4 id="third-run-the-gesture-service-sample-application-and-connect-it-to-the-gesturebot"><strong>Third, run the Gesture Service sample application and connect it to the gestureBot:</strong></h4>
+<ul>
+<li>Open the URL http://localhost:8001 in the browser.</li>
+</ul>
+<p><img alt="gestureBot Controller UI" src="../../img/gB_gestureBotController_UI.png" /></p>
+<ul>
+<li>
+<p>In the Hardware section of the UI, enter the Port value for your gestureBot and select the Connect button.</p>
+</li>
+<li>
+<p>After connecting, the physical gestureBot will move to the current pose and thereafter track the on-screen virtual gestureBot movements until it is disconnected. </p>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

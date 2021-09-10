@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Modern Python Coding Guidelines - Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#modern-python-coding-guidelines">Modern Python Coding Guidelines</a></li>
+        <li class="main "><a href="#modern-c-coding-guidelines">Modern C++ Coding Guidelines</a></li>
+            <li><a href="#quick-note">Quick Note</a></li>
+            <li><a href="#naming-conventions">Naming Conventions</a></li>
+            <li><a href="#header-files">Header Files</a></li>
+            <li><a href="#bracketing">Bracketing</a></li>
+            <li><a href="#const-and-references">Const and References</a></li>
+            <li><a href="#overriding">Overriding</a></li>
+            <li><a href="#pointers">Pointers</a></li>
+            <li><a href="#this-is-too-short-ye">This is Too Short, ye?</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="modern-python-coding-guidelines">Modern Python Coding Guidelines</h1>
+<ul>
+<li>Runs under Python3</li>
+<li>3-space indents</li>
+</ul>
+<h1 id="modern-c-coding-guidelines">Modern C++ Coding Guidelines</h1>
+<p>We are using Modern C++11. Smart pointers, Lambdas, and C++11 multithreading primitives are your friend.</p>
+<h2 id="quick-note">Quick Note</h2>
+<p>The great thing about "standards" is that there are many to chose from: <a href="https://isocpp.org/wiki/faq/coding-standards">ISO</a>, <a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md">Sutter &amp; Stroustrup</a>, <a href="http://wiki.ros.org/CppStyleGuide">ROS</a>, <a href="https://www.kernel.org/doc/Documentation/CodingStyle">LINUX</a>, <a href="https://google.github.io/styleguide/cppguide.html">Google's</a>, <a href="https://msdn.microsoft.com/en-us/library/888a6zcz.aspx">Microsoft's</a>, <a href="http://atlas-computing.web.cern.ch/atlas-computing/projects/qa/draft_guidelines.html">CERN's</a>, <a href="https://gcc.gnu.org/wiki/CppConventions">GCC's</a>, <a href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0475c/CJAJAJCJ.html">ARM's</a>, <a href="http://llvm.org/docs/CodingStandards.html">LLVM's</a> and probably 
+thousands of others. Unfortunately most of these can't even agree on something as basic as how to name a class or a constant. This is probably due to the fact that these standards often carry lots of  legacy issues due to supporting existing code bases. The intention behind this document is to create guidance that remains as close to ISO, Sutter &amp; Stroustrup and ROS while resolving as many conflicts, disadvantages and inconsistencies as possible among them.</p>
+<h2 id="naming-conventions">Naming Conventions</h2>
+<p>Avoid using any sort of Hungarian notation on names and "_ptr" on pointers.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Code Element</strong></th>
+<th><strong>Style</strong></th>
+<th><strong>Comment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Namespace</td>
+<td>under_scored</td>
+<td>Differentiate from class names</td>
+</tr>
+<tr>
+<td>Class name</td>
+<td>CamelCase</td>
+<td>To differentiate from STL types which ISO recommends (do not use "C" or "T" prefixes)</td>
+</tr>
+<tr>
+<td>Function name</td>
+<td>camelCase</td>
+<td>Lower case start is almost universal except for .Net world</td>
+</tr>
+<tr>
+<td>Parameters/Locals</td>
+<td>under_scored</td>
+<td>Vast majority of standards recommends this because _ is more readable to C++ crowd (although not much to Java/.Net crowd)</td>
+</tr>
+<tr>
+<td>Member variables</td>
+<td>under_scored_with_</td>
+<td>The prefix _ is heavily discouraged as ISO has rules around reserving _identifiers, so we recommend suffix instead</td>
+</tr>
+<tr>
+<td>Enums and its members</td>
+<td>CamelCase</td>
+<td>Most except very old standards agree with this one</td>
+</tr>
+<tr>
+<td>Globals</td>
+<td>g_under_scored</td>
+<td>You shouldn't have these in first place!</td>
+</tr>
+<tr>
+<td>Constants</td>
+<td>UPPER_CASE</td>
+<td>Very contentious and we just have to pick one here, unless if is a private constant in class or method, then use naming for Members or Locals</td>
+</tr>
+<tr>
+<td>File names</td>
+<td>Match case of class name in file</td>
+<td>Lot of pro and cons either way but this removes inconsistency in auto generated code (important for ROS)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="header-files">Header Files</h2>
+<p>Use a namespace qualified #ifdef to protect against multiple inclusion:</p>
+<pre><code>#ifndef msr_airsim_MyHeader_hpp
+#define msr_airsim_MyHeader_hpp
+
+//--your code
+
+#endif
+</code></pre>
+
+<p>The reason we don't use #pragma once is because it's not supported if same header file exists at multiple places (which might be possible under ROS build system!).</p>
+<h2 id="bracketing">Bracketing</h2>
+<p>Inside function or method body place curly bracket on same line. 
+Outside that the Namespace, Class and methods levels use separate line.
+This is called <a href="https://en.wikipedia.org/wiki/Indent_style#K.26R_style">K&amp;R style</a> and its variants are widely used in C++ vs other styles which are more popular in other languages. 
+Notice that curlies are not required if you have single statement, but complex statements are easier to keep correct with the braces.</p>
+<pre><code>int main(int argc, char* argv[])
+{
+     while (x == y) {
+        f0();
+        if (cont()) {
+            f1();
+        } else {
+            f2();
+            f3();
+        }
+        if (x &gt; 100)
+            break;
+    }
+}
+</code></pre>
+
+<h2 id="const-and-references">Const and References</h2>
+<p>Religiously review all non-scalar parameters you declare to be candidate for const and references. If you are coming from languages such as C#/Java/Python,
+the most often mistake you would make is to pass parameters by value instead of <code>const T&amp;;</code> Especially most of the strings, vectors and maps you want to 
+pass as <code>const T&amp;;</code> (if they are readonly) or <code>T&amp;</code> (if they are writable). Also add <code>const</code> suffix to methods as much as possible.</p>
+<h2 id="overriding">Overriding</h2>
+<p>When overriding virtual method, use override suffix.</p>
+<h2 id="pointers">Pointers</h2>
+<p>This is really about memory management.  A simulator has much performance critical code, so we try and avoid overloading the memory manager
+with lots of calls to new/delete.  We also want to avoid too much copying of things on the stack, so we pass things by reference when ever possible.
+But when the object really needs to live longer than the call stack you often need to allocate that object on
+the heap, and so you have a pointer.  Now, if management of the lifetime of that object is going to be tricky we recommend using 
+<a href="https://cppstyle.wordpress.com/c11-smart-pointers/">C++ 11 smart pointers</a>. 
+But smart pointers do have a cost, so don’t use them blindly everywhere.  For private code 
+where performance is paramount, raw pointers can be used.  Raw pointers are also often needed when interfacing with legacy systems
+that only accept pointer types, for example, sockets API.  But we try to wrap those legacy interfaces as
+much as possible and avoid that style of programming from leaking into the larger code base.  </p>
+<p>Religiously check if you can use const everywhere, for example, <code>const float * const xP</code>. Avoid using prefix or suffix to indicate pointer types in variable names, i.e. use <code>my_obj</code> instead of <code>myobj_ptr</code> except in cases where it might make sense to differentiate variables better, for example, <code>int mynum = 5; int* mynum_ptr = mynum;</code></p>
+<h2 id="this-is-too-short-ye">This is Too Short, ye?</h2>
+<p>Yes, and it's on purpose because no one likes to read 200 page coding guidelines. The goal here is to cover only most significant things which are 
+already not covered by <a href="http://shitalshah.com/p/how-to-enable-and-use-gcc-strict-mode-compilation/">strict mode compilation in GCC</a> and Level 4 
+warnings-as-errors in VC++. If you had like to know about how to write better code in C++, please see <a href="https://herbsutter.com/gotw/">GotW</a> 
+and <a href="http://shop.oreilly.com/product/0636920033707.do">Effective Modern C++</a> book.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

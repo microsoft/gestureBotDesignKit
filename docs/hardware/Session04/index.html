@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Session04 - Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesturebot-construction-guide">gestureBot Construction Guide</a></li>
+            <li><a href="#session-4-assemble-the-head-structure">Session 4: Assemble the Head Structure</a></li>
+            <li><a href="#next-session-5-assemble-the-right-arm">Next-&gt; Session 5: Assemble the Right Arm</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../../img/MARR_logo.png" /> <a href="https://microsoft.github.io/AppliedRoboticsResearchLibrary/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesturebot-construction-guide"><a href="../">gestureBot Construction Guide</a></h1>
+<h2 id="session-4-assemble-the-head-structure"><strong>Session 4:</strong> Assemble the Head Structure</h2>
+<p>In this session we will 3D-print the components for both arms while assembling the structural components of the gestureBot's head.</p>
+<h3 id="parts">Parts:</h3>
+<ul>
+<li>servo labeled ID:001 programmed in Session 2</li>
+<li>130MM servo cable</li>
+<li>(22) short plastic rivets</li>
+<li>(5) long plastic rivets</li>
+<li>(8) 3mm miniature steel screws</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Neck.stl">Neck</a> 3D-printed in Session 3, the neck is connected to servo ID:002 that rotates horizontally allowing the gestureBot to turn its head and servo ID:001.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket_Head.stl">Head Swing Bracket</a> 3D-printed in Session 3, the head swing bracket and servo wheel are attached to servo ID:001 that rotates vertically allowing the gestureBot to look up and down.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl">Servo Wheel</a> 3D-printed in Session 3, the servo wheel supports servo ID:001 in the head swing bracket.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_HeadFrame.stl">Head Frame</a> 3D-printed in Session 3, the head frame attaches to the head swing bracket and provides a mount point for the speaker and face components.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Face.stl">Face</a> 3D-printed in Session 3, the face connects to the head frame and provides a mount point for the speaker and the eyes.</li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_Speaker.stl">Speaker</a> 3D-printed in Session 3, the speaker is a mounting component intended as a placeholder for a speakspeaker modification in the future.</li>
+</ul>
+<h3 id="tools">Tools:</h3>
+<ul>
+<li>PH0 Phillips screwdriver</li>
+<li>plastic rivet tool</li>
+</ul>
+<p><img alt="Session04 parts and tools" src="../../img/gB_Session04_PartsTools.jpg" /></p>
+<h3 id="procedure"><strong>Procedure:</strong></h3>
+<h4 id="first-start-3d-printing-the-parts-required-for-both-arm-assemblies"><strong>First, start 3D-printing the parts required for both arm assemblies:</strong></h4>
+<ul>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_SwingBracket.stl">(4) Screw Mount Swing Bracket</a></li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoWheel.stl">(4) Servo Wheel</a></li>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_print/gb_ServoMountPlate.stl">(6) Servo Mount Plate</a></li>
+</ul>
+<h4 id="second-assemble-the-head-structure"><strong>Second, assemble the head structure:</strong></h4>
+<ul>
+<li>
+<p>Mount the neck to the horn () of servo ID:002, taking care to align the tick-marks of the servo cover, the horn, and the neck component.
+<img alt="mount neck" src="../../img/gB_Session04_MountNeck.jpg" /></p>
+</li>
+<li>
+<p>Route the 130mm cable from servo ID:002 through the holes in the neck.
+<img alt="route neck cable" src="../../img/gB_Session04_RouteNeckCable.jpg" /></p>
+</li>
+<li>
+<p>Connect the 130mm cable to servo ID:001.
+<img alt="connect neck cable" src="../../img/gB_Session04_ConnectServo1toServo2.jpg" /></p>
+</li>
+<li>
+<p>Mount servo ID:001 to neck with (4) rivets.
+<img alt="mount head servo" src="../../img/gB_Session04_MountServo1Neck.jpg" /></p>
+</li>
+<li>
+<p>Mount the speaker component and head frame to face with (4) M1 10mm machine screws.
+<img alt="mount speaker to headframe" src="../../img/gB_Session04_MountSpeakertoHeadFrame.jpg" />
+<img alt="mount headframe to face" src="../../img/gB_Session04_MountHeadFrametoFace.jpg" /></p>
+</li>
+<li>
+<p>Attach servo wheel to head swing bracket with long rivet. Do not install the rivet pin to allow the servo wheel to rotate freely.
+<img alt="install headbracket servo wheel" src="../../img/gB_Session04_Servo1WheelInstall.jpg" /></p>
+</li>
+<li>
+<p>Install servo ID:001 to head swing bracket taking care to align servo horn tick-mark with tick-mark on bracket.
+<img alt="install headbracket servo screws" src="../../img/gB_Session04_Servo1Install_Screws.jpg" /></p>
+</li>
+<li>
+<p>Mount face frame to head swing bracket with (4) long rivets. Installing the rivet pins is not recommended to accomodate future modifications and disassembly.
+<img alt="mount face frame to head swing bracket" src="../../img/gB_Session04_MountFaceFrameHeadSwingBracket.jpg" /></p>
+</li>
+<li>
+<p>Inspect the gestureBot torso and head structure assemblies.
+<img alt="torso and head structures completed" src="../../img/gB_Session04_HeadStructureTorsoComplete.jpg" /></p>
+</li>
+</ul>
+<h2 id="next-session-5-assemble-the-right-arm"><a href="../Session05/"><strong>Next-&gt; Session 5:</strong> Assemble the Right Arm</a></h2></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

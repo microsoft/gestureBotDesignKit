@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gesture Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" />
+    <link rel="Stylesheet" type="text/css" href="main.css" />
+
+    <script>
+        var dev_version = '' + Math.floor(Math.random() * 100000);
+        var js_files = ['controls', 'app'];
+
+        for (var i = 0; i < js_files.length; i++) {
+            document.write('<script src="./js/' + js_files[i] + '.js?rand=' + dev_version + '"\><\/script>');
+        }
+    </script>
+
+    <style>
+    </style>
+</head>
+
+<body style="touch-action: none;" onload="onBodyLoad()">
+    <table style="border: none">
+        <tr>
+            <td width="64px"><img src="./images/Logo_RobotHandshake.png" alt="Microsoft Applied Robotics Research logo" width="64px" /></td>
+            <td align="left">
+                <div>
+                    <div style="font-size: 1.8em; font-family: 'Open Sans'; font-weight: bold; margin-bottom: -0.3em">Microsoft Applied Robotics Research Library</div><br />
+                    <div style="font-size: 1.5em; font-family: 'Open Sans'; font-weight: normal; margin-top: -0.3em"><a href="https://github.com/microsoft/LabanotationSuite">Labanotation Suite</a>: Gesture Service</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <div style="border: none">
+        <div style="float: left;" align="left">
+            <!--   ----------------------------------------  -->
+            <!--   misc controls                             -->
+            <!--   ----------------------------------------  -->
+            <fieldset>
+                <legend>Input</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <textarea name="txtInput" id="txtInput" style="width:480px; height:150px;">Come and visit us some day!</textarea><br />
+                            <button type="button" id="btnSend">Send</button>
+                        </td>
+                        <td align="center" valign="top">
+                            <p style="margin: 2px;"><button type="button" id="btnSample1">Sample 01</button></p>
+                            <p style="margin: 2px;"><button type="button" id="btnSample2">Sample 02</button></p>
+                            <p style="margin: 2px;"><button type="button" id="btnSample3">Sample 03</button></p>
+                            <p style="margin: 2px;"><button type="button" id="btnSample4">Sample 04</button></p>
+                            <p style="margin: 2px;"><button type="button" id="btnSample5">Sample 05</button></p>
+                            <p style="margin: 2px;"><button type="button" id="btnSample6">Sample 06</button></p>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <!--   ----------------------------------------  -->
+            <!--   TTS                             -->
+            <!--   ----------------------------------------  -->
+            <fieldset>
+                <legend>Speech Synthesis</legend>
+                <div id="ttsPhrase"> </div>
+            </fieldset>
+            <!--   ----------------------------------------  -->
+            <!--   status / log window                       -->
+            <!--   ----------------------------------------  -->
+            <fieldset style="background: #e8e8e8;">
+                <legend>Status</legend>
+                <div id="lblStatus" style="width:768px; height: 200px; overflow-y: auto; background: #e8e8e8; padding: 0px;"></div>
+            </fieldset>
+            <!--   ----------------------------------------  -->
+            <!--   gesture library                           -->
+            <!--   ----------------------------------------  -->
+            <fieldset>
+                <legend><label id="lblGestureLibrary">&nbsp;<input type="checkbox" id="chkGestureLibrary" />&nbsp;Gesture Library</label></legend>
+                <table id="tblGestureLibrary"></table>
+            </fieldset>
+        </div>
+    </div>
+
+    <script>
+        //--------------------------------------------------------------------------------------------
+        function onBodyLoad()
+        {
+            _app = new App();
+            if (_app) {
+                _app.initialize();
+            }
+        }
+        //--------------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>

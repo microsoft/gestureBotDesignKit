@@ -1,0 +1,58 @@
+[
+  {
+    "time": 0.0,
+    "head": {
+      "dur": 0.0,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.0,
+      "dir": "right",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.0,
+      "dir": "left forward",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.0,
+      "dir": "left",
+      "lvl": "low"
+    },
+    "lwrist": {
+      "dur": 0.0,
+      "dir": "right forward",
+      "lvl": "low"
+    }
+  },
+  {
+    "time": 0.0,
+    "head": {
+      "dur": 0.05,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.05,
+      "dir": "right forward",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.05,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.05,
+      "dir": "left forward",
+      "lvl": "low"
+    },
+    "lwrist": {
+      "dur": 0.05,
+      "dir": "place",
+      "lvl": "low"
+    }
+  }
+]

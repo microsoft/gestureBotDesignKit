@@ -1,0 +1,9 @@
+numpy==1.19.3
+scipy==1.5.2
+tornado
+opencv-python==4.4.0.46
+pyserial==3.4
+msgpack-rpc-python==0.4.1
+gensim==3.8.3
+nltk==3.5
+dynamixel_sdk==3.7.31

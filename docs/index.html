@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesturebot-design-kit">gestureBot Design Kit</a></li>
+            <li><a href="#what-is-the-gesturebot-and-who-might-be-interested-in-using-this-kit">What is the gestureBot and who might be interested in using this kit?</a></li>
+        <li class="main "><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#system-diagram">System Diagram</a></li>
+            <li><a href="#system-modules">System Modules:</a></li>
+        <li class="main "><a href="#install-build-and-run">Install, Build and Run</a></li>
+        <li class="main "><a href="#contributing">Contributing</a></li>
+            <li><a href="#checklist">Checklist</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#citation">Citation</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="img/MARR_logo.png" /> <a href="https://microsoft.github.io/AppliedRoboticsResearchLibrary/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesturebot-design-kit">gestureBot Design Kit</h1>
+<p>Welcome! This gestureBot Design Kit repository  contains all the information needed to build both a virtual and physical desktop companion robot. Along with other tools in the Labanotation Suite, the gestureBot can be used to create and edit gestures documented in the Labanotation format and see them performed by a robot.  </p>
+<p>A Windows 10 PC is required to run the software and the virtual robot. The physical robot can be built using a desktop 3D-printer and about <strong>$350(USD)</strong> in electronic servos and parts.</p>
+<p>The kit contains a browser-based simulated robot with control software based on the <a href="https://www.robotis.us/dynamixel-xl-320/">Robotis XL</a> series of servo motors. To construct a physical robot, it provides models for 3D-printable body-parts, a parts-list and purchase links for electronic components, and step-by-step assembly instructions. No soldering is required, but some manual skill is needed to mate small electronic connectors, manipulate small plastic rivets, and install miniature metal screws to assemble the body components.</p>
+<p><img alt="Browser Model Wave" src="img/gB_BrowserModel_Wave.png" /></p>
+<h2 id="what-is-the-gesturebot-and-who-might-be-interested-in-using-this-kit">What is the gestureBot and who might be interested in using this kit?</h2>
+<p>The gestureBot is a semi-humanoid service-robot capable of mimicking human gestures. Its purpose is to support research and education in the field of <strong><em>Human-Robot-Interaction (HRI)</em></strong>. Its function is to physically and virtually render gestures stored in a digital Labanotation format. The designation "semi-humanoid" means that it has some but not all of the limbs and joints of a human form. The designation <strong>"service-robot"</strong> refers to a requirement that is designed to safely operate directly with humans, as opposed to an <strong>"industrial-robot"</strong> that usually repeats tasks within a cordoned-off safety zone. The gestureBot was adapted from a project originally created by interns working for Microsoft Research Asia. We've built on their work and put together this design kit to help students learn with a fun hand's-on project that provides exposure to key technologies used in service-robotics. Researchers in the field of HRI can use the kit to support experimentation in the use of gestures to enhance robot-to-human comunication.</p>
+<p>No matter where your interest lies, we hope you find the gestureBot Design Kit a fun and easy way to work and learn in the field of robotics.</p>
+<h1 id="how-it-works">How It Works</h1>
+<h2 id="system-diagram">System Diagram</h2>
+<p><img alt="gestureBot System Diagram" src="img/gB_RobotGestureSystem_Diagram.png" /></p>
+<h2 id="system-modules">System Modules:</h2>
+<h3 id="gesture-service"><strong>Gesture Service</strong></h3>
+<h4 id="labanotation-controller"><strong>Labanotation Controller</strong></h4>
+<p>The Labanotation Controller reads .json files containing gestures described in Labanotation format, which are recordings of human gestural movements reduced to significant keyframes consisting of sequenced joint position and movement timing goals. Gesture selection and loading, as well as joint positional movements and their durations contained in the gestures, are requested by and sent to the gestureBot Controller module. The keyframes can also be transmitted under the control of simple play/pause commands and a scrubbing timeline with a browser-based UI available on <strong>http port 8000</strong>.</p>
+<h4 id="gesture-library"><strong>Gesture Library</strong></h4>
+<p>The <a href="src/Labanotation/"><strong>Gesture Library</strong></a> is a database of gesture-concept pairs expressed in Labanotation format and stored as .json files. The data is directly accessed by the Gesture Engine.  The library includes a complete listing of the sample database including a video clip of each gesture performed by the gestureBot.</p>
+<h4 id="gesture-engine"><strong>Gesture Engine</strong></h4>
+<p>For humanoid robot performance, the Gesture Engine contains a software module constructed with Python and Google's neural network <a href="https://code.google.com/archive/p/word2vec/#!"><strong>word2vec</strong></a>. It receives text phrases from the Labanotation Controller as input and returns corresponding gestures. Sample text phrases and gesture-concept pairs contained in the Gesture Library can be previewed by the system with a browser-based UI available on <strong>http port 8002</strong>.</p>
+<h3 id="gesturebot-controller"><strong>gestureBot Controller</strong></h3>
+<p>The gestureBot Controller requests from the Labanotation Controller gestures to be loaded and played. Optionally, it will interpolate and insert interstitial keyframes between Labanotation keyframes in a gesture at a selectable sampling rate. It transforms goal positions and times contained in the keyframes into joint servo commands calculated using information specific to the the gestureBot's physical characteristics. It animates both the real and models of the robot using the servo commands and a library of virtual model assets. Finally, it provides a browser-based user interface on <strong>http port 8001</strong> for:
+*   Selecting a Gesture-Concept .json input file for rendering
+*   Optionally setting a sample rate for interstitial keyframe extrapolations between Labanotation keyframes
+*   Optionally showing keyframe goal positions with "bone segments" within the browser-hosted model
+*   Optionally hide cover components in the browser-hosted model
+*   Direct override control for individual servos in the gestureBot
+*   Previewing a gesture or movement in a simple simulator
+*   Reporting application status with console messages</p>
+<h3 id="real-and-simulated-gesturebots"><strong>Real and Simulated gestureBots</strong></h3>
+<p>Both physical gestureBots and virtual models hosted in a browser connect to the gestureBot controller and receive movement commands as servo-control packets. The packets adhere to the <a href="https://emanual.robotis.com/docs/en/dxl/x/xl320/">Robotis Dynamixel 2.0 Protocol</a>. A packet is sent for each Labanotation and interstitial keyframe transmitted by the gestureBot Controller and contains individual goal positions and movement durations for each servo in the gestureBot.</p>
+<h1 id="install-build-and-run">Install, Build and Run</h1>
+<ul>
+<li><a href="src/Samples/gestureService_w2v/">Software Installation Instructions </a> for the controller applications</li>
+<li><a href="hardware/">Step-by-Step Instructions </a> for constructing a physical gestureBot</li>
+</ul>
+<h1 id="contributing">Contributing</h1>
+<p>We think the gestureBot can be made to do much more than render gestures and we hope you will help it evolve! We have designed the hardware and software to be easy to understand and modify.
+- Please read our <a href="coding_guidelines/">short and sweet coding guidelines</a>.
+- For big changes such as adding new feature or refactoring, <a href="https://github.com/Microsoft/gestureBotDesignKit/issues">file an issue first</a>.
+- Use our <a href="dev_workflow/">recommended development workflow</a> to make changes and test it.
+- Use <a href="https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/">usual steps</a> to make contributions just like other GitHub projects. If you are not familiar with Git Branch-Rebase-Merge workflow, please <a href="http://shitalshah.com/p/git-workflow-branch-rebase-squash-merge/">read this first</a>.</p>
+<h2 id="checklist">Checklist</h2>
+<ul>
+<li>Use same style and formatting as rest of code even if it's not your preferred one.</li>
+<li>Change any documentation that goes with code changes.</li>
+<li>Do not include OS specific header files or new 3rd party dependencies.</li>
+<li>Keep your pull request small, ideally under 10 files.</li>
+<li>Don't don't include large binary files.</li>
+<li>When adding new includes, make sure the dependency is absolutely necessary.</li>
+<li>Rebase your branch frequently with master (once every 2-3 days is ideal).</li>
+<li>Make sure your code compiles on Windows, Linux and OSX.</li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<ul>
+<li>
+<p><strong>Q</strong> <em>Who should I contact regarding this repository?</em></p>
+</li>
+<li>
+<p><strong>A</strong> Please create a Github issue or email <a href="mailto:robosupp@microsoft.com">robosupp@microsoft.com</a> with any questions or feedback.</p>
+</li>
+<li>
+<p><strong>Q</strong> <em>How challenging is this project for children?</em></p>
+</li>
+<li>
+<p><strong>A</strong> We think it depends on the child and how much support they receive!  We'd love to attract kids who love Minecraft and/or Legos, but we've shaped this project to be easily accessible to high-school and college STEM faculty looking for affordable lab projects, academic HRI researchers, and casual hobbyists.</p>
+</li>
+<li>
+<p><strong>Q</strong> <em>How does this project relate to Artificial Intelligence (AI)?</em></p>
+</li>
+<li>
+<p><strong>A</strong> Physics-based simulation of real robots in virtual environments opens the door for the use of AI "brain" training using Reinforcement Learning tool-chains such as <a href="https://bons.ai">Microsoft Bonsai</a>.</p>
+</li>
+</ul>
+<h2 id="citation">Citation</h2>
+<p>If you want to cite this work, please use the following bibtex code</p>
+<pre><code>@Article{Ikeuchi2018,
+author=&quot;Ikeuchi, Katsushi
+and Ma, Zhaoyuan
+and Yan, Zengqiang
+and Kudoh, Shunsuke
+and Nakamura, Minako&quot;,
+title=&quot;Describing Upper-Body Motions Based on Labanotation for Learning-from-Observation Robots&quot;,
+journal=&quot;International Journal of Computer Vision&quot;,
+year=&quot;2018&quot;,
+month=&quot;Dec&quot;,
+day=&quot;01&quot;,
+volume=&quot;126&quot;,
+number=&quot;12&quot;,
+pages=&quot;1415--1429&quot;,
+issn=&quot;1573-1405&quot;,
+doi=&quot;10.1007/s11263-018-1123-1&quot;,
+url=&quot;https://doi.org/10.1007/s11263-018-1123-1&quot;
+}
+</code></pre>
+
+<p>If you want to learn more about creating good readme files then refer the following <a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops">guidelines</a>. You can also seek inspiration from the below readme files:
+- <a href="https://github.com/aspnet/Home">ASP.NET Core</a>
+- <a href="https://github.com/Microsoft/vscode">Visual Studio Code</a>
+- <a href="https://github.com/Microsoft/ChakraCore">Chakra Core</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2021-09-10 04:51:00
+-->

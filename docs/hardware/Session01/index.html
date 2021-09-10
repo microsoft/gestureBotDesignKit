@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Session01 - Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesturebot-construction-guide">gestureBot Construction Guide</a></li>
+            <li><a href="#session-1-set-up-the-servo-controller-electronics">Session 1: Set Up the Servo Controller Electronics</a></li>
+            <li><a href="#next-session-2-communicate-with-the-servos">Next -&gt; Session 2 - Communicate with the Servos</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../../img/MARR_logo.png" /> <a href="https://microsoft.github.io/AppliedRoboticsResearchLibrary/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesturebot-construction-guide"><a href="../">gestureBot Construction Guide</a></h1>
+<h2 id="session-1-set-up-the-servo-controller-electronics"><strong>Session 1:</strong> Set Up the Servo Controller Electronics</h2>
+<p>In this first session we will begin the process of 3D-printing robot plastic parts starting with the base frame which will be used in Session 2. Then, we will connect the servo controller to the powered USB3 Hub and a single servo motor.</p>
+<h3 id="parts">Parts:</h3>
+<ul>
+<li>(2) servos and their included 130mm cables</li>
+<li>USB Terminal Block</li>
+<li>USB3 Hub with Power Supply</li>
+<li>Servo Controller</li>
+</ul>
+<h3 id="tools">Tools:</h3>
+<ul>
+<li>wire strippers/cutters</li>
+<li>2mm screwdriver</li>
+</ul>
+<p><img alt="Session01 parts and tools" src="../../img/gB_Session01_PartsTools.jpg" /></p>
+<h3 id="procedure"><strong>Procedure:</strong></h3>
+<h4 id="first-start-3d-printing-the-parts-required-for-the-next-session"><strong>First, start 3D-printing the parts required for the next session:</strong></h4>
+<ul>
+<li><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl">Base Frame</a></li>
+</ul>
+<h4 id="second-connect-the-controller-and-terminal-block-to-the-usb-hub"><strong>Second, connect the controller and Terminal Block to the USB Hub:</strong></h4>
+<ul>
+<li>
+<p>From two servo packages, remove the short connection cables and servos then set one servo aside.
+<img alt="2 short cables and servos" src="../../img/gB_Session01_ShortCables_Servos.jpg" /></p>
+</li>
+<li>
+<p>Using the wire strippers/cutters, cut the plastic connector off of one of the short connection cables.
+<img alt="cut short cable connector" src="../../img/gB_Session01_cut_short_cable.jpg" /></p>
+</li>
+<li>
+<p>Cut the Pin3 wire completely off the remaining connector and save it to use as a ground jumper wire.
+<img alt="ground wire cutting" src="../../img/gB_Session01_GroundWire_Cut.jpg" />
+<strong><em>Tip:</em></strong> Double check you are cutting the correct wire!</p>
+</li>
+<li>
+<p>Using the wire stripper's stranded 22-gauge slot, remove approximately 3mm of the insulation from each end of the ground jumper wire and the remaining two ends of the connector cable.
+<img alt="ground wire end stripping" src="../../img/gB_Session01_GroundWire_Strip.jpg" /></p>
+</li>
+<li>
+<p>Using your fingers, twist the wire ends so that the strands hold together.
+<img alt="jumper cable preparation" src="../../img/gB_Session01_JumperCable_Prep.jpg" />
+<img alt="ground wire preparation" src="../../img/gB_Session01_GroundWire_Prep.jpg" /></p>
+</li>
+<li>
+<p>Using the 2mm screwdriver, loosen the screw-clamps on the USB terminal block marked '<strong>S</strong>', '<strong>-</strong>', and '<strong>+</strong>'.
+<img alt="USB terminal block preparation" src="../../img/gB_Session01_USBTerminalBlock_Prep.jpg" />
+<img alt="USB terminal block preparation end view" src="../../img/gB_Session01_USBTerminalBlock_PrepEnd.jpg" /></p>
+</li>
+<li>
+<p>Insert one end of the prepared jumper wire into the USB terminal block's screw clamp marked "<strong>-</strong>" then tighten with the screw driver.
+<img alt="USB terminal block pull-test" src="../../img/gB_Session01_USBTerminalBlock_PullTest.jpg" />
+<strong><em>Tip:</em></strong> Make sure the wire is correctly connected by firmly pulling on it and visually checking that it is not slipping out</p>
+</li>
+<li>
+<p>Connect the wires from the short cable to the USB Terminal Block:</p>
+</li>
+<li>
+<p>Insert both the loose end of the prepared wire clamped into '<strong>-</strong>' and the cable wire connected to pin 1 into the wire clamp marked '<strong>S</strong>' then tighten with the screwdriver.</p>
+</li>
+<li>
+<p>Insert the cable wire connected to pin 2 on the connector into the wire clamp marked "<strong>+</strong>" (for positive voltage) and tighten with the screwdriver.
+<img alt="USB terminal block wiring guide" src="../../img/gB_Session01_USBTerminalBlock_WiringGuide.jpg" />
+<strong><em>Tip:</em></strong> the jumper wire ties the negative side of the power provided by USB to chassis ground which reduces electromagnetic noise that may interfere with communications between the controller and the servos.</p>
+</li>
+<li>
+<p>Connect the USB Terminal Block to the Servo Controller with any one of the four three-pin connectors on the controller.
+<img alt="connect servo controller to USB terminal block" src="../../img/gB_Session01_USBTerminalBlock_Connect_ServoController.jpg" /></p>
+</li>
+<li>
+<p>Plug the USB Terminal Block into the USB Hub using the port closest to the hub's link cable. Using the short USB-to-mini cable, connect the servo controller to any of the USB Hub's ports.
+<img alt="plug controller into USB hub" src="../../img/gB_Session01_Controller_USBHubConnect.jpg" /></p>
+</li>
+<li>
+<p>Connect the servo to the servo controller with the remaining 130mm cable. The cable connector must snap into place on either connector on the servo. The other end of the cable can be inserted into any of the three remaining 3-pin connectors on the servo controller PC board. 
+<img alt="plug cable into servo" src="../../img/gB_Session01_Cable_ServoConnect.jpg" />
+<img alt="plug servo into controller" src="../../img/gB_Session01_Servo_ControllerConnect.jpg" />
+<strong><em>Tip:</em></strong> Look closely at the cable connector ends and the receptacles to make sure the pin orientation is correct. If you push hard enough, it is possible to mistakenly insert them backwards. When inserted correctly, they will "snap" into place.</p>
+</li>
+</ul>
+<h4 id="third-power-it-up"><strong>Third, power it up!</strong></h4>
+<ul>
+<li>
+<p>Plug the USB Hub's power supply into an AC receptacle and insert its connector into the USB Hub. Observe a LED inside the servo flash red momentarily and a green LED on the controller turn on when power is applied.
+<img alt="observe servo red light flash" src="../../img/gB_Session01_Servo_PowerLightFlash.jpg" /></p>
+</li>
+<li>
+<p>Plug the USB Hub into your PC, then use Windows to open Device Manager and note which serial port number the servo controller is assigned to (for example: <strong>"COM4"</strong>)
+<img alt="gB_DeviceManager Com Port" src="../../img/gB_Session01_DeviceManager_ComPort.png" /></p>
+</li>
+</ul>
+<h2 id="next-session-2-communicate-with-the-servos"><a href="../Session02/"><strong>Next -&gt; Session 2</strong> - Communicate with the Servos</a></h2></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

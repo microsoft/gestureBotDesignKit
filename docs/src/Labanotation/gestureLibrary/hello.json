@@ -1,0 +1,282 @@
+[
+  {
+    "time": 0.0,
+    "head": {
+      "dur": 0.0,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.0,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.0,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.0,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lwrist": {
+      "dur": 0.0,
+      "dir": "place",
+      "lvl": "low"
+    }
+  },
+  {
+    "time": 0.0,
+    "head": {
+      "dur": 0.05,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.05,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.05,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.05,
+      "dir": "place",
+      "lvl": "high"
+    },
+    "lwrist": {
+      "dur": 0.05,
+      "dir": "place",
+      "lvl": "high"
+    }
+  },
+  {
+    "time": 0.05,
+    "head": {
+      "dur": 0.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "high"
+    },
+    "lwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "high"
+    }
+  },
+  {
+    "time": 0.55,
+    "head": {
+      "dur": 0.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.5,
+      "dir": "left",
+      "lvl": "high"
+    },
+    "lwrist": {
+      "dur": 0.5,
+      "dir": "left",
+      "lvl": "high"
+    }
+  },
+  {
+    "time": 1.05,
+    "head": {
+      "dur": 0.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.5,
+      "dir": "left",
+      "lvl": "high"
+    },
+    "lwrist": {
+      "dur": 0.5,
+      "dir": "left",
+      "lvl": "high"
+    }
+  },
+  {
+    "time": 1.55,
+    "head": {
+      "dur": 0.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "high"
+    },
+    "lwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "high"
+    }
+  },
+  {
+    "time": 2.05,
+    "head": {
+      "dur": 0.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "high"
+    },
+    "lwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "high"
+    }
+  },
+  {
+    "time": 2.55,
+    "head": {
+      "dur": 0.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.5,
+      "dir": "left",
+      "lvl": "high"
+    },
+    "lwrist": {
+      "dur": 0.5,
+      "dir": "left",
+      "lvl": "high"
+    }
+  },
+  {
+    "time": 3.05,
+    "head": {
+      "dur": 0.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.5,
+      "dir": "left",
+      "lvl": "high"
+    },
+    "lwrist": {
+      "dur": 0.5,
+      "dir": "left",
+      "lvl": "high"
+    }
+  },
+  {
+    "time": 3.55,
+    "head": {
+      "dur": 0.5,
+      "dir": "forward",
+      "lvl": "normal"
+    },
+    "relbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "rwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lelbow": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    },
+    "lwrist": {
+      "dur": 0.5,
+      "dir": "place",
+      "lvl": "low"
+    }
+  }
+]

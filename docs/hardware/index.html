@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Microsoft Applied Robotics Research Library: gestureBotDesignKit</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="..">Microsoft Applied Robotics Research Library: gestureBotDesignKit</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#microsoft-applied-robotics-research-library">Microsoft Applied Robotics Research Library</a></li>
+            <li><a href="#open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</a></li>
+        <li class="main "><a href="#gesturebot-construction-guide">gestureBot Construction Guide</a></li>
+        <li class="main "><a href="#before-you-begin">Before you begin...</a></li>
+        <li class="main "><a href="#safety-alert">Safety Alert:</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#parts-list">Parts List</a></li>
+        <li class="main "><a href="#step-by-step-instructions">Step-by-Step Instructions</a></li>
+            <li><a href="#session-1-set-up-the-servo-controller-electronics">Session 1: Set Up the Servo Controller Electronics</a></li>
+            <li><a href="#session-2-configure-the-servos">Session 2: Configure the Servos</a></li>
+            <li><a href="#session-3-assemble-the-torso">Session 3: Assemble the Torso</a></li>
+            <li><a href="#session-4-assemble-the-head-structure">Session 4: Assemble the Head Structure</a></li>
+            <li><a href="#session-5-assemble-the-right-arm">Session 5: Assemble the Right Arm</a></li>
+            <li><a href="#session-6-assemble-the-left-arm">Session 6: Assemble the Left Arm</a></li>
+            <li><a href="#session-7-attach-the-arms-and-test-the-servos">Session 7: Attach the Arms and Test the Servos</a></li>
+            <li><a href="#session-8-complete-the-head">Session 8: Complete the Head</a></li>
+            <li><a href="#session-9-install-the-body-covers">Session 9: Install the Body Covers</a></li>
+            <li><a href="#session-10-run-the-gesture-applications">Session 10: Run the Gesture Applications</a></li>
+        <li class="main "><a href="#a-last-word">A last word...</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="microsoft-applied-robotics-research-library"><img alt="logo" src="../img/MARR_logo.png" /> <a href="https://microsoft.github.io/AppliedRoboticsResearchLibrary/">Microsoft Applied Robotics Research Library</a></h2>
+<h3 id="open-source-samples-for-service-robotics">Open Source Samples for Service Robotics</h3>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>  </p>
+<h1 id="gesturebot-construction-guide">gestureBot Construction Guide</h1>
+<p>The gestureBot is adapted from the <a href="https://www.robotis.us/robotis-mini-intl/"><strong>Mini</strong></a> robot kit from <a href="https://www.robotis.us"><strong>Robotis, Inc</strong></a> and the MSRAbot project created by interns at Microsoft Research Asia.
+The information on this page will guide you through <a href="#purchased-parts"><strong>purchasing</strong></a> and <a href="#3d-printed-parts"><strong>printing</strong></a> parts, as well as <a href="#step-by-step-instructions"><strong>step-by-step assembly</strong></a> of the gestureBot.</p>
+<p><img alt="gestureBot wireframe" src="../img/gB_WireFrame.png" /></p>
+<h1 id="before-you-begin">Before you begin...</h1>
+<p>If you have experience in 3D printing and electronic assembly, we hope that you find this project relatively simple and straight-forward.  Once the parts are in-hand, the time required to complete the project won't be much more than it takes to print the 3D models.</p>
+<p>If you are not experienced in these areas, one of the first things you'll learn is that desktop <strong><em>3D-printers are not a good source of instant gratification!</em></strong>  Even the smallest of the models contained in this kit will take several hours to print, while some of the larger models take more than half a day.  With those time requirements in mind, we broke the procedures down into work sessions that fit along with the 3D print operations. Alternatively, a class of 5-10 students taking on this project might be successful with serial use of a single 3D printer and meeting once-a-week to perform the other assembly tasks.</p>
+<p>An important feature of these instructions is their sequence. Following the steps in the sessions <strong><em>in order</em></strong> is key to preventing the need to disassemble an assembly in order to have access to cable pathways or screw and rivet holes.</p>
+<h1 id="safety-alert"><strong><em>Safety Alert:</em></strong></h1>
+<p>We've found that a key to success in building this and other projects using 3D-printed plastic parts is to <strong><em>know your own strength</em></strong>. Human hands can be more than strong enough to damage or destroy plastic parts, especially when muscle force is amplified by the leverage provided by a tool. For example, gripping a screwdriver with your fingers instead of the palm of your hand will limit the torque force you can apply with your muscles when driving a metal screw into a plastic servo horn (wheel). <strong><em>When applying muscle force with a tool against a plastic part, being aware of where the stationary force from your hand, body, or workbench is pushing back against your tool can avoid suddenly breaking the part and possibly causing injury.</em></strong> It is also helpful to use vision as well as force when tightening a screw. Paying attention to the closing gaps when turning a screw can help avoid stripping threads in the plastic and will make for stronger connections. A famous book that discusses this concept of "mechanic's feel" as well as other challenges in life is <a href="https://hpb.com/products/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values-9780060589462"><strong><em>Zen and the Art of Motorcycle Maintenance: An Inquiry into Values</em></strong></a> by Robert M. Persig.</p>
+<h2 id="requirements">Requirements</h2>
+<p>Here are the physical things you'll need to build and use your gestureBot:</p>
+<h3 id="pc">PC</h3>
+<ul>
+<li>x64 CPU</li>
+<li>Microsoft Windows 10</li>
+<li>USB3 port (USB2 can work in some cases)</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>3D printer (we use an <a href="https://ultimaker.com/3d-printers/ultimaker-3">Ultimaker3</a> with PLA filament)</li>
+<li><a href="https://vetco.net/products/16awg-32awg-wire-stripper-cutter/plat-15005c">Wire Stripper/Cutter</a></li>
+<li><a href="https://vetco.net/products/general-tools-712010-precision-screwdriver-phillips-0">small Phillips screwdriver (PH0)</a></li>
+<li><a href="https://vetco.net/products/">small flat-blade screwdriver (2mm)</a></li>
+<li>Alternative Screwdrivers:<ul>
+<li><a href="https://vetco.net/products/general-tools-spc606-jewelers-screwdriver-set-of-5">5 in 1 Precision Screwdriver</a></li>
+<li><a href="https://vetco.net/products/16-in-1-precision-screwdriver-set">16 in 1 Precision Screwdriver</a></li>
+</ul>
+</li>
+<li>pen and light-colored tape for labeling servo ID's</li>
+</ul>
+<h3 id="optional-but-helpful-tools">Optional but Helpful Tools</h3>
+<ul>
+<li><a href="https://www.robotis.us/tool-stl/">Rivet Tool</a></li>
+<li>needle-nose pliers</li>
+<li><a href="https://vetco.net/products/3-4-round-magnet/son-pm550">Magnet (for easier screw driving)</a></li>
+<li>3mm drill bit, variable speed drill</li>
+<li><a href="https://www.matterhackers.com/articles/tools-of-the-trade-to-make-your-life-as-a-3d-print-master-much-simpler">3D-printing cleanup tools</a>. A swivel deburring tool is especially useful.</li>
+</ul>
+<h2 id="parts-list">Parts List</h2>
+<h3 id="purchased-parts">Purchased Parts</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>ID</strong></th>
+<th align="center"><strong>Qty</strong></th>
+<th align="center"><strong>Name &amp; Purchase Link</strong></th>
+<th align="center"><strong> . </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">P1</td>
+<td align="center">12</td>
+<td align="center"><a href="https://www.robotis.us/dynamixel-xl-320/">Robotis XL-320 Servo Motors (includes short connection cable)</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_XL-320_Servo.jpg" /></td>
+</tr>
+<tr>
+<td align="center">P2</td>
+<td align="center">1</td>
+<td align="center"><a href="https://vetco.net/products/4-port-powered-usb-3-0-hub/vupn615">USB3 Hub with Power Supply</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_USB3Hub.jpg" /></td>
+</tr>
+<tr>
+<td align="center">P3</td>
+<td align="center">1</td>
+<td align="center"><a href="https://www.robotis.us/opencm9-04-c-with-onboard-xl-type-connectors/">Robotis OpenCM9.04c Servo Control Circuit Board</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_ServoController.jpg" /></td>
+</tr>
+<tr>
+<td align="center">P4</td>
+<td align="center">1</td>
+<td align="center"><a href="https://vetco.net/products/usb-a-male-to-screw-terminal-breakout/cv051">USB Terminal Block</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_USBPower.jpg" /></td>
+</tr>
+<tr>
+<td align="center">P5</td>
+<td align="center">1</td>
+<td align="center"><a href="https://vetco.net/products/usb-a-to-micro-usb-90-angle/">Short USB Cable (USB-A to USB-Micro)</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_ShortUSBCable.jpg" /></td>
+</tr>
+<tr>
+<td align="center">P6</td>
+<td align="center">2</td>
+<td align="center"><a href="https://www.robotis.us/robot-cable-3p-xl-190mm-5pcs/">Long (19cm) Servo Connection Cables</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_LongServoCable.jpg" /></td>
+</tr>
+<tr>
+<td align="center">P7</td>
+<td align="center">1</td>
+<td align="center"><a href="https://www.robotis.us/robotis-mini-rivet-set/">6mm Plastic Rivets, (40) short (2-step) and (10) long (3-step)</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_MiniRivetSet.jpg" /></td>
+</tr>
+<tr>
+<td align="center">P7 (alternate)</td>
+<td align="center">1</td>
+<td align="center"><a href="https://www.robotis.us/rivet-set-rs-10/">6mm Plastic Rivets (weaker but lower-cost, variety of colors)</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_PlasticRivetSet.jpg" /></td>
+</tr>
+<tr>
+<td align="center">P8</td>
+<td align="center">1</td>
+<td align="center"><a href="https://www.robotis.us/robotis-mini-screw-set/">Screw Set</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_PowerSignalJumper.jpg" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="3d-printed-parts">3D Printed Parts</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>ID</strong></th>
+<th align="center"><strong>Qty</strong></th>
+<th align="center"><strong>Name &amp; Model Link</strong></th>
+<th align="center"><strong> . </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">M1</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Base.stl">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Base &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_Base.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M2</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BaseFrame.stl">Base Frame</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_BaseFrame.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M3</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BracketCover_RivetSide.stl">Bracket Cover (Rivet Side)</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_BracketCover_RivetSide.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M4</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_BracketCover_ScrewSide.stl">Bracket Cover (Screw Side)</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_BracketCover_ScrewSide.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M5</td>
+<td align="center">2</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Ear.STL">Ear</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_Ear.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M6</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Eyes.STL">Eyes</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_Eyes.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M7</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Face.STL">Face</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_Face.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M8</td>
+<td align="center">2</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Neck.stl">Hand</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_Neck.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M9</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_HeadFrame.stl">Head Frame</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_HeadFrame.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M10</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_HipCover.stl">Hip Cover</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_HipCover.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M11</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Hood.stl">Hood</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_Hood.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M12</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Neck.stl">Neck</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_Neck.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M13</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoCover.stl">Servo Cover</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_ServoCover.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M14</td>
+<td align="center">2</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoMountPlate.stl">Servo Mount Plate</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_ServoMountPlate.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M15</td>
+<td align="center">2</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoSideCover.stl">Servo Side Cover</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_ServoSideCover.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M16</td>
+<td align="center">2</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_ServoWheel.stl">Servo Wheel</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_ServoWheel.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M17</td>
+<td align="center">2</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_Speaker.stl">Speaker</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_Speaker.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M18</td>
+<td align="center">2</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_Head.stl">Head Swing Bracket</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_SwingBracket_Head.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M19</td>
+<td align="center">2</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_Hip.stl">Hip Swing Bracket</a></td>
+<td align="center"><img alt="" src="../img/gestureBo_SwingBracket_Hip.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M20</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_SwingBracket_ScrewMount.stl">Screw-Mount Swing Bracket</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_SwingBracket_ScrewMount.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M21</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoBackCover.stl">Upper Torso Back Cover</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_UpperTorsoBackCover.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M22</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoFrontCover.stl">Upper Torso Front Cover</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_UpperTorsoFrontCover.jpg" /></td>
+</tr>
+<tr>
+<td align="center">M23</td>
+<td align="center">1</td>
+<td align="center"><a href="https://github.com/microsoft/gestureBotDesignKit/blob/main/hardware/3D_Print/gB_UpperTorsoFrame.stl">Upper Torso Frame</a></td>
+<td align="center"><img alt="" src="../img/gB_TableImage_UpperTorsoFrame.jpg" /></td>
+</tr>
+</tbody>
+</table>
+<h1 id="step-by-step-instructions">Step-by-Step Instructions</h1>
+<p>The 3D-printed parts are used to organize this project's task steps into sessions. 3D printing a part usually requires more time than is reasonable for a work session, often leaving the print operation to complete overnight as the most practical solution.</p>
+<h2 id="session-1-set-up-the-servo-controller-electronics">Session 1: <a href="Session01/">Set Up the Servo Controller Electronics</a></h2>
+<p>In the first session we will begin the process of 3D-printing the gestureBot's plastic parts starting with the base frame while connecting the servo controller to the powered USB3 Hub and a single servo motor.</p>
+<p><img alt="Session 1 Complete" src="../img/gB_Session01_Servo_PowerLightFlash.jpg" /></p>
+<h2 id="session-2-configure-the-servos">Session 2: <a href="Session02/">Configure the Servos</a></h2>
+<p>In the second session we will 3D-print the gestureBot's torso components while establishing the communication network for our servo motors by connecting them one-by-one to the PC and using using the <a href="http://en.robotis.com/service/downloadpage.php?ca_id=10">Robotis Dynamixel Wizard 2.0</a> application to program each with a unique ID.</p>
+<p><img alt="Session 2 Complete" src="../img/gB_Session02_LabeledServos.jpg" /></p>
+<h2 id="session-3-assemble-the-torso">Session 3: <a href="Session03/">Assemble the Torso</a></h2>
+<p>In the third session we will 3D-print the head components while assembling the gestureBot's torso.</p>
+<p><img alt="Session 3 Complete" src="../img/gB_Session03_Complete.jpg" /></p>
+<h2 id="session-4-assemble-the-head-structure">Session 4: <a href="Session04/">Assemble the Head Structure</a></h2>
+<p>In the fourth session we will 3D-print the components for both arms while assembling the structural components of the gestureBot's head.</p>
+<p><img alt="Session 4 Complete" src="../img/gB_Session04_HeadStructureTorsoComplete.jpg" /></p>
+<h2 id="session-5-assemble-the-right-arm">Session 5: <a href="Session05/">Assemble the Right Arm</a></h2>
+<p>In the fifth session we will 3D-print the base component while assembling the gestureBot's right arm.</p>
+<h2 id="session-6-assemble-the-left-arm">Session 6: <a href="Session06/">Assemble the Left Arm</a></h2>
+<p>In the sixth session we will 3D-print the eye and ear components (in an alternate color if desired) while assembling the gestureBot's left arm.</p>
+<p><img alt="Session 6 Complete" src="../img/gB_Session06_Complete.jpg" /></p>
+<h2 id="session-7-attach-the-arms-and-test-the-servos">Session 7: <a href="Session07/">Attach the Arms and Test the Servos</a></h2>
+<p>In the seventh session we will 3D-print the hood component (in an alternate color if desired) while we attach the arms to the torso and test the servos using the <a href="https://www.robotis.us/dynamixel-management/">Robotis Dynamixel Wizard 2.0</a> application.</p>
+<p><img alt="Session 7 Complete" src="../img/gB_Session07_TorsoArmsHeadStructureComplete_LEDFlash.jpg" /></p>
+<h2 id="session-8-complete-the-head">Session 8: <a href="Session08/">Complete the Head</a></h2>
+<p>In the eigth session we will 3D-print the hands and arm servo covers while we assemble the the head components.</p>
+<p><img alt="Session 8 Complete" src="../img/gB_Session08_Complete.jpg" /></p>
+<h2 id="session-9-install-the-body-covers">Session 9: <a href="Session09/">Install the Body Covers</a></h2>
+<p>In the ninth session we will 3D-print the torso front and back covers while we install the arm servo covers and hands.</p>
+<p><img alt="Session 9 Complete" src="../img/gB_Session09_Complete.jpg" /></p>
+<h2 id="session-10-run-the-gesture-applications">Session 10: <a href="Session10/">Run the Gesture Applications</a></h2>
+<p>In the tenth session we will 3D-print the torso cover components while we attach the hands and the arm servo covers. At this point the gestureBot will be ready to run the Labanotation Suite software applications. The torso covers can be attached as soon as they are finished printing.</p>
+<p><img alt="Session 10 Complete" src="../img/gB_gestureBotController_UI.png" /></p>
+<h1 id="a-last-word">A last word...</h1>
+<p>Something to keep in mind is that this kit is designed to be changed and adapted. The 3D models are simple and lend themselves to modifications using such tools as <a href="https://www.blender.org/"><strong>Blender</strong></a>. Additional devices such as cameras, microphones, and loudspeakers can be added using the two available USB ports in the base of the robot, as well as leveraging other devices and connections through the host PC. </p>
+<p>We can't wait to see what you come up with!</p>
+<p><strong><em>--the Microsoft Applied Robotics Research Team</em></strong></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2021-09-10 04:51:01
+-->
